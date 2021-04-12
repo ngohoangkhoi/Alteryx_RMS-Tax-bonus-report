@@ -1,41 +1,6 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="2019.3">
   <Nodes>
-    <Node ToolID="46">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="124.9997" y="115.0001" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="21">.\INPUT\Y2021\01.Jan\bm1860$.txt</File>
-          <FormatSpecificOptions>
-            <TrimWhiteSpace>Unset</TrimWhiteSpace>
-            <LineEndStyle>Unset</LineEndStyle>
-            <AllowLongLines>Unset</AllowLongLines>
-            <CodePage>28591</CodePage>
-            <AllowShortLines>Unset</AllowShortLines>
-            <FlatFileXML>
-              <flatfile version="1">
-                <file eoltype="crlf" allowShortLines="t" allowLongLines="t" trimWhiteSpace="t" />
-                <fields>
-                  <field name="Field_1" type="V_String" length="171" />
-                </fields>
-              </flatfile>
-            </FlatFileXML>
-          </FormatSpecificOptions>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>bm1860$.txt</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
-    </Node>
     <Node ToolID="65">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
         <Position x="3485" y="535.0001" />
@@ -56,9 +21,6 @@
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -159,7 +121,7 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">.OUTPUT\Y2021\Different Name (file120-Bank).xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">.\OUTPUT\Y2021\Different Name (file120-Bank).xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
@@ -267,7 +229,7 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">.OUTPUT\Y2021\Different Net (file120-Bank).xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">.\OUTPUT\Y2021\Different Net (file120-Bank).xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
@@ -340,9 +302,9 @@ Table=Sheet1</DefaultAnnotationText>
               <CommaDecimal value="False" />
               <SelectFields>
                 <SelectField field="Left_Name" selected="True" rename="Bank Name" input="Left_" />
+                <SelectField field="Left_Net" selected="True" rename="Bank Net" input="Left_" />
                 <SelectField field="Left_DateTime" selected="False" input="Left_" />
                 <SelectField field="Right_ID" selected="False" rename="Right_ID" input="Right_" />
-                <SelectField field="Right_Net" selected="True" rename="Bank Net" input="Right_" />
                 <SelectField field="Right_Transaction ID" selected="False" rename="Right_Transaction ID" input="Right_" />
                 <SelectField field="Left_Date" selected="False" rename="Left_Date" input="Left_" />
                 <SelectField field="Left_Name1" selected="False" input="Left_" />
@@ -400,88 +362,17 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Directory>.\INPUT\Y2021</Directory>
+          <Directory>.\Input\Y2021</Directory>
           <FileSpec>bm0120*.txt</FileSpec>
           <IncludeSubDirs value="True" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>dir .\INPUT\Y2021\bm0120*.txt</DefaultAnnotationText>
+          <DefaultAnnotationText>dir .\Input\Y2021\bm0120*.txt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
-    </Node>
-    <Node ToolID="8">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
-        <Position x="197.9996" y="440.0003" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <InputConfiguration>
-            <Configuration>
-              <Passwords />
-              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">T:\BO\Amway\RMS Tax &amp; bonus reportMar\VM030321.txt</File>
-              <FormatSpecificOptions>
-                <CodePage>28591</CodePage>
-                <Delimeter>;</Delimeter>
-                <IgnoreErrors>False</IgnoreErrors>
-                <FieldLen>254</FieldLen>
-                <AllowShareWrite>False</AllowShareWrite>
-                <HeaderRow>False</HeaderRow>
-                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
-                <ImportLine>1</ImportLine>
-              </FormatSpecificOptions>
-            </Configuration>
-          </InputConfiguration>
-          <Mode>ReadList</Mode>
-          <ReadList_Field>FullPath</ReadList_Field>
-          <ReadList_Type>Path</ReadList_Type>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
-    </Node>
-    <Node ToolID="7">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
-        <Position x="101.9997" y="440.0001" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Directory>.\INPUT\Y2021\RMS Tax &amp; bonus report</Directory>
-          <FileSpec>VM*.txt</FileSpec>
-          <IncludeSubDirs value="True" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>dir .\INPUT\Y2021\RMS Tax &amp; bonus report\VM*.txt</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
-    </Node>
-    <Node ToolID="93">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1493" y="427.0001" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <ByName_ErrorMode>Warning</ByName_ErrorMode>
-          <ByName_OutputMode>All</ByName_OutputMode>
-          <Mode>ByName</Mode>
-          <SetOutputOrder value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
     </Node>
     <Node ToolID="94">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
@@ -496,43 +387,6 @@ Table=Sheet1</DefaultAnnotationText>
             <SummarizeField field="Tax" action="Sum" rename="Sum_Tax" />
             <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
             <SummarizeField field="DateTime" action="GroupBy" rename="DateTime" />
-          </SummarizeFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
-    <Node ToolID="95">
-      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1745" y="343.0001" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <SummarizeFields>
-            <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
-            <SummarizeField field="DateTime" action="GroupBy" rename="DateTime" />
-          </SummarizeFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
-    <Node ToolID="96">
-      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1697" y="103.0001" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <SummarizeFields>
-            <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
           </SummarizeFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -769,7 +623,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="105">
       <GuiSettings>
-        <Position x="3749" y="787.0001" />
+        <Position x="3750" y="786" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -795,7 +649,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="106">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="3797" y="943.0001" />
+        <Position x="3798" y="918" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -825,7 +679,7 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="List Box (11)">"Net","Tax","Bank Net","Gross"</Value>
+          <Value name="List Box (11)">"Net","Bank Net","Gross","Tax"</Value>
           <Value name="Check Box (84)">True</Value>
           <Value name="Check Box (117)">True</Value>
           <Value name="Check Box (15)">True</Value>
@@ -842,6 +696,9 @@ Table=Sheet1</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
     </Node>
@@ -900,7 +757,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="113">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="3725" y="1111" />
+        <Position x="3726" y="1002" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -919,7 +776,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="114">
       <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-        <Position x="3809" y="1183" />
+        <Position x="3929" y="835" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -945,7 +802,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="115">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="3905" y="1195" />
+        <Position x="4025" y="847" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -977,7 +834,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="116">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="3978" y="1182" />
+        <Position x="4110" y="834" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -995,15 +852,12 @@ Table=Sheet1</DefaultAnnotationText>
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
     <Node ToolID="117">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="3989" y="787.0001" />
+        <Position x="4038" y="642" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1021,15 +875,115 @@ Table=Sheet1</DefaultAnnotationText>
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
+    <Node ToolID="118">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="3942" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Gross_January_2021] + [Gross_February_2021] + [Gross_March_2021]" field="Total Gross" size="8" type="Double" />
+            <FormulaField expression="IF [Total Gross] &gt; 100000000 THEN [Total Gross]*0.05 ELSE 0 ENDIF" field="Total Tax" size="8" type="Double" />
+            <FormulaField expression="[Total Gross] - [Total Tax]" field="Total Net" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Total Gross = [Gross_January_2021] + [Gross_February_2021] + [Gross_March_2021]
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="119">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="3846" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="123">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2130" y="906" width="156" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Join the Net &amp; Bank files to see the Different Name &amp; Different Net in Net &amp; Bank files</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="183" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="125">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2586" y="654" width="172" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Get both the data from Bank and Net : Bank --&gt; Bank Net; 
+Net --&gt; Gross, Tax, Net</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="159" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="126">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2862" y="894" width="172" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Get both the data from Bank and Net : Bank --&gt; Bank Net; 
+Net --&gt; Gross, Tax, Net</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="159" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="257.9997" y="727.9999" width="1741" height="708.0002" />
+        <Position x="257" y="724.9999" width="1742" height="711.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1076,12 +1030,12 @@ Table=Sheet1</DefaultAnnotationText>
               <CommaDecimal value="False" />
               <SelectFields>
                 <SelectField field="ID" selected="True" />
+                <SelectField field="Name" selected="True" />
+                <SelectField field="Gross" selected="True" />
                 <SelectField field="Tax" selected="True" />
                 <SelectField field="Net" selected="True" />
                 <SelectField field="Name2" selected="False" />
                 <SelectField field="Name1" selected="False" />
-                <SelectField field="Name" selected="True" />
-                <SelectField field="Gross" selected="True" />
                 <SelectField field="DateTime" selected="False" />
                 <SelectField field="DateTime2" selected="True" rename="DateTime" />
                 <SelectField field="*Unknown" selected="True" />
@@ -1320,7 +1274,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-            <Position x="882.9997" y="788.9998" />
+            <Position x="882.9996" y="788.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1338,7 +1292,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="21">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="822.9997" y="1293" />
+            <Position x="822.9996" y="1293" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1392,7 +1346,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="19">
           <GuiSettings>
-            <Position x="942.9997" y="1029" />
+            <Position x="942.9996" y="1029" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1452,7 +1406,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="17">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="858.9996" y="1029" />
+            <Position x="858.9995" y="1029" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1634,7 +1588,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="10">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="282.9997" y="1041" />
+            <Position x="282.9998" y="1041" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1653,43 +1607,18 @@ Custom</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
         </Node>
-      </ChildNodes>
-    </Node>
-    <Node ToolID="39">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="305.9997" y="380.0002" width="625" height="252" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>VM*</Caption>
-          <Style TextColor="#314c4a" FillColor="#ffa6a6" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
-          <Folded value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="2">
-          <GuiSettings>
-            <Position x="426.9997" y="441.0003" />
+        <Node ToolID="122">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="282" y="773.9999" width="192" height="48" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Value name="List Box (11)">"Field_81"</Value>
-              <Value name="Check Box (84)">True</Value>
-              <Value name="Check Box (117)">True</Value>
-              <Value name="Check Box (15)">True</Value>
-              <Value name="Check Box (109)">False</Value>
-              <Value name="Check Box (122)">False</Value>
-              <Value name="Check Box (53)">False</Value>
-              <Value name="Check Box (58)">False</Value>
-              <Value name="Check Box (70)">True</Value>
-              <Value name="Check Box (77)">False</Value>
-              <Value name="Drop Down (81)">upper</Value>
+              <Text>Cleaning the data into 4 columns: ID, Name, Gross, Tax, Net, DateTime</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="255" g="255" b="174" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -1697,165 +1626,16 @@ Custom</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
-          <EngineSettings Macro="Cleanse.yxmc" />
-        </Node>
-        <Node ToolID="3">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="846.9997" y="429.0002" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="True" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Field_9" selected="True" rename="ID" />
-                <SelectField field="Field_1" selected="False" />
-                <SelectField field="Field_2" selected="True" rename="Name" />
-                <SelectField field="Field_3" selected="False" />
-                <SelectField field="Field_4" selected="False" />
-                <SelectField field="Field_5" selected="False" />
-                <SelectField field="Field_6" selected="False" />
-                <SelectField field="Field_7" selected="False" />
-                <SelectField field="Field_8" selected="False" type="Double" size="8" />
-                <SelectField field="Field_10" selected="False" />
-                <SelectField field="Field_11" selected="False" />
-                <SelectField field="Field_12" selected="False" />
-                <SelectField field="Field_13" selected="False" />
-                <SelectField field="Field_81" selected="True" rename="Net" type="Double" size="8" />
-                <SelectField field="Field_82" selected="False" />
-                <SelectField field="DateTime_Out" selected="False" />
-                <SelectField field="DateTime" selected="True" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="4">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="330.9997" y="441.0002" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Field>Field_8</Field>
-              <ErrorHandling>Last</ErrorHandling>
-              <RootName>Field_8</RootName>
-              <Delimeters value="." />
-              <NumFields value="2" />
-              <Flags value="0" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
-        </Node>
-        <Node ToolID="5">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="594.9997" y="441.0002" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <IsFrom value="False" />
-              <InputFieldName>Field_10</InputFieldName>
-              <Format>yyyyMMdd</Format>
-              <OutputFieldName>DateTime_Out</OutputFieldName>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Convert Field_10 From:
-Custom</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
-        </Node>
-        <Node ToolID="6">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="690.9997" y="441.0002" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Expression>!IsNull([DateTime_Out])</Expression>
-              <Mode>Simple</Mode>
-              <Simple>
-                <Operator>IsNotNull</Operator>
-                <Field>DateTime_Out</Field>
-                <Operands>
-                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-                  <DateType>fixed</DateType>
-                  <PeriodDate>2021-04-09 16:52:01</PeriodDate>
-                  <PeriodType>days</PeriodType>
-                  <PeriodCount>0</PeriodCount>
-                  <Operand>2021-04-09</Operand>
-                  <StartDate>2021-04-09 16:52:01</StartDate>
-                  <EndDate>2021-04-09 16:52:01</EndDate>
-                </Operands>
-              </Simple>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>!IsNull([DateTime_Out])</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-        </Node>
-        <Node ToolID="37">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="774.9997" y="429.0002" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <IsFrom value="True" />
-              <InputFieldName>DateTime_Out</InputFieldName>
-              <Format>Month yyyy</Format>
-              <OutputFieldName>DateTime</OutputFieldName>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Convert DateTime_Out To:
-Custom</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
-        </Node>
-        <Node ToolID="42">
-          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="845.9997" y="548.0002" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <SummarizeFields>
-                <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
-                <SummarizeField field="DateTime" action="GroupBy" rename="DateTime" />
-              </SummarizeFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
         </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="90">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="195.9997" y="54" width="1465" height="312" />
+        <Position x="76.99975" y="17.0001" width="1584" height="700" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Caption>Container 90</Caption>
+          <Caption>bm1860</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="False" />
           <Folded value="False" />
@@ -1869,7 +1649,7 @@ Custom</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="45">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="220.9997" y="114.9999" />
+            <Position x="220.9999" y="174.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1891,7 +1671,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="67">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="340.9997" y="115" />
+            <Position x="340.9997" y="174.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1923,7 +1703,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="68">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="448.9998" y="103.0001" />
+            <Position x="448.9997" y="163.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1944,7 +1724,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="69">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="592.9997" y="103" />
+            <Position x="592.9997" y="163.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1965,7 +1745,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="70">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="724.9997" y="103.0001" />
+            <Position x="724.9998" y="163.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1987,7 +1767,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="74">
           <GuiSettings>
-            <Position x="868.9997" y="103.0001" />
+            <Position x="868.9998" y="163.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2013,7 +1793,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="79">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="364.9997" y="247.0002" />
+            <Position x="364.9997" y="307.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2045,7 +1825,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="80">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="448.9997" y="223.0001" />
+            <Position x="448.9997" y="283.0003" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2067,7 +1847,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="81">
           <GuiSettings>
-            <Position x="532.9997" y="223.0002" />
+            <Position x="532.9997" y="283.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2093,7 +1873,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="82">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="604.9997" y="235" />
+            <Position x="604.9998" y="295.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2113,7 +1893,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="83">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="676.9997" y="235.0001" />
+            <Position x="676.9997" y="295.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2137,7 +1917,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="84">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="952.9997" y="103" />
+            <Position x="952.9999" y="163" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2158,7 +1938,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="85">
           <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-            <Position x="1085" y="163.0001" />
+            <Position x="1085" y="223.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2184,7 +1964,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="86">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1277" y="163.0001" />
+            <Position x="1277" y="223.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2209,7 +1989,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="87">
           <GuiSettings>
-            <Position x="1181" y="163.0001" />
+            <Position x="1181" y="223.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2235,7 +2015,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="88">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="1349" y="163.0001" />
+            <Position x="1349" y="223.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2259,7 +2039,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="89">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1421" y="163.0001" />
+            <Position x="1421" y="223.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2291,7 +2071,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="91">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="1505" y="139.0001" />
+            <Position x="1505" y="199.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2311,7 +2091,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="92">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1577" y="139.0001" />
+            <Position x="1577" y="199.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2331,14 +2111,375 @@ Custom</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
         </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="124.9998" y="175.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="21">.\Input\Y2021\1.Jan\bm1860$.txt</File>
+              <FormatSpecificOptions>
+                <TrimWhiteSpace>Unset</TrimWhiteSpace>
+                <LineEndStyle>Unset</LineEndStyle>
+                <AllowLongLines>Unset</AllowLongLines>
+                <CodePage>28591</CodePage>
+                <AllowShortLines>Unset</AllowShortLines>
+                <FlatFileXML>
+                  <flatfile version="1">
+                    <file eoltype="crlf" allowShortLines="t" allowLongLines="t" trimWhiteSpace="t" />
+                    <fields>
+                      <field name="Field_1" type="V_String" length="171" />
+                    </fields>
+                  </flatfile>
+                </FlatFileXML>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>bm1860$.txt</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Field_1" size="171" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm1860$.txt" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="93">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1493" y="487.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="120">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="402" y="66.0001" width="192" height="36" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Cleaning the data into 4 columns: ID, Name, Net, DateTime</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor r="255" g="255" b="196" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="305.9997" y="413" width="624.9999" height="279.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>VM*</Caption>
+              <Style TextColor="#314c4a" FillColor="#ffa6a6" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="42">
+              <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+                <Position x="845.9996" y="608.0001" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <SummarizeFields>
+                    <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
+                    <SummarizeField field="DateTime" action="GroupBy" rename="DateTime" />
+                  </SummarizeFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+            </Node>
+            <Node ToolID="37">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+                <Position x="774.9997" y="489.0002" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <IsFrom value="True" />
+                  <InputFieldName>DateTime_Out</InputFieldName>
+                  <Format>Month yyyy</Format>
+                  <OutputFieldName>DateTime</OutputFieldName>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Convert DateTime_Out To:
+Custom</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+            </Node>
+            <Node ToolID="6">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+                <Position x="690.9997" y="501.0002" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Expression>!IsNull([DateTime_Out])</Expression>
+                  <Mode>Simple</Mode>
+                  <Simple>
+                    <Operator>IsNotNull</Operator>
+                    <Field>DateTime_Out</Field>
+                    <Operands>
+                      <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                      <DateType>fixed</DateType>
+                      <PeriodDate>2021-04-09 16:52:01</PeriodDate>
+                      <PeriodType>days</PeriodType>
+                      <PeriodCount>0</PeriodCount>
+                      <Operand>2021-04-09</Operand>
+                      <StartDate>2021-04-09 16:52:01</StartDate>
+                      <EndDate>2021-04-09 16:52:01</EndDate>
+                    </Operands>
+                  </Simple>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>!IsNull([DateTime_Out])</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+            </Node>
+            <Node ToolID="5">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+                <Position x="594.9997" y="501.0002" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <IsFrom value="False" />
+                  <InputFieldName>Field_10</InputFieldName>
+                  <Format>yyyyMMdd</Format>
+                  <OutputFieldName>DateTime_Out</OutputFieldName>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Convert Field_10 From:
+Custom</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+            </Node>
+            <Node ToolID="4">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+                <Position x="330.9997" y="501.0002" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Field>Field_8</Field>
+                  <ErrorHandling>Last</ErrorHandling>
+                  <RootName>Field_8</RootName>
+                  <Delimeters value="." />
+                  <NumFields value="2" />
+                  <Flags value="0" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+            </Node>
+            <Node ToolID="3">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+                <Position x="846.9996" y="489.0002" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Field_9" selected="True" rename="ID" />
+                    <SelectField field="Field_1" selected="False" />
+                    <SelectField field="Field_2" selected="True" rename="Name" />
+                    <SelectField field="Field_3" selected="False" />
+                    <SelectField field="Field_4" selected="False" />
+                    <SelectField field="Field_5" selected="False" />
+                    <SelectField field="Field_6" selected="False" />
+                    <SelectField field="Field_7" selected="False" />
+                    <SelectField field="Field_8" selected="False" type="Double" size="8" />
+                    <SelectField field="Field_10" selected="False" />
+                    <SelectField field="Field_11" selected="False" />
+                    <SelectField field="Field_12" selected="False" />
+                    <SelectField field="Field_13" selected="False" />
+                    <SelectField field="Field_81" selected="True" rename="Net" type="Double" size="8" />
+                    <SelectField field="Field_82" selected="False" />
+                    <SelectField field="DateTime_Out" selected="False" />
+                    <SelectField field="DateTime" selected="True" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+            </Node>
+            <Node ToolID="2">
+              <GuiSettings>
+                <Position x="426.9997" y="501.0002" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="List Box (11)">"Field_81"</Value>
+                  <Value name="Check Box (84)">True</Value>
+                  <Value name="Check Box (117)">True</Value>
+                  <Value name="Check Box (15)">True</Value>
+                  <Value name="Check Box (109)">False</Value>
+                  <Value name="Check Box (122)">False</Value>
+                  <Value name="Check Box (53)">False</Value>
+                  <Value name="Check Box (58)">False</Value>
+                  <Value name="Check Box (70)">True</Value>
+                  <Value name="Check Box (77)">False</Value>
+                  <Value name="Drop Down (81)">upper</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="Cleanse.yxmc" />
+            </Node>
+            <Node ToolID="121">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="438" y="462" width="192" height="36" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Cleaning the data into 4 columns: ID, Name, Net, DateTime</Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor r="255" g="255" b="202" />
+                  <Shape shape="0" />
+                  <Justification Justification="4" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
+            <Position x="101.9997" y="500" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Directory>.\Input\Y2021</Directory>
+              <FileSpec>VM*.txt</FileSpec>
+              <IncludeSubDirs value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dir .\Input\Y2021\VM*.txt</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDirectory" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+            <Position x="197.9996" y="500.0004" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <InputConfiguration>
+                <Configuration>
+                  <Passwords />
+                  <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">T:\BO\Amway\RMS Tax &amp; bonus reportMar\VM030321.txt</File>
+                  <FormatSpecificOptions>
+                    <CodePage>28591</CodePage>
+                    <Delimeter>;</Delimeter>
+                    <IgnoreErrors>False</IgnoreErrors>
+                    <FieldLen>254</FieldLen>
+                    <AllowShareWrite>False</AllowShareWrite>
+                    <HeaderRow>False</HeaderRow>
+                    <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                    <ImportLine>1</ImportLine>
+                  </FormatSpecificOptions>
+                </Configuration>
+              </InputConfiguration>
+              <Mode>ReadList</Mode>
+              <ReadList_Field>FullPath</ReadList_Field>
+              <ReadList_Type>Path</ReadList_Type>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+        </Node>
+        <Node ToolID="124">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1446" y="546" width="144" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Union the Bank in Jan with Bank in Feb &amp; Mar</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
       </ChildNodes>
     </Node>
   </Nodes>
   <Connections>
-    <Connection>
-      <Origin ToolID="46" Connection="Output" />
-      <Destination ToolID="45" Connection="Input" />
-    </Connection>
     <Connection>
       <Origin ToolID="64" Connection="Output" />
       <Destination ToolID="63" Connection="Input" />
@@ -2388,11 +2529,11 @@ Custom</DefaultAnnotationText>
       <Destination ToolID="57" Connection="Input" />
     </Connection>
     <Connection name="#1">
-      <Origin ToolID="54" Connection="Join" />
+      <Origin ToolID="54" Connection="Left" />
       <Destination ToolID="61" Connection="Input" />
     </Connection>
     <Connection name="#2">
-      <Origin ToolID="54" Connection="Left" />
+      <Origin ToolID="54" Connection="Join" />
       <Destination ToolID="61" Connection="Input" />
     </Connection>
     <Connection>
@@ -2402,26 +2543,6 @@ Custom</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="33" Connection="Output" />
       <Destination ToolID="34" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="8" Connection="Output" />
-      <Destination ToolID="4" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="7" Connection="Output" />
-      <Destination ToolID="8" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="93" Connection="Output" />
-      <Destination ToolID="54" Connection="Left" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="36" Connection="Output" />
-      <Destination ToolID="54" Connection="Right" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="93" Connection="Output" />
-      <Destination ToolID="95" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="94" Connection="Output" />
@@ -2469,7 +2590,7 @@ Custom</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="105" Connection="Output26" />
-      <Destination ToolID="117" Connection="Input" />
+      <Destination ToolID="119" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="108" Connection="Output26" />
@@ -2490,6 +2611,22 @@ Custom</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="115" Connection="True" />
       <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="118" Connection="Output" />
+      <Destination ToolID="117" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="118" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="54" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="54" Connection="Left" />
     </Connection>
     <Connection>
       <Origin ToolID="35" Connection="Output" />
@@ -2592,38 +2729,6 @@ Custom</DefaultAnnotationText>
       <Destination ToolID="12" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="2" Connection="Output26" />
-      <Destination ToolID="5" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="3" Connection="Output" />
-      <Destination ToolID="42" Connection="Input" />
-    </Connection>
-    <Connection name="#2">
-      <Origin ToolID="3" Connection="Output" />
-      <Destination ToolID="93" Connection="Input" />
-    </Connection>
-    <Connection name="#1">
-      <Origin ToolID="92" Connection="Output" />
-      <Destination ToolID="93" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="4" Connection="Output" />
-      <Destination ToolID="2" Connection="Input2" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="5" Connection="Output" />
-      <Destination ToolID="6" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="6" Connection="True" />
-      <Destination ToolID="37" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="37" Connection="Output" />
-      <Destination ToolID="3" Connection="Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="45" Connection="Output" />
       <Destination ToolID="67" Connection="Input" />
     </Connection>
@@ -2699,9 +2804,49 @@ Custom</DefaultAnnotationText>
       <Origin ToolID="91" Connection="Output" />
       <Destination ToolID="92" Connection="Input" />
     </Connection>
-    <Connection>
+    <Connection name="#1">
       <Origin ToolID="92" Connection="Output" />
-      <Destination ToolID="96" Connection="Input" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="2" Connection="Input2" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output26" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
