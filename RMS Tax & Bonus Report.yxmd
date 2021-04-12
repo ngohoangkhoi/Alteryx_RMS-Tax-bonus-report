@@ -8,7 +8,7 @@
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="21">T:\BO\Amway\RMS Tax &amp; bonus report\Jan\bm1860$.txt</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="21">.\INPUT\Y2021\01.Jan\bm1860$.txt</File>
           <FormatSpecificOptions>
             <TrimWhiteSpace>Unset</TrimWhiteSpace>
             <LineEndStyle>Unset</LineEndStyle>
@@ -30,21 +30,19 @@
           <DefaultAnnotationText>bm1860$.txt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Field_1" size="171" source="File: T:\BO\Amway\RMS Tax &amp; bonus report\Jan\bm1860$.txt" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
     </Node>
     <Node ToolID="65">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="3185" y="415.0001" />
+        <Position x="3485" y="535.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">C:\Users\nkhoi005\Desktop\RMS-Tax-bonus-report.xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">.\OUTPUT\Y2021\RMS-Tax-bonus-report.xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
@@ -58,12 +56,15 @@
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2670" y="596.0002" />
+        <Position x="2970" y="716.0002" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -82,7 +83,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="63">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2753" y="595.0001" />
+        <Position x="3053" y="715.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -114,7 +115,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2513" y="595.0001" />
+        <Position x="2813" y="715.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -135,7 +136,7 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
     </Node>
     <Node ToolID="61">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="2345" y="595.0001" />
+        <Position x="2645" y="715.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -158,7 +159,7 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">C:\Users\nkhoi005\Desktop\Different Name (file120-Bank).xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">.OUTPUT\Y2021\Different Name (file120-Bank).xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
@@ -172,6 +173,9 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -263,7 +267,7 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">C:\Users\nkhoi005\Desktop\Different Net (file120-Bank).xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">.OUTPUT\Y2021\Different Net (file120-Bank).xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
@@ -277,6 +281,9 @@ Table=Sheet1</DefaultAnnotationText>
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -393,13 +400,13 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Directory>T:\BO\Amway\RMS Tax &amp; bonus report</Directory>
+          <Directory>.\INPUT\Y2021</Directory>
           <FileSpec>bm0120*.txt</FileSpec>
           <IncludeSubDirs value="True" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>dir T:\BO\Amway\RMS Tax &amp; bonus report\bm0120*.txt</DefaultAnnotationText>
+          <DefaultAnnotationText>dir .\INPUT\Y2021\bm0120*.txt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -445,13 +452,13 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Directory>T:\BO\Amway\RMS Tax &amp; bonus report</Directory>
+          <Directory>.\INPUT\Y2021\RMS Tax &amp; bonus report</Directory>
           <FileSpec>VM*.txt</FileSpec>
           <IncludeSubDirs value="True" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>dir T:\BO\Amway\RMS Tax &amp; bonus report\VM*.txt</DefaultAnnotationText>
+          <DefaultAnnotationText>dir .\INPUT\Y2021\RMS Tax &amp; bonus report\VM*.txt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -478,7 +485,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="94">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="3089" y="595.0001" />
+        <Position x="3389" y="715.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -538,7 +545,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="97">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="3185" y="523.0001" />
+        <Position x="3485" y="643.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -586,7 +593,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="101">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="3377" y="511.0001" />
+        <Position x="3677" y="631.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -643,7 +650,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="102">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="2681" y="511.0001" />
+        <Position x="2981" y="631.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -661,7 +668,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="103">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="2789" y="499.0001" />
+        <Position x="3089" y="619.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -680,7 +687,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="100">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="3281" y="523.0001" />
+        <Position x="3581" y="643.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -734,7 +741,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="104">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="3353" y="667.0001" />
+        <Position x="3653" y="787.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -762,7 +769,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="105">
       <GuiSettings>
-        <Position x="3449" y="667.0001" />
+        <Position x="3749" y="787.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -788,7 +795,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="106">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="3497" y="823.0001" />
+        <Position x="3797" y="943.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -814,7 +821,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="108">
       <GuiSettings>
-        <Position x="2429" y="595.0001" />
+        <Position x="2729" y="715.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -840,7 +847,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="109">
       <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-        <Position x="2897" y="583.0001" />
+        <Position x="3197" y="703.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -866,7 +873,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="110">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2993" y="571.0001" />
+        <Position x="3293" y="691.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -893,7 +900,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="113">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="3425" y="991.0001" />
+        <Position x="3725" y="1111" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -912,7 +919,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="114">
       <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-        <Position x="3509" y="1063" />
+        <Position x="3809" y="1183" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -938,7 +945,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="115">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="3605" y="1075" />
+        <Position x="3905" y="1195" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -970,11 +977,11 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="116">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="3677" y="1063" />
+        <Position x="3978" y="1182" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">C:\Users\nkhoi005\Desktop\Duplicate ID (file 120-Bank).xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">.\OUTPUT\Y2021\Duplicate ID (file 120-Bank).xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
@@ -988,16 +995,19 @@ Table=Sheet1</DefaultAnnotationText>
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
     <Node ToolID="117">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="3689" y="667.0001" />
+        <Position x="3989" y="787.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">C:\Users\nkhoi005\Desktop\Report.xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">.\OUTPUT\Y2021\Report.xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
@@ -1011,6 +1021,9 @@ Table=Sheet1</DefaultAnnotationText>
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
