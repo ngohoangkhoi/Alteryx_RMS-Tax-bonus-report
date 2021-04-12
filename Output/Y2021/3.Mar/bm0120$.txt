@@ -1,0 +1,908 @@
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     1
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+ Business Entity 500
+            Type  Description               Amt Subject To Tax      Tax Amount              Total
+        2008788 TRUONG HUYEN NGA
+              A   Withholding Tax Registere      40579455.00        6443750.00-       34135705.00
+         Distributor  Total . . . . . . :        40579455.00        6443750.00-       34135705.00
+        2008982 VU THI THU HUONG
+              A   Withholding Tax Registere      46251384.00        2312569.00-       43938815.00
+         Distributor  Total . . . . . . :        46251384.00        2312569.00-       43938815.00
+        2009093 LAM CHI THANG & NGUYEN NGOC NHU
+              A   Withholding Tax Registere      45984701.00        2299235.00-       43685466.00
+         Distributor  Total . . . . . . :        45984701.00        2299235.00-       43685466.00
+        2009188 DOAN TO CHAN
+              A   Withholding Tax Registere      94074504.00        4703726.00-       89370778.00
+         Distributor  Total . . . . . . :        94074504.00        4703726.00-       89370778.00
+        2009189 DANG NU
+              A   Withholding Tax Registere     168704439.00        8435222.00-      160269217.00
+         Distributor  Total . . . . . . :       168704439.00        8435222.00-      160269217.00
+        2009206 NGUYEN THANH CHUONG
+              A   Withholding Tax Registere      43195260.00        2159763.00-       41035497.00
+         Distributor  Total . . . . . . :        43195260.00        2159763.00-       41035497.00
+        2009209 PHAM THI QUYNH DZYAO & NGUYEN XUAN THAO
+              A   Withholding Tax Registere      43451491.00        2172575.00-       41278916.00
+         Distributor  Total . . . . . . :        43451491.00        2172575.00-       41278916.00
+        2009210 DOAN QUOC THANH & NGUYEN THI ANH NGA
+              A   Withholding Tax Registere      38551419.00        5539189.00-       33012230.00
+         Distributor  Total . . . . . . :        38551419.00        5539189.00-       33012230.00
+        2009319 NGUYEN THI LAN ANH
+              A   Withholding Tax Registere      77829523.00        3891476.00-       73938047.00
+         Distributor  Total . . . . . . :        77829523.00        3891476.00-       73938047.00
+        2009436 DONG TUAN DAT
+              A   Withholding Tax Registere     163678602.00        8183931.00-      155494671.00
+         Distributor  Total . . . . . . :       163678602.00        8183931.00-      155494671.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     2
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2009473 DINH TIEN THANH & HOANG THI THUY HANG
+              A   Withholding Tax Registere      72587377.00        3629369.00-       68958008.00
+         Distributor  Total . . . . . . :        72587377.00        3629369.00-       68958008.00
+        2009500 LUU TU TAM & LAM TAN KHANH
+              A   Withholding Tax Registere      72043109.00        3602155.00-       68440954.00
+         Distributor  Total . . . . . . :        72043109.00        3602155.00-       68440954.00
+        2009526 HUYNH HUE HOA & LUU CHI HUNG
+              A   Withholding Tax Registere      41180416.00        2059020.00-       39121396.00
+         Distributor  Total . . . . . . :        41180416.00        2059020.00-       39121396.00
+        2009527 HUYNH QUOC VINH
+              A   Withholding Tax Registere      44880935.00        2244047.00-       42636888.00
+         Distributor  Total . . . . . . :        44880935.00        2244047.00-       42636888.00
+        2009530 NGO BINH TAN & HUYNH LIEU LINH
+              A   Withholding Tax Registere      49739475.00        5737035.00-       44002440.00
+         Distributor  Total . . . . . . :        49739475.00        5737035.00-       44002440.00
+        2009868 TRAN THI AI TINH
+              A   Withholding Tax Registere      44962162.00        5286357.00-       39675805.00
+         Distributor  Total . . . . . . :        44962162.00        5286357.00-       39675805.00
+        2009888 NGUYEN THI DIEP
+              A   Withholding Tax Registere     125463127.00        6273156.00-      119189971.00
+         Distributor  Total . . . . . . :       125463127.00        6273156.00-      119189971.00
+        2010086 HUYNH YEN MINH
+              A   Withholding Tax Registere      32420265.00        5511585.00-       26908680.00
+         Distributor  Total . . . . . . :        32420265.00        5511585.00-       26908680.00
+        2010188 DAM TAN THANH
+              A   Withholding Tax Registere      68658365.00        3432919.00-       65225446.00
+         Distributor  Total . . . . . . :        68658365.00        3432919.00-       65225446.00
+        2010443 PHAM CHI BINH & NGUYEN THI TUYET NGAN
+              A   Withholding Tax Registere      87937652.00        4396883.00-       83540769.00
+         Distributor  Total . . . . . . :        87937652.00        4396883.00-       83540769.00
+        2010479 PHAM QUANG HUNG & HA THI THANH THUY
+              A   Withholding Tax Registere      54128026.00        7294427.00-       46833599.00
+         Distributor  Total . . . . . . :        54128026.00        7294427.00-       46833599.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     3
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2010508 HO TRI DUNG
+              A   Withholding Tax Registere      78224215.00        3911210.00-       74313005.00
+         Distributor  Total . . . . . . :        78224215.00        3911210.00-       74313005.00
+        2014200 DAM THI HOAT & PHAM LAM
+              A   Withholding Tax Registere      33290759.00        5409020.00-       27881739.00
+         Distributor  Total . . . . . . :        33290759.00        5409020.00-       27881739.00
+        2014400 NGUYEN THI THANH HUONG & PHAM NGOC VAN
+              A   Withholding Tax Registere      48701064.00        2435053.00-       46266011.00
+         Distributor  Total . . . . . . :        48701064.00        2435053.00-       46266011.00
+        2014623 LE QUANG HUY & TRAN THU HUONG
+              A   Withholding Tax Registere      50003334.00        2500167.00-       47503167.00
+         Distributor  Total . . . . . . :        50003334.00        2500167.00-       47503167.00
+        2014629 TRAN THI HANH & NGUYEN NGOC LINH
+              A   Withholding Tax Registere      49857918.00        2492896.00-       47365022.00
+         Distributor  Total . . . . . . :        49857918.00        2492896.00-       47365022.00
+        2014640 TRAN THI THU HUONG & PHAN THANH XUAN
+              A   Withholding Tax Registere      33747430.00        6166385.00-       27581045.00
+         Distributor  Total . . . . . . :        33747430.00        6166385.00-       27581045.00
+        2014888 DONG THUY DAN
+              A   Withholding Tax Registere     123215013.00        6160751.00-      117054262.00
+         Distributor  Total . . . . . . :       123215013.00        6160751.00-      117054262.00
+        2014997 PHAM THI PHUONG HOA & NGUYEN THE DUC
+              A   Withholding Tax Registere      33904923.00        5093774.00-       28811149.00
+         Distributor  Total . . . . . . :        33904923.00        5093774.00-       28811149.00
+        2019321 PHAM HONG LE
+              A   Withholding Tax Registere     102005605.00        5100280.00-       96905325.00
+         Distributor  Total . . . . . . :       102005605.00        5100280.00-       96905325.00
+        2019937 NGUYEN TRAN THIEN THANH & NGUYEN THI XUAN PHUONG
+              A   Withholding Tax Registere      77451425.00        3872571.00-       73578854.00
+         Distributor  Total . . . . . . :        77451425.00        3872571.00-       73578854.00
+        2021160 DUONG THI THU & NGUYEN NGOC HIEU
+              A   Withholding Tax Registere      84276605.00        4213830.00-       80062775.00
+         Distributor  Total . . . . . . :        84276605.00        4213830.00-       80062775.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     4
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2021296 TRAN PHAM BINH & NGUYEN THI VIET NGA
+              A   Withholding Tax Registere     130602980.00        6530149.00-      124072831.00
+         Distributor  Total . . . . . . :       130602980.00        6530149.00-      124072831.00
+        2022468 TRAN QUOC DUNG & LE THI THUY DUONG
+              A   Withholding Tax Registere      99534558.00        4976728.00-       94557830.00
+         Distributor  Total . . . . . . :        99534558.00        4976728.00-       94557830.00
+        2022472 VO HOANG THANH HUONG
+              A   Withholding Tax Registere      31083529.00        5059958.00-       26023571.00
+         Distributor  Total . . . . . . :        31083529.00        5059958.00-       26023571.00
+        2024141 PHUNG TU TRINH
+              A   Withholding Tax Registere      53429348.00        6838489.00-       46590859.00
+         Distributor  Total . . . . . . :        53429348.00        6838489.00-       46590859.00
+        2026241 PHAM DUY MANH & VU THI KIEU TRINH
+              A   Withholding Tax Registere      35326253.00        5778261.00-       29547992.00
+         Distributor  Total . . . . . . :        35326253.00        5778261.00-       29547992.00
+        2026368 NGUYEN THI ANH DAO
+              A   Withholding Tax Registere      58849388.00        2942470.00-       55906918.00
+         Distributor  Total . . . . . . :        58849388.00        2942470.00-       55906918.00
+        2028106 VU THI PHUC
+              A   Withholding Tax Registere      80240087.00        4012005.00-       76228082.00
+         Distributor  Total . . . . . . :        80240087.00        4012005.00-       76228082.00
+        2028263 TRAN THI QUYNH CHAU
+              A   Withholding Tax Registere     130345957.00        6517298.00-      123828659.00
+         Distributor  Total . . . . . . :       130345957.00        6517298.00-      123828659.00
+        2029889 HA CHI TRAN
+              A   Withholding Tax Registere      53894162.00        2694708.00-       51199454.00
+         Distributor  Total . . . . . . :        53894162.00        2694708.00-       51199454.00
+        2030053 NGUYEN HUU TINH & NGUYEN THI BICH TUYEN
+              A   Withholding Tax Registere      57579466.00        2878973.00-       54700493.00
+         Distributor  Total . . . . . . :        57579466.00        2878973.00-       54700493.00
+        2037942 AN MINH TIEN & VU LE THANH
+              A   Withholding Tax Registere      50248525.00        5064188.00-       45184337.00
+         Distributor  Total . . . . . . :        50248525.00        5064188.00-       45184337.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     5
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2037950 BUI THI KIM CHI
+              A   Withholding Tax Registere      28969626.00        6124453.00-       22845173.00
+         Distributor  Total . . . . . . :        28969626.00        6124453.00-       22845173.00
+        2038005 DINH HUU SON
+              A   Withholding Tax Registere      46577435.00        6932042.00-       39645393.00
+         Distributor  Total . . . . . . :        46577435.00        6932042.00-       39645393.00
+        2040244 PHAM HUNG & HO VU THIEN NGA
+              A   Withholding Tax Registere      50430250.00        2521513.00-       47908737.00
+         Distributor  Total . . . . . . :        50430250.00        2521513.00-       47908737.00
+        2041313 PHAM THI TOI & DANG VAN DUC
+              A   Withholding Tax Registere      52104450.00        6549916.00-       45554534.00
+         Distributor  Total . . . . . . :        52104450.00        6549916.00-       45554534.00
+        2046689 NGO QUOC HUNG & PHAN THI BE
+              A   Withholding Tax Registere      46485790.00        5880123.00-       40605667.00
+         Distributor  Total . . . . . . :        46485790.00        5880123.00-       40605667.00
+        2049426 BUI DINH NHAT & VU THI HOA TRANG
+              A   Withholding Tax Registere      48083513.00        6662799.00-       41420714.00
+         Distributor  Total . . . . . . :        48083513.00        6662799.00-       41420714.00
+        2050672 LAM HUNG & DIEC LE
+              A   Withholding Tax Registere     100962499.00        5048125.00-       95914374.00
+         Distributor  Total . . . . . . :       100962499.00        5048125.00-       95914374.00
+        2052055 TRAN CO DANH
+              A   Withholding Tax Registere     114025372.00        5701269.00-      108324103.00
+         Distributor  Total . . . . . . :       114025372.00        5701269.00-      108324103.00
+        2052337 LE TRUNG TIN & VO THI LOL
+              A   Withholding Tax Registere     150275452.00        7513773.00-      142761679.00
+         Distributor  Total . . . . . . :       150275452.00        7513773.00-      142761679.00
+        2052875 BUI THI NGOC BANG & KHUC DUY THANG
+              A   Withholding Tax Registere      59356365.00        2967818.00-       56388547.00
+         Distributor  Total . . . . . . :        59356365.00        2967818.00-       56388547.00
+        2057300 TRAN THI QUYNH LOAN & HA NGOC TUAN
+              A   Withholding Tax Registere      50676517.00        2533826.00-       48142691.00
+         Distributor  Total . . . . . . :        50676517.00        2533826.00-       48142691.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     6
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2060413 NGUYEN QUY BINH & DAO NHAT LINH
+              A   Withholding Tax Registere      56727064.00        2836354.00-       53890710.00
+         Distributor  Total . . . . . . :        56727064.00        2836354.00-       53890710.00
+        2065342 DUONG VAN VUONG
+              A   Withholding Tax Registere      59247100.00        2962355.00-       56284745.00
+         Distributor  Total . . . . . . :        59247100.00        2962355.00-       56284745.00
+        2071151 GIANG THI THAM & VO CONG HUNG
+              A   Withholding Tax Registere      81513395.00        4075669.00-       77437726.00
+         Distributor  Total . . . . . . :        81513395.00        4075669.00-       77437726.00
+        2073692 NGUYEN THI THANH HOA & NGUYEN VAN CHINH
+              A   Withholding Tax Registere      70722770.00        3536139.00-       67186631.00
+         Distributor  Total . . . . . . :        70722770.00        3536139.00-       67186631.00
+        2074792 LE THI PHUONG CHI & LE HO TUAN
+              A   Withholding Tax Registere      42007013.00        6710361.00-       35296652.00
+         Distributor  Total . . . . . . :        42007013.00        6710361.00-       35296652.00
+        2079775 VO THANH MINH
+              A   Withholding Tax Registere      99600664.00        4980033.00-       94620631.00
+         Distributor  Total . . . . . . :        99600664.00        4980033.00-       94620631.00
+        2080259 TA VAN HUNG & PHAM THI PHUONG ANH
+              A   Withholding Tax Registere      93278389.00        4663919.00-       88614470.00
+         Distributor  Total . . . . . . :        93278389.00        4663919.00-       88614470.00
+        2082319 NGUYEN QUANG SON
+              A   Withholding Tax Registere      36799545.00        6660554.00-       30138991.00
+         Distributor  Total . . . . . . :        36799545.00        6660554.00-       30138991.00
+        2085896 NGUYEN THI HAO & VO QUOC DAN
+              A   Withholding Tax Registere     112851406.00        5642570.00-      107208836.00
+         Distributor  Total . . . . . . :       112851406.00        5642570.00-      107208836.00
+        2086999 TRAN THANH TOAN
+              A   Withholding Tax Registere      53475840.00        2673792.00-       50802048.00
+         Distributor  Total . . . . . . :        53475840.00        2673792.00-       50802048.00
+        2089761 NGUYEN THI LIEN & NGUYEN DANG THAM
+              A   Withholding Tax Registere      57948909.00        2897446.00-       55051463.00
+         Distributor  Total . . . . . . :        57948909.00        2897446.00-       55051463.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     7
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2094977 TRINH THI BICH THAO & NGUYEN XUAN KHAI
+              A   Withholding Tax Registere      49771859.00        6123106.00-       43648753.00
+         Distributor  Total . . . . . . :        49771859.00        6123106.00-       43648753.00
+        2099113 PHAM THI PHUONG THAO & PHAM VAN VINH
+              A   Withholding Tax Registere      26738258.00        6051940.00-       20686318.00
+         Distributor  Total . . . . . . :        26738258.00        6051940.00-       20686318.00
+        2100350 DANG THI HOANG YEN & TRAN KHANH CUONG
+              A   Withholding Tax Registere     205861457.00       10293073.00-      195568384.00
+         Distributor  Total . . . . . . :       205861457.00       10293073.00-      195568384.00
+        2108313 NGUYEN THI THANH
+              A   Withholding Tax Registere      40328092.00        5829274.00-       34498818.00
+         Distributor  Total . . . . . . :        40328092.00        5829274.00-       34498818.00
+        2110443 NGUYEN THI LAN CHI & TRAN VAN NGHIA
+              A   Withholding Tax Registere      50632169.00        6950027.00-       43682142.00
+         Distributor  Total . . . . . . :        50632169.00        6950027.00-       43682142.00
+        2116750 TRAN THI XUAN & TRAN HAU HAI
+              A   Withholding Tax Registere      91679596.00        4583980.00-       87095616.00
+         Distributor  Total . . . . . . :        91679596.00        4583980.00-       87095616.00
+        2122394 HO HOANG VU
+              A   Withholding Tax Registere      32830771.00        5866212.00-       26964559.00
+         Distributor  Total . . . . . . :        32830771.00        5866212.00-       26964559.00
+        2124251 TRUONG THI THANH HUONG & HOANG VAN HUNG
+              A   Withholding Tax Registere      36504019.00        6004449.00-       30499570.00
+         Distributor  Total . . . . . . :        36504019.00        6004449.00-       30499570.00
+        2131968 NGUYEN THI CHINH & DAU VAN THANG
+              A   Withholding Tax Registere      39226609.00        6909565.00-       32317044.00
+         Distributor  Total . . . . . . :        39226609.00        6909565.00-       32317044.00
+        2134575 PHAN THI THUY & NGUYEN VAN QUE
+              A   Withholding Tax Registere      65975488.00        3298775.00-       62676713.00
+         Distributor  Total . . . . . . :        65975488.00        3298775.00-       62676713.00
+        2137276 NGUYEN THI TRA MY
+              A   Withholding Tax Registere      41665654.00        5941924.00-       35723730.00
+         Distributor  Total . . . . . . :        41665654.00        5941924.00-       35723730.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     8
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2139344 TO VUONG BA
+              A   Withholding Tax Registere      36921695.00        6588220.00-       30333475.00
+         Distributor  Total . . . . . . :        36921695.00        6588220.00-       30333475.00
+        2142888 NGUYEN TAN TAI
+              A   Withholding Tax Registere      49252468.00        5497833.00-       43754635.00
+         Distributor  Total . . . . . . :        49252468.00        5497833.00-       43754635.00
+        2147117 NGUYEN THI THUY VI & HOANG THAI VU
+              A   Withholding Tax Registere      42567905.00        5248973.00-       37318932.00
+         Distributor  Total . . . . . . :        42567905.00        5248973.00-       37318932.00
+        2149171 NGUYEN HUNG BINH
+              A   Withholding Tax Registere      67342339.00        3367117.00-       63975222.00
+         Distributor  Total . . . . . . :        67342339.00        3367117.00-       63975222.00
+        2149526 NGUYEN DANG NHA THU
+              A   Withholding Tax Registere      48731587.00        6684223.00-       42047364.00
+         Distributor  Total . . . . . . :        48731587.00        6684223.00-       42047364.00
+        2151837 TRAN VAN DUNG & NGUYEN THI HAI YEN
+              A   Withholding Tax Registere      33980430.00        6026065.00-       27954365.00
+         Distributor  Total . . . . . . :        33980430.00        6026065.00-       27954365.00
+        2156905 TRINH THI HUE NUONG & CHU DINH THE
+              A   Withholding Tax Registere      55659210.00        2782960.00-       52876250.00
+         Distributor  Total . . . . . . :        55659210.00        2782960.00-       52876250.00
+        2162847 NGUYEN THI NGA & VU MAI PHONG
+              A   Withholding Tax Registere      44200874.00        6889747.00-       37311127.00
+         Distributor  Total . . . . . . :        44200874.00        6889747.00-       37311127.00
+        2164828 VO THI NGOC PHUONG
+              A   Withholding Tax Registere      57947268.00        2897363.00-       55049905.00
+         Distributor  Total . . . . . . :        57947268.00        2897363.00-       55049905.00
+        2166520 TRAN HIEU DUY & DANG TIEU QUYNH
+              A   Withholding Tax Registere      37232526.00        5409184.00-       31823342.00
+         Distributor  Total . . . . . . :        37232526.00        5409184.00-       31823342.00
+        2166544 CU THI BICH NGOC
+              A   Withholding Tax Registere      48215499.00        7036188.00-       41179311.00
+         Distributor  Total . . . . . . :        48215499.00        7036188.00-       41179311.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     9
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2179467 NGUYEN THI THANH HUONG & KIEU THANH CA
+              A   Withholding Tax Registere     124550263.00        6227514.00-      118322749.00
+         Distributor  Total . . . . . . :       124550263.00        6227514.00-      118322749.00
+        2180527 TONG DUC THUAN
+              A   Withholding Tax Registere      34017040.00        5069329.00-       28947711.00
+         Distributor  Total . . . . . . :        34017040.00        5069329.00-       28947711.00
+        2180888 NGO NGOC TRAM
+              A   Withholding Tax Registere      70487821.00        3524391.00-       66963430.00
+         Distributor  Total . . . . . . :        70487821.00        3524391.00-       66963430.00
+        2195394 NGUYEN NGOC TY & TRINH THI THU TRANG
+              A   Withholding Tax Registere      84149309.00        4207465.00-       79941844.00
+         Distributor  Total . . . . . . :        84149309.00        4207465.00-       79941844.00
+        2198857 BUI THUY HA & NGUYEN HUY HOANG
+              A   Withholding Tax Registere      54612990.00        2730650.00-       51882340.00
+         Distributor  Total . . . . . . :        54612990.00        2730650.00-       51882340.00
+        2200071 PHAM BAO THO & NGUYEN THANH TRUNG
+              A   Withholding Tax Registere     207420923.00       10371046.00-      197049877.00
+         Distributor  Total . . . . . . :       207420923.00       10371046.00-      197049877.00
+        2202457 HOANG THI KIM TUYET & LE DUC MINH
+              A   Withholding Tax Registere      56292339.00        2814617.00-       53477722.00
+         Distributor  Total . . . . . . :        56292339.00        2814617.00-       53477722.00
+        2203112 VO THI PHI PHUONG & PHAM VIET BAC
+              A   Withholding Tax Registere     126785583.00        6339279.00-      120446304.00
+         Distributor  Total . . . . . . :       126785583.00        6339279.00-      120446304.00
+        2203398 DO MINH PHUNG & NGUYEN THI KIM THOA
+              A   Withholding Tax Registere      38966005.00        5127527.00-       33838478.00
+         Distributor  Total . . . . . . :        38966005.00        5127527.00-       33838478.00
+        2203399 HUYNH LE HOANG QUAN & NGUYEN THI THU THUY
+              A   Withholding Tax Registere     118915236.00        5945761.00-      112969475.00
+         Distributor  Total . . . . . . :       118915236.00        5945761.00-      112969475.00
+        2203406 NGUYEN NGOC PHU & TRAN HOANG BAO TRAN
+              A   Withholding Tax Registere      37064311.00        5431754.00-       31632557.00
+         Distributor  Total . . . . . . :        37064311.00        5431754.00-       31632557.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    10
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2203569 NGUYEN THI DIEM HAN & NGUYEN CHI BINH
+              A   Withholding Tax Registere     105920374.00        5296019.00-      100624355.00
+         Distributor  Total . . . . . . :       105920374.00        5296019.00-      100624355.00
+        2205040 HUYNH THI THUY AN & BUI TAN HA
+              A   Withholding Tax Registere      60637478.00        3031874.00-       57605604.00
+         Distributor  Total . . . . . . :        60637478.00        3031874.00-       57605604.00
+        2208992 NGUYEN HOANG THANH & BUI THI HOA
+              A   Withholding Tax Registere      38816338.00        1940817.00-       36875521.00
+         Distributor  Total . . . . . . :        38816338.00        1940817.00-       36875521.00
+        2215059 TON NU THUY MY & TRUONG TAN HOANG
+              A   Withholding Tax Registere      63755307.00        3187765.00-       60567542.00
+         Distributor  Total . . . . . . :        63755307.00        3187765.00-       60567542.00
+        2219667 TON NU THUY DINH & DO VAN CUONG
+              A   Withholding Tax Registere      71739761.00        3586988.00-       68152773.00
+         Distributor  Total . . . . . . :        71739761.00        3586988.00-       68152773.00
+        2224873 PHAM MANH TOAN & LE THI THUY LINH
+              A   Withholding Tax Registere      41107308.00        5647299.00-       35460009.00
+         Distributor  Total . . . . . . :        41107308.00        5647299.00-       35460009.00
+        2230254 HO ANH DUNG
+              A   Withholding Tax Registere      39924701.00        5860256.00-       34064445.00
+         Distributor  Total . . . . . . :        39924701.00        5860256.00-       34064445.00
+        2241234 NGUYEN MINH TRUNG & LE THI PHUONG THAO
+              A   Withholding Tax Registere      29124891.00        5099909.00-       24024982.00
+         Distributor  Total . . . . . . :        29124891.00        5099909.00-       24024982.00
+        2247686 NGUYEN THI NGUYET & TRAN VAN DAO
+              A   Withholding Tax Registere      80064304.00        4003216.00-       76061088.00
+         Distributor  Total . . . . . . :        80064304.00        4003216.00-       76061088.00
+        2248779 NGUYEN THI PHUONG THANH & NGUYEN HOANG QUOC
+              A   Withholding Tax Registere      38019968.00        6185269.00-       31834699.00
+         Distributor  Total . . . . . . :        38019968.00        6185269.00-       31834699.00
+        2253907 TRUONG HONG PHUC
+              A   Withholding Tax Registere      47343264.00        6399561.00-       40943703.00
+         Distributor  Total . . . . . . :        47343264.00        6399561.00-       40943703.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    11
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2256088 CAO VAN HAY & DOAN THI XUAN MAI
+              A   Withholding Tax Registere      53119259.00        2655963.00-       50463296.00
+         Distributor  Total . . . . . . :        53119259.00        2655963.00-       50463296.00
+        2259440 TON NU THUY MY & NGUYEN QUOC HUNG
+              A   Withholding Tax Registere      38174529.00        1908726.00-       36265803.00
+         Distributor  Total . . . . . . :        38174529.00        1908726.00-       36265803.00
+        2266945 NGUYEN MANH HUNG & NGUYEN THI THAO NGA
+              A   Withholding Tax Registere      53868867.00        2693443.00-       51175424.00
+         Distributor  Total . . . . . . :        53868867.00        2693443.00-       51175424.00
+        2272295 MAI THI HOANG TUYET & HOANG SY QUANG
+              A   Withholding Tax Registere      42947817.00        5829212.00-       37118605.00
+         Distributor  Total . . . . . . :        42947817.00        5829212.00-       37118605.00
+        2277158 TRAN VAN TRI & LE THI KIM LIEN
+              A   Withholding Tax Registere     118185064.00        5909253.00-      112275811.00
+         Distributor  Total . . . . . . :       118185064.00        5909253.00-      112275811.00
+        2277963 LE MINH LOC & VO THI THU NGAN
+              A   Withholding Tax Registere      39108185.00        6338169.00-       32770016.00
+         Distributor  Total . . . . . . :        39108185.00        6338169.00-       32770016.00
+        2291306 NGUYEN THI PHUONG & NGUYEN VAN SON
+              A   Withholding Tax Registere      53933153.00        2696657.00-       51236496.00
+         Distributor  Total . . . . . . :        53933153.00        2696657.00-       51236496.00
+        2292825 DANG THI THANH XUAN & DOAN CANH TAM
+              A   Withholding Tax Registere      37536826.00        5292770.00-       32244056.00
+         Distributor  Total . . . . . . :        37536826.00        5292770.00-       32244056.00
+        2300266 PHUNG TRUNG QUAN & NGUYEN THI TUYET
+              A   Withholding Tax Registere      73406190.00        3670309.00-       69735881.00
+         Distributor  Total . . . . . . :        73406190.00        3670309.00-       69735881.00
+        2300551 QUACH SIEU NEN & LE VAN CANH
+              A   Withholding Tax Registere      40703394.00        6150949.00-       34552445.00
+         Distributor  Total . . . . . . :        40703394.00        6150949.00-       34552445.00
+        2301540 LE THI NGOC DUNG & HOANG MAI HUNG
+              A   Withholding Tax Registere      78943919.00        3947196.00-       74996723.00
+         Distributor  Total . . . . . . :        78943919.00        3947196.00-       74996723.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    12
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2320953 TRAN THI TUYET
+              A   Withholding Tax Registere      35937166.00        5191873.00-       30745293.00
+         Distributor  Total . . . . . . :        35937166.00        5191873.00-       30745293.00
+        2335075 NGUYEN THUY GIANG SINH & HUYNH TAN PHUC
+              A   Withholding Tax Registere      61208480.00        3060424.00-       58148056.00
+         Distributor  Total . . . . . . :        61208480.00        3060424.00-       58148056.00
+        2336086 NGUYEN VAN CHUNG & CA THI NHUNG
+              A   Withholding Tax Registere      89460067.00        4473004.00-       84987063.00
+         Distributor  Total . . . . . . :        89460067.00        4473004.00-       84987063.00
+        2341123 TRAN THI THAM & HUYNH NHU TAN
+              A   Withholding Tax Registere      47578303.00        2378915.00-       45199388.00
+         Distributor  Total . . . . . . :        47578303.00        2378915.00-       45199388.00
+        2348854 NGUYEN THI HUONG LAN & NGUYEN MINH CUONG
+              A   Withholding Tax Registere     111072047.00        5553602.00-      105518445.00
+         Distributor  Total . . . . . . :       111072047.00        5553602.00-      105518445.00
+        2350738 DANG QUOC HUNG & NGUYEN THI CAM TU
+              A   Withholding Tax Registere     126506706.00        6325335.00-      120181371.00
+         Distributor  Total . . . . . . :       126506706.00        6325335.00-      120181371.00
+        2354479 LAM THI KIEU LOAN
+              A   Withholding Tax Registere      48449174.00        2422459.00-       46026715.00
+         Distributor  Total . . . . . . :        48449174.00        2422459.00-       46026715.00
+        2374310 TRAN KIM NHI
+              A   Withholding Tax Registere      94938106.00        4746905.00-       90191201.00
+         Distributor  Total . . . . . . :        94938106.00        4746905.00-       90191201.00
+        2382480 LE THANH BINH & NGUYEN MINH THAO
+              A   Withholding Tax Registere      75670940.00        3783547.00-       71887393.00
+         Distributor  Total . . . . . . :        75670940.00        3783547.00-       71887393.00
+        2385501 TRAN HONG HUE
+              A   Withholding Tax Registere      35060400.00        5859325.00-       29201075.00
+         Distributor  Total . . . . . . :        35060400.00        5859325.00-       29201075.00
+        2412029 NGUYEN THI THU THUY & TRAN NGUYEN VINH MINH
+              A   Withholding Tax Registere      71935133.00        3596756.00-       68338377.00
+         Distributor  Total . . . . . . :        71935133.00        3596756.00-       68338377.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    13
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2417467 VO NGHIEP DOAN & NGUYEN THI THE
+              A   Withholding Tax Registere      54949650.00        2747482.00-       52202168.00
+         Distributor  Total . . . . . . :        54949650.00        2747482.00-       52202168.00
+        2422951 BUI QUANG DUNG & VU THI TY
+              A   Withholding Tax Registere      41660791.00        5990481.00-       35670310.00
+         Distributor  Total . . . . . . :        41660791.00        5990481.00-       35670310.00
+        2435646 NGUYEN LONG SON
+              A   Withholding Tax Registere      39850970.00        5335858.00-       34515112.00
+         Distributor  Total . . . . . . :        39850970.00        5335858.00-       34515112.00
+        2440791 NGUYEN THI THUY DUONG & KHUONG GAP LOI
+              A   Withholding Tax Registere      35665781.00        6166979.00-       29498802.00
+         Distributor  Total . . . . . . :        35665781.00        6166979.00-       29498802.00
+        2452229 LE KIM PHUONG & NGUYEN DINH THANG
+              A   Withholding Tax Registere      48449994.00        7254289.00-       41195705.00
+         Distributor  Total . . . . . . :        48449994.00        7254289.00-       41195705.00
+        2452239 DAO THUY HIEN & LE TRONG DAI
+              A   Withholding Tax Registere     210873525.00       10543676.00-      200329849.00
+         Distributor  Total . . . . . . :       210873525.00       10543676.00-      200329849.00
+        2452384 LAI THI BANG TAM & DO KIM HOAN
+              A   Withholding Tax Registere      34861393.00        5442229.00-       29419164.00
+         Distributor  Total . . . . . . :        34861393.00        5442229.00-       29419164.00
+        2484768 NGUYEN THI KIM LIEN
+              A   Withholding Tax Registere      38914229.00        5707880.00-       33206349.00
+         Distributor  Total . . . . . . :        38914229.00        5707880.00-       33206349.00
+        2504619 TRAN THI GIANG & LO LAM NGU
+              A   Withholding Tax Registere      34302275.00        5981798.00-       28320477.00
+         Distributor  Total . . . . . . :        34302275.00        5981798.00-       28320477.00
+        2511285 DAO THI TIEN & NGUYEN HONG PHUONG
+              A   Withholding Tax Registere      28591611.00        6374379.00-       22217232.00
+         Distributor  Total . . . . . . :        28591611.00        6374379.00-       22217232.00
+        2519152 TRAN LE KHUYEN & TRAN MANH HUNG
+              A   Withholding Tax Registere      29849502.00        5932587.00-       23916915.00
+         Distributor  Total . . . . . . :        29849502.00        5932587.00-       23916915.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    14
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2571987 PHAN THI NGOC DIEP
+              A   Withholding Tax Registere      33105575.00        5091269.00-       28014306.00
+         Distributor  Total . . . . . . :        33105575.00        5091269.00-       28014306.00
+        2573880 TRAN THI THEM & TRINH HONG THAI
+              A   Withholding Tax Registere      27732420.00        5046261.00-       22686159.00
+         Distributor  Total . . . . . . :        27732420.00        5046261.00-       22686159.00
+        2589783 NGUYEN THANH LIEM & PHAM THI THANH HUONG
+              A   Withholding Tax Registere      83102405.00        4155121.00-       78947284.00
+         Distributor  Total . . . . . . :        83102405.00        4155121.00-       78947284.00
+        2597854 NGUYEN THI HA & NGUYEN BA HA
+              A   Withholding Tax Registere      29392533.00        5638038.00-       23754495.00
+         Distributor  Total . . . . . . :        29392533.00        5638038.00-       23754495.00
+        2597914 PHAM NGOC HA & NGUYEN THI MAI TRANG
+              A   Withholding Tax Registere      32708362.00        5144916.00-       27563446.00
+         Distributor  Total . . . . . . :        32708362.00        5144916.00-       27563446.00
+        2609061 VU DINH KHOI & NGUYEN THI HUYEN TRAN
+              A   Withholding Tax Registere      40002344.00        5863542.00-       34138802.00
+         Distributor  Total . . . . . . :        40002344.00        5863542.00-       34138802.00
+        2625697 TRINH THI HANG & LE TRUNG HUAN
+              A   Withholding Tax Registere      40241767.00        2012088.00-       38229679.00
+         Distributor  Total . . . . . . :        40241767.00        2012088.00-       38229679.00
+        2627745 VU THI DUYEN & LE HUU DANH
+              A   Withholding Tax Registere      37169829.00        5899758.00-       31270071.00
+         Distributor  Total . . . . . . :        37169829.00        5899758.00-       31270071.00
+        2634091 VO THI BICH LIEN & NGUYEN ANH KHOA
+              A   Withholding Tax Registere      52327577.00        2616379.00-       49711198.00
+         Distributor  Total . . . . . . :        52327577.00        2616379.00-       49711198.00
+        2637557 NGUYEN THI HAI YEN & PHAM QUANG HUNG
+              A   Withholding Tax Registere      47542079.00        5241390.00-       42300689.00
+         Distributor  Total . . . . . . :        47542079.00        5241390.00-       42300689.00
+        2638192 VO THI THANH LICH & NGUYEN MINH SON
+              A   Withholding Tax Registere      45124659.00        5851443.00-       39273216.00
+         Distributor  Total . . . . . . :        45124659.00        5851443.00-       39273216.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    15
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2644466 LE ANH PHAN & PHAM KIEU MY
+              A   Withholding Tax Registere      83644572.00        4182228.00-       79462344.00
+         Distributor  Total . . . . . . :        83644572.00        4182228.00-       79462344.00
+        2654194 NGUYEN THI GIANG
+              A   Withholding Tax Registere      84732348.00        4236618.00-       80495730.00
+         Distributor  Total . . . . . . :        84732348.00        4236618.00-       80495730.00
+        2665065 TRINH THAI HUONG & VOONG VINH LE
+              A   Withholding Tax Registere     116852860.00        5842643.00-      111010217.00
+         Distributor  Total . . . . . . :       116852860.00        5842643.00-      111010217.00
+        2669389 LE THI NA
+              A   Withholding Tax Registere      42154409.00        2107721.00-       40046688.00
+         Distributor  Total . . . . . . :        42154409.00        2107721.00-       40046688.00
+        2679346 TRAN THI KIM NGAN & DINH QUY GIANG
+              A   Withholding Tax Registere      36322123.00        5597801.00-       30724322.00
+         Distributor  Total . . . . . . :        36322123.00        5597801.00-       30724322.00
+        2682400 HUYNH NGUYEN THANH QUANG
+              A   Withholding Tax Registere      39899056.00        6339429.00-       33559627.00
+         Distributor  Total . . . . . . :        39899056.00        6339429.00-       33559627.00
+        2696692 TO NGOC UYEN THAO
+              A   Withholding Tax Registere      35056620.00        6692857.00-       28363763.00
+         Distributor  Total . . . . . . :        35056620.00        6692857.00-       28363763.00
+        2727741 NGUYEN LY HUYNH CHUONG
+              A   Withholding Tax Registere      32220120.00        1611006.00-       30609114.00
+         Distributor  Total . . . . . . :        32220120.00        1611006.00-       30609114.00
+        2727825 NGUYEN THI TUYET MAI
+              A   Withholding Tax Registere      45599551.00        6742608.00-       38856943.00
+         Distributor  Total . . . . . . :        45599551.00        6742608.00-       38856943.00
+        2734052 VO TAN DUNG & NGUYEN THI NGOC AN
+              A   Withholding Tax Registere      67233690.00        3361685.00-       63872005.00
+         Distributor  Total . . . . . . :        67233690.00        3361685.00-       63872005.00
+        2739340 NGUYEN THI HUONG
+              A   Withholding Tax Registere      66347815.00        3317390.00-       63030425.00
+         Distributor  Total . . . . . . :        66347815.00        3317390.00-       63030425.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    16
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2748988 PHAM THI THU HA & NGUYEN MAU DUNG
+              A   Withholding Tax Registere      29869435.00        5419941.00-       24449494.00
+         Distributor  Total . . . . . . :        29869435.00        5419941.00-       24449494.00
+        2758034 PHAN ANH TUAN & TRAN THI THANH VY
+              A   Withholding Tax Registere      72659545.00        3632977.00-       69026568.00
+         Distributor  Total . . . . . . :        72659545.00        3632977.00-       69026568.00
+        2765442 NGUYEN XUAN HOAI & DAU THI BICH HANG
+              A   Withholding Tax Registere      70740864.00        3537044.00-       67203820.00
+         Distributor  Total . . . . . . :        70740864.00        3537044.00-       67203820.00
+        2784849 DANG THI THUY HANG & NGUYEN KIM TAM
+              A   Withholding Tax Registere      86331031.00        4316552.00-       82014479.00
+         Distributor  Total . . . . . . :        86331031.00        4316552.00-       82014479.00
+        2790461 NGUYEN NGOC TIEN & PHAM CHI BINH
+              A   Withholding Tax Registere      46656591.00        6966732.00-       39689859.00
+         Distributor  Total . . . . . . :        46656591.00        6966732.00-       39689859.00
+        2791505 HUYNH THI NGHIA & DANG QUOC TRUNG
+              A   Withholding Tax Registere      48276144.00        6392816.00-       41883328.00
+         Distributor  Total . . . . . . :        48276144.00        6392816.00-       41883328.00
+        2806845 NGUYEN NGOC TUYEN & HUYNH PHU HAI
+              A   Withholding Tax Registere      32577670.00        5213358.00-       27364312.00
+         Distributor  Total . . . . . . :        32577670.00        5213358.00-       27364312.00
+        2858068 HOANG NGOC VIET & TRAN THINH QUYEN
+              A   Withholding Tax Registere      63718319.00        7783876.00-       55934443.00
+         Distributor  Total . . . . . . :        63718319.00        7783876.00-       55934443.00
+        2887902 NGUYEN TUAN MINH
+              A   Withholding Tax Registere      36712729.00        5751198.00-       30961531.00
+         Distributor  Total . . . . . . :        36712729.00        5751198.00-       30961531.00
+        2899714 DAO THI NET
+              A   Withholding Tax Registere      42312546.00        5821388.00-       36491158.00
+         Distributor  Total . . . . . . :        42312546.00        5821388.00-       36491158.00
+        2910200 NGUYEN THI MY TIEN & VO DUC DUY
+              A   Withholding Tax Registere      52341170.00        2617058.00-       49724112.00
+         Distributor  Total . . . . . . :        52341170.00        2617058.00-       49724112.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    17
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        2960718 TRAN THI BICH VAN
+              A   Withholding Tax Registere      38929498.00        1946475.00-       36983023.00
+         Distributor  Total . . . . . . :        38929498.00        1946475.00-       36983023.00
+        2962765 MA NGOC THANG & NGUYEN THI HOE
+              A   Withholding Tax Registere      36387840.00        5263470.00-       31124370.00
+         Distributor  Total . . . . . . :        36387840.00        5263470.00-       31124370.00
+        2969673 LAI THI THU XUAN & NGUYEN MINH CHAU
+              A   Withholding Tax Registere      40675765.00        2033788.00-       38641977.00
+         Distributor  Total . . . . . . :        40675765.00        2033788.00-       38641977.00
+        2978686 DOAN TIEN DUNG & NGUYEN THI THU HANG
+              A   Withholding Tax Registere      62883493.00        3144175.00-       59739318.00
+         Distributor  Total . . . . . . :        62883493.00        3144175.00-       59739318.00
+        2980435 DAO THI MAI THI
+              A   Withholding Tax Registere      69217617.00        3460881.00-       65756736.00
+         Distributor  Total . . . . . . :        69217617.00        3460881.00-       65756736.00
+        2980511 LE THI HONG THUY & PHAM VAN CHUONG
+              A   Withholding Tax Registere      72001363.00        3600068.00-       68401295.00
+         Distributor  Total . . . . . . :        72001363.00        3600068.00-       68401295.00
+        3002500 NGUYEN DANG HUONG THAO & NGUYEN THANH PHUONG
+              A   Withholding Tax Registere      46635267.00        6110356.00-       40524911.00
+         Distributor  Total . . . . . . :        46635267.00        6110356.00-       40524911.00
+        3002814 TRAN NHO SI TUNG & DINH NGOC DUNG
+              A   Withholding Tax Registere      32253967.00        5135812.00-       27118155.00
+         Distributor  Total . . . . . . :        32253967.00        5135812.00-       27118155.00
+        3034137 NGUYEN THI SAM & NGUYEN VAN CHUONG
+              A   Withholding Tax Registere      32795002.00        5199178.00-       27595824.00
+         Distributor  Total . . . . . . :        32795002.00        5199178.00-       27595824.00
+        3034138 NGUYEN THI THUY & DANG SONG AN
+              A   Withholding Tax Registere      33905164.00        5550296.00-       28354868.00
+         Distributor  Total . . . . . . :        33905164.00        5550296.00-       28354868.00
+        3035493 PHAM THI KIM LY & DAO DUY HIEN
+              A   Withholding Tax Registere      83396804.00        4169840.00-       79226964.00
+         Distributor  Total . . . . . . :        83396804.00        4169840.00-       79226964.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    18
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        3038155 NGUYEN THU HANG & TRINH TIEN THANH
+              A   Withholding Tax Registere      54239553.00        6216995.00-       48022558.00
+         Distributor  Total . . . . . . :        54239553.00        6216995.00-       48022558.00
+        3071237 NGUYEN THANH NGHIA
+              A   Withholding Tax Registere      43414490.00        6838131.00-       36576359.00
+         Distributor  Total . . . . . . :        43414490.00        6838131.00-       36576359.00
+        3079417 DINH VAN MUOI & PHAM THI THAM
+              A   Withholding Tax Registere      37905901.00        5146845.00-       32759056.00
+         Distributor  Total . . . . . . :        37905901.00        5146845.00-       32759056.00
+        3090178 LA VAN TRONG & HO THI NGOC LUYEN
+              A   Withholding Tax Registere      43560638.00        6473735.00-       37086903.00
+         Distributor  Total . . . . . . :        43560638.00        6473735.00-       37086903.00
+        3128001 NGUYEN QUOC NGHI & LUU THI DUNG
+              A   Withholding Tax Registere      22377769.00        1118889.00-       21258880.00
+         Distributor  Total . . . . . . :        22377769.00        1118889.00-       21258880.00
+        3154657 NGUYEN DUC TIEN
+              A   Withholding Tax Registere      37042787.00        5901843.00-       31140944.00
+         Distributor  Total . . . . . . :        37042787.00        5901843.00-       31140944.00
+        3154660 VO DINH UT & TRAN THI KIM
+              A   Withholding Tax Registere      49378006.00        7429234.00-       41948772.00
+         Distributor  Total . . . . . . :        49378006.00        7429234.00-       41948772.00
+        3164836 NGUYEN THI MINH THUY
+              A   Withholding Tax Registere      35618260.00        6292233.00-       29326027.00
+         Distributor  Total . . . . . . :        35618260.00        6292233.00-       29326027.00
+        3164969 TRAN THI BICH VAN & LUONG CONG TAM
+              A   Withholding Tax Registere      37675127.00        5220237.00-       32454890.00
+         Distributor  Total . . . . . . :        37675127.00        5220237.00-       32454890.00
+        3169734 PHAM THI BE THUONG & TRAN PHUONG BAO
+              A   Withholding Tax Registere      51350980.00        2567549.00-       48783431.00
+         Distributor  Total . . . . . . :        51350980.00        2567549.00-       48783431.00
+        3179262 PHAN THI HANH & NGUYEN TRUONG GIANG
+              A   Withholding Tax Registere      37919771.00        5458916.00-       32460855.00
+         Distributor  Total . . . . . . :        37919771.00        5458916.00-       32460855.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    19
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        3204210 VU XUAN HOANG & LE THI THUY TIEN
+              A   Withholding Tax Registere      35764697.00        5516625.00-       30248072.00
+         Distributor  Total . . . . . . :        35764697.00        5516625.00-       30248072.00
+        3226871 HUYNH TIEN PHAT
+              A   Withholding Tax Registere      36836141.00        5473040.00-       31363101.00
+         Distributor  Total . . . . . . :        36836141.00        5473040.00-       31363101.00
+        3230113 NGUYEN THI MAI & NGUYEN VAN LONG
+              A   Withholding Tax Registere       7274074.00         363703.00-        6910371.00
+         Distributor  Total . . . . . . :         7274074.00         363703.00-        6910371.00
+        3234674 VO NGOC LOI & NGUYEN THI HONG
+              A   Withholding Tax Registere      41759838.00        6976015.00-       34783823.00
+         Distributor  Total . . . . . . :        41759838.00        6976015.00-       34783823.00
+        3246800 HUYNH NGOC PHUONG
+              A   Withholding Tax Registere      40239000.00        5570062.00-       34668938.00
+         Distributor  Total . . . . . . :        40239000.00        5570062.00-       34668938.00
+        3249493 VU DANH TUAN
+              A   Withholding Tax Registere      34133033.00        5388158.00-       28744875.00
+         Distributor  Total . . . . . . :        34133033.00        5388158.00-       28744875.00
+        3284018 NGUYEN THI THUY LINH & LE VAN UT
+              A   Withholding Tax Registere      39585711.00        6337733.00-       33247978.00
+         Distributor  Total . . . . . . :        39585711.00        6337733.00-       33247978.00
+        3297167 PHAN VAN CHIEN & LE THI CHIN
+              A   Withholding Tax Registere      31856624.00        5148361.00-       26708263.00
+         Distributor  Total . . . . . . :        31856624.00        5148361.00-       26708263.00
+        3318156 DINH VAN NAM & DO THI HANG
+              A   Withholding Tax Registere      32886022.00        5053270.00-       27832752.00
+         Distributor  Total . . . . . . :        32886022.00        5053270.00-       27832752.00
+        3336027 TRAN THI GIAU & LE THANH DE
+              A   Withholding Tax Registere      27168536.00        5369289.00-       21799247.00
+         Distributor  Total . . . . . . :        27168536.00        5369289.00-       21799247.00
+        3357997 PHAN DINH KIEN & VU THIEN LINH
+              A   Withholding Tax Registere      56917283.00        2845864.00-       54071419.00
+         Distributor  Total . . . . . . :        56917283.00        2845864.00-       54071419.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    20
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        3367410 NGUYEN THI KIM LOAN
+              A   Withholding Tax Registere      35215325.00        5500008.00-       29715317.00
+         Distributor  Total . . . . . . :        35215325.00        5500008.00-       29715317.00
+        3382324 DAO THI TUYET ANH & HO THANH TRI
+              A   Withholding Tax Registere      53857079.00        7475856.00-       46381223.00
+         Distributor  Total . . . . . . :        53857079.00        7475856.00-       46381223.00
+        3405157 LE YEN OANH & NGUYEN KIEM CHAU
+              A   Withholding Tax Registere      45690418.00        6222602.00-       39467816.00
+         Distributor  Total . . . . . . :        45690418.00        6222602.00-       39467816.00
+        3423982 TRINH HO ANH THI & PHAM KHANH DIEP
+              A   Withholding Tax Registere      72424398.00        3621220.00-       68803178.00
+         Distributor  Total . . . . . . :        72424398.00        3621220.00-       68803178.00
+        3429068 PHAM THI QUYNH TRAM
+              A   Withholding Tax Registere      59712592.00        7656562.00-       52056030.00
+         Distributor  Total . . . . . . :        59712592.00        7656562.00-       52056030.00
+        3433868 LUONG YEN OANH
+              A   Withholding Tax Registere      42629762.00        7090584.00-       35539178.00
+         Distributor  Total . . . . . . :        42629762.00        7090584.00-       35539178.00
+        3437686 NGUYEN KHAC TUNG & VU THI TUYET MAI
+              A   Withholding Tax Registere      32335537.00        5550979.00-       26784558.00
+         Distributor  Total . . . . . . :        32335537.00        5550979.00-       26784558.00
+        3451515 PHUNG VAN DUC & NGUYEN THI HONG LAM
+              A   Withholding Tax Registere      42562679.00        5841136.00-       36721543.00
+         Distributor  Total . . . . . . :        42562679.00        5841136.00-       36721543.00
+        3474637 PHAM THAO VY
+              A   Withholding Tax Registere      45449029.00        5623701.00-       39825328.00
+         Distributor  Total . . . . . . :        45449029.00        5623701.00-       39825328.00
+        3477924 DUONG THI THAM
+              A   Withholding Tax Registere      39759218.00        5316883.00-       34442335.00
+         Distributor  Total . . . . . . :        39759218.00        5316883.00-       34442335.00
+        3479322 NGUYEN DINH LONG
+              A   Withholding Tax Registere      37750608.00        5248330.00-       32502278.00
+         Distributor  Total . . . . . . :        37750608.00        5248330.00-       32502278.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    21
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        3504506 DANG NGOC YEN MY & TRAN QUOC DAT
+              A   Withholding Tax Registere      35118948.00        6435978.00-       28682970.00
+         Distributor  Total . . . . . . :        35118948.00        6435978.00-       28682970.00
+        3567321 NGUYEN QUOC NGOC & NGUYEN THI TUAN NGAN
+              A   Withholding Tax Registere      41863486.00        2093174.00-       39770312.00
+         Distributor  Total . . . . . . :        41863486.00        2093174.00-       39770312.00
+        3568329 NGUYEN THI HUE
+              A   Withholding Tax Registere      38452898.00        5576940.00-       32875958.00
+         Distributor  Total . . . . . . :        38452898.00        5576940.00-       32875958.00
+        3570974 VU THI LUYEN
+              A   Withholding Tax Registere      45639827.00        6321323.00-       39318504.00
+         Distributor  Total . . . . . . :        45639827.00        6321323.00-       39318504.00
+        3594708 LE BICH HIEN & NGUYEN VAN CHUNG
+              A   Withholding Tax Registere      29836157.00        5604470.00-       24231687.00
+         Distributor  Total . . . . . . :        29836157.00        5604470.00-       24231687.00
+        3624336 LE THI DEO EM
+              A   Withholding Tax Registere      37012944.00        1850647.00-       35162297.00
+         Distributor  Total . . . . . . :        37012944.00        1850647.00-       35162297.00
+        3626690 VONG TU QUANG
+              A   Withholding Tax Registere      58057339.00        2902867.00-       55154472.00
+         Distributor  Total . . . . . . :        58057339.00        2902867.00-       55154472.00
+        3627395 CAO DUC LINH
+              A   Withholding Tax Registere      63199012.00        3159951.00-       60039061.00
+         Distributor  Total . . . . . . :        63199012.00        3159951.00-       60039061.00
+        3634499 NGUYEN VAN THO & DO THI NGOC TRIEU
+              A   Withholding Tax Registere      57478135.00        5003115.00-       52475020.00
+         Distributor  Total . . . . . . :        57478135.00        5003115.00-       52475020.00
+        3635235 LAM NGOC SON
+              A   Withholding Tax Registere      26761588.00        5300468.00-       21461120.00
+         Distributor  Total . . . . . . :        26761588.00        5300468.00-       21461120.00
+        3636620 NGO DUY TAN
+              A   Withholding Tax Registere      36964305.00        6835960.00-       30128345.00
+         Distributor  Total . . . . . . :        36964305.00        6835960.00-       30128345.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    22
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        3636991 NGUYEN THI DAO & NGUYEN MINH CHAU
+              A   Withholding Tax Registere      35389679.00        5030889.00-       30358790.00
+         Distributor  Total . . . . . . :        35389679.00        5030889.00-       30358790.00
+        3654726 DINH THI LIEN
+              A   Withholding Tax Registere      55458278.00        5158711.00-       50299567.00
+         Distributor  Total . . . . . . :        55458278.00        5158711.00-       50299567.00
+        3665197 TRUONG THY VAN
+              A   Withholding Tax Registere      37709778.00        5870751.00-       31839027.00
+         Distributor  Total . . . . . . :        37709778.00        5870751.00-       31839027.00
+        3679333 DUONG THI HUNG ANH
+              A   Withholding Tax Registere      52954702.00        7377913.00-       45576789.00
+         Distributor  Total . . . . . . :        52954702.00        7377913.00-       45576789.00
+        3683609 LAM HONG DIEM
+              A   Withholding Tax Registere      43504590.00        6254272.00-       37250318.00
+         Distributor  Total . . . . . . :        43504590.00        6254272.00-       37250318.00
+        3691741 TRAN GIA HUE
+              A   Withholding Tax Registere      41662121.00        6743744.00-       34918377.00
+         Distributor  Total . . . . . . :        41662121.00        6743744.00-       34918377.00
+        3694254 TA ANH VIET
+              A   Withholding Tax Registere      26823917.00        5666357.00-       21157560.00
+         Distributor  Total . . . . . . :        26823917.00        5666357.00-       21157560.00
+        3697988 DO VAN SON
+              A   Withholding Tax Registere      30847249.00        1542362.00-       29304887.00
+         Distributor  Total . . . . . . :        30847249.00        1542362.00-       29304887.00
+        3707578 NGUYEN THANH HOAN & VO THI KIEU
+              A   Withholding Tax Registere      38388687.00        5243601.00-       33145086.00
+         Distributor  Total . . . . . . :        38388687.00        5243601.00-       33145086.00
+        3708097 HO LE HANG
+              A   Withholding Tax Registere      36864943.00        5387109.00-       31477834.00
+         Distributor  Total . . . . . . :        36864943.00        5387109.00-       31477834.00
+        3709997 PHAM THI LOI
+              A   Withholding Tax Registere      30067645.00        5273195.00-       24794450.00
+         Distributor  Total . . . . . . :        30067645.00        5273195.00-       24794450.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    23
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        3709999 DO VAN THUAN
+              A   Withholding Tax Registere      31596580.00        5209857.00-       26386723.00
+         Distributor  Total . . . . . . :        31596580.00        5209857.00-       26386723.00
+        3731610 LE THI HANH & VO THAI BINH
+              A   Withholding Tax Registere      46095844.00        5095172.00-       41000672.00
+         Distributor  Total . . . . . . :        46095844.00        5095172.00-       41000672.00
+        3732039 PHAM THI THU HUONG
+              A   Withholding Tax Registere      50459676.00        5907821.00-       44551855.00
+         Distributor  Total . . . . . . :        50459676.00        5907821.00-       44551855.00
+        3742662 NGUYEN THI THUY HUYNH
+              A   Withholding Tax Registere      36288728.00        5447501.00-       30841227.00
+         Distributor  Total . . . . . . :        36288728.00        5447501.00-       30841227.00
+        3746030 NGUYEN HUY NGHIA & NGUYEN THI TUONG VY
+              A   Withholding Tax Registere      35533865.00        5868477.00-       29665388.00
+         Distributor  Total . . . . . . :        35533865.00        5868477.00-       29665388.00
+        3746963 NGUYEN THANH TUNG
+              A   Withholding Tax Registere      81921909.00        4096095.00-       77825814.00
+         Distributor  Total . . . . . . :        81921909.00        4096095.00-       77825814.00
+        3749818 TA XUAN TINH
+              A   Withholding Tax Registere      48054048.00        5014286.00-       43039762.00
+         Distributor  Total . . . . . . :        48054048.00        5014286.00-       43039762.00
+        3752320 PHAM TRUNG DUNG
+              A   Withholding Tax Registere      55745754.00        2787287.00-       52958467.00
+         Distributor  Total . . . . . . :        55745754.00        2787287.00-       52958467.00
+        3753954 TON THI NGOC PHUONG
+              A   Withholding Tax Registere      73898698.00        3694935.00-       70203763.00
+         Distributor  Total . . . . . . :        73898698.00        3694935.00-       70203763.00
+        3759115 TRAN THI THIET
+              A   Withholding Tax Registere      39271784.00        6335164.00-       32936620.00
+         Distributor  Total . . . . . . :        39271784.00        6335164.00-       32936620.00
+        3759118 TON PHUONG DUNG
+              A   Withholding Tax Registere      41653532.00        6429268.00-       35224264.00
+         Distributor  Total . . . . . . :        41653532.00        6429268.00-       35224264.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    24
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        3784667 VOONG VAN MAN
+              A   Withholding Tax Registere      65059984.00        3252999.00-       61806985.00
+         Distributor  Total . . . . . . :        65059984.00        3252999.00-       61806985.00
+        3786321 TRINH HUU PHUOC & DAO THI BICH DIEU
+              A   Withholding Tax Registere      37447486.00        5524100.00-       31923386.00
+         Distributor  Total . . . . . . :        37447486.00        5524100.00-       31923386.00
+        3793356 NGUYEN THI HANG & CAO DUC VINH
+              A   Withholding Tax Registere      42975109.00        6024964.00-       36950145.00
+         Distributor  Total . . . . . . :        42975109.00        6024964.00-       36950145.00
+        3798576 NGUYEN VAN TRUONG
+              A   Withholding Tax Registere      35259618.00        5364914.00-       29894704.00
+         Distributor  Total . . . . . . :        35259618.00        5364914.00-       29894704.00
+        3798836 PHAN THANH NHAN
+              A   Withholding Tax Registere      46893535.00        2344677.00-       44548858.00
+         Distributor  Total . . . . . . :        46893535.00        2344677.00-       44548858.00
+        3802005 PHAN HUU TRUC
+              A   Withholding Tax Registere      36913170.00        6200154.00-       30713016.00
+         Distributor  Total . . . . . . :        36913170.00        6200154.00-       30713016.00
+        3802299 TRAN VAN CHUONG
+              A   Withholding Tax Registere      29165698.00        5904507.00-       23261191.00
+         Distributor  Total . . . . . . :        29165698.00        5904507.00-       23261191.00
+        3808686 TRAN NHAT LE
+              A   Withholding Tax Registere      45776140.00        2288807.00-       43487333.00
+         Distributor  Total . . . . . . :        45776140.00        2288807.00-       43487333.00
+        3833984 LE THI VAN THI
+              A   Withholding Tax Registere      48847261.00        6787583.00-       42059678.00
+         Distributor  Total . . . . . . :        48847261.00        6787583.00-       42059678.00
+        3837870 MACH MIEU THUONG
+              A   Withholding Tax Registere      41522722.00        6680877.00-       34841845.00
+         Distributor  Total . . . . . . :        41522722.00        6680877.00-       34841845.00
+        3842470 NGUYEN VU NGOC MAI & VU HOANG TAM
+              A   Withholding Tax Registere      49958227.00        2497911.00-       47460316.00
+         Distributor  Total . . . . . . :        49958227.00        2497911.00-       47460316.00
+ BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page    25
+                                                     Tax Information
+                                         Payment Date From 10/03/2021  To 10/03/2021
+                                          VAT Registered Selection   All
+        5018602 TRAN THI QUYNH TRANG & PHAM QUANG HA
+              A   Withholding Tax Registere      37558032.00        5334394.00-       32223638.00
+         Distributor  Total . . . . . . :        37558032.00        5334394.00-       32223638.00
+        5104047 TRAN THI NGOC HA
+              A   Withholding Tax Registere      27550754.00        5565458.00-       21985296.00
+         Distributor  Total . . . . . . :        27550754.00        5565458.00-       21985296.00
+        5284251 PHAM QUANG NGUYEN
+              A   Withholding Tax Registere      38528711.00        5665257.00-       32863454.00
+         Distributor  Total . . . . . . :        38528711.00        5665257.00-       32863454.00
+     7004314368 NGUYEN THI NGUYET
+              A   Withholding Tax Registere      64313245.00        3215662.00-       61097583.00
+         Distributor  Total . . . . . . :        64313245.00        3215662.00-       61097583.00
+ Business Entity Totals 500
+            Tax   Tax
+            Type  Description               Amt Subject to Tax      Tax Amount              Total
+              A   Withholding Tax Registere   14943356090.00     1321289318.00-    13622066772.00
+ ** END OF REPORT **
