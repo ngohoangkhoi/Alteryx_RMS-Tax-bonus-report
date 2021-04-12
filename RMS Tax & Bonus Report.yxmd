@@ -8,7 +8,7 @@
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="21">.\INPUT\Y2021\01.Jan\bm1860$.txt</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="21">.\Input\Y2021\1.Jan\bm1860$.txt</File>
           <FormatSpecificOptions>
             <TrimWhiteSpace>Unset</TrimWhiteSpace>
             <LineEndStyle>Unset</LineEndStyle>
@@ -33,6 +33,11 @@
         <Dependencies>
           <Implicit />
         </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="171" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm1860$.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
     </Node>
@@ -56,9 +61,6 @@
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -159,7 +161,7 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">.OUTPUT\Y2021\Different Name (file120-Bank).xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">.\OUTPUT\Y2021\Different Name (file120-Bank).xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
@@ -267,7 +269,7 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="25" MaxRecords="">.OUTPUT\Y2021\Different Net (file120-Bank).xlsx|||Sheet1</File>
+          <File FileFormat="25" MaxRecords="">.\OUTPUT\Y2021\Different Net (file120-Bank).xlsx|||Sheet1</File>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
@@ -400,13 +402,13 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Directory>.\INPUT\Y2021</Directory>
+          <Directory>.\Input\Y2021</Directory>
           <FileSpec>bm0120*.txt</FileSpec>
           <IncludeSubDirs value="True" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>dir .\INPUT\Y2021\bm0120*.txt</DefaultAnnotationText>
+          <DefaultAnnotationText>dir .\Input\Y2021\bm0120*.txt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -452,13 +454,13 @@ Table=Sheet1</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Directory>.\INPUT\Y2021\RMS Tax &amp; bonus report</Directory>
+          <Directory>.\Input\Y2021</Directory>
           <FileSpec>VM*.txt</FileSpec>
           <IncludeSubDirs value="True" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>dir .\INPUT\Y2021\RMS Tax &amp; bonus report\VM*.txt</DefaultAnnotationText>
+          <DefaultAnnotationText>dir .\Input\Y2021\VM*.txt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -995,9 +997,6 @@ Table=Sheet1</DefaultAnnotationText>
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -1021,15 +1020,12 @@ Table=Sheet1</DefaultAnnotationText>
 Table=Sheet1</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="257.9997" y="727.9999" width="1741" height="708.0002" />
+        <Position x="257.9997" y="727.9999" width="1741" height="708.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
