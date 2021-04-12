@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="46">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="126" y="66" />
+        <Position x="124.9997" y="115.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -30,9 +30,6 @@
           <DefaultAnnotationText>bm1860$.txt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Field_1" size="171" source="File: T:\BO\Amway\RMS Tax &amp; bonus report\Jan\bm1860$.txt" type="V_String" />
@@ -41,831 +38,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
     </Node>
-    <Node ToolID="38">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="259" y="678.9999" width="1741" height="708.0001" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>bm120</Caption>
-          <Style TextColor="#314c4a" FillColor="#b4fef3" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
-          <Folded value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="40">
-          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="1891" y="1303" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <SummarizeFields>
-                <SummarizeField field="Gross" action="Sum" rename="Sum_Gross" />
-                <SummarizeField field="Tax" action="Sum" rename="Sum_Tax" />
-                <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
-                <SummarizeField field="DateTime2" action="GroupBy" rename="DateTime2" />
-              </SummarizeFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-        </Node>
-        <Node ToolID="36">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1916" y="979.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="True" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="ID" selected="True" />
-                <SelectField field="Tax" selected="True" />
-                <SelectField field="Net" selected="True" />
-                <SelectField field="Name2" selected="False" />
-                <SelectField field="Name1" selected="False" />
-                <SelectField field="Name" selected="True" />
-                <SelectField field="Gross" selected="True" />
-                <SelectField field="DateTime" selected="False" />
-                <SelectField field="DateTime2" selected="True" rename="DateTime" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="35">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="1724" y="979.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <IsFrom value="True" />
-              <InputFieldName>DateTime</InputFieldName>
-              <Format>Month yyyy</Format>
-              <OutputFieldName>DateTime</OutputFieldName>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Convert DateTime To:
-Custom</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
-        </Node>
-        <Node ToolID="31">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1388" y="919.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Field_121" selected="False" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="30">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1292" y="919.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Expression>!IsNull([Gross])</Expression>
-              <Mode>Simple</Mode>
-              <Simple>
-                <Operator>IsNotNull</Operator>
-                <Field>Gross</Field>
-                <Operands>
-                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-                  <DateType>fixed</DateType>
-                  <PeriodDate>2021-04-10 22:19:39</PeriodDate>
-                  <PeriodType>
-                  </PeriodType>
-                  <PeriodCount>0</PeriodCount>
-                  <Operand>
-                  </Operand>
-                  <StartDate>2021-04-10 22:19:39</StartDate>
-                  <EndDate>2021-04-10 22:19:39</EndDate>
-                </Operands>
-              </Simple>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>!IsNull([Gross])</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-        </Node>
-        <Node ToolID="29">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="1232" y="919.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <UpdateField value="True" />
-              <UpdateField_Name>DateTime</UpdateField_Name>
-              <CreateField_Name>New Field</CreateField_Name>
-              <CreateField_Type>Int32</CreateField_Type>
-              <CreateField_Size>4</CreateField_Size>
-              <OtherRows>Empty</OtherRows>
-              <NumRows value="1" />
-              <Expression>IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF</Expression>
-              <GroupByFields />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] E...</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
-        </Node>
-        <Node ToolID="28">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-            <Position x="1160" y="919.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <FieldFind>Field_121</FieldFind>
-              <FieldSearch>Field_123</FieldSearch>
-              <ReplaceFoundField>Field_123</ReplaceFoundField>
-              <FindMode>FindAny</FindMode>
-              <NoCase value="False" />
-              <MatchWholeWord value="False" />
-              <ReplaceMode>Append</ReplaceMode>
-              <ReplaceMultipleFound value="False" />
-              <ReplaceAppendFields>
-                <Field field="DateTime" />
-              </ReplaceAppendFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
-        </Node>
-        <Node ToolID="27">
-          <GuiSettings>
-            <Position x="1832" y="991.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="List Box (11)">"ID","Gross","Tax","Net","DateTime"</Value>
-              <Value name="Check Box (84)">True</Value>
-              <Value name="Check Box (117)">True</Value>
-              <Value name="Check Box (15)">True</Value>
-              <Value name="Check Box (109)">False</Value>
-              <Value name="Check Box (122)">True</Value>
-              <Value name="Check Box (53)">False</Value>
-              <Value name="Check Box (58)">False</Value>
-              <Value name="Check Box (70)">False</Value>
-              <Value name="Check Box (77)">False</Value>
-              <Value name="Drop Down (81)">upper</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="Cleanse.yxmc" />
-        </Node>
-        <Node ToolID="25">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="1627.999" y="979.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Field>Name</Field>
-              <ErrorHandling>Last</ErrorHandling>
-              <RootName>Name</RootName>
-              <Delimeters value="&amp;" />
-              <NumFields value="2" />
-              <Flags value="0" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
-        </Node>
-        <Node ToolID="24">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="1040" y="727.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <IsFrom value="False" />
-              <InputFieldName>Field_123</InputFieldName>
-              <Format>dd/MM/yyyy</Format>
-              <OutputFieldName>DateTime</OutputFieldName>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Convert Field_123 From:
-Custom</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
-        </Node>
-        <Node ToolID="23">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="967.9996" y="727.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Field_1" selected="False" />
-                <SelectField field="Field_11" selected="False" />
-                <SelectField field="Field_12" selected="False" />
-                <SelectField field="Field_121" selected="False" />
-                <SelectField field="Field_122" selected="False" />
-                <SelectField field="Field_124" selected="False" />
-                <SelectField field="1" selected="False" />
-                <SelectField field="2" selected="False" />
-                <SelectField field="21" selected="False" />
-                <SelectField field="22" selected="False" />
-                <SelectField field="23" selected="False" rename="Date" />
-                <SelectField field="24" selected="False" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="22">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-            <Position x="884" y="739.9997" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <UniqueFields>
-                <Field field="Field_123" />
-              </UniqueFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
-        </Node>
-        <Node ToolID="21">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="824" y="1244" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Field_1" selected="False" />
-                <SelectField field="Field_11" selected="True" rename="ID" />
-                <SelectField field="Field_12" selected="True" rename="Name" />
-                <SelectField field="1" selected="False" rename="ID" />
-                <SelectField field="2" selected="False" rename="Name" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="20">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
-            <Position x="1507.999" y="991.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <JoinByRecPos value="True" />
-              <OutputJoinOnly value="False" />
-              <SelectConfiguration>
-                <Configuration outputConnection="Output">
-                  <OrderChanged value="False" />
-                  <CommaDecimal value="False" />
-                  <SelectFields>
-                    <SelectField field="Input_#3_Field_1" selected="True" rename="Input_#3_Field_1" />
-                    <SelectField field="Input_#3_Field_11" selected="True" rename="Input_#3_Field_11" />
-                    <SelectField field="Input_#3_Field_12" selected="True" rename="Input_#3_Field_12" />
-                    <SelectField field="*Unknown" selected="True" />
-                  </SelectFields>
-                </Configuration>
-              </SelectConfiguration>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
-        </Node>
-        <Node ToolID="19">
-          <GuiSettings>
-            <Position x="944" y="979.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="List Box (11)">"Field_1222","Field_1223"</Value>
-              <Value name="Check Box (84)">True</Value>
-              <Value name="Check Box (117)">True</Value>
-              <Value name="Check Box (15)">True</Value>
-              <Value name="Check Box (109)">False</Value>
-              <Value name="Check Box (122)">True</Value>
-              <Value name="Check Box (53)">True</Value>
-              <Value name="Check Box (58)">False</Value>
-              <Value name="Check Box (70)">True</Value>
-              <Value name="Check Box (77)">False</Value>
-              <Value name="Drop Down (81)">upper</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="Cleanse.yxmc" />
-        </Node>
-        <Node ToolID="18">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1028" y="979.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Field_1" selected="False" />
-                <SelectField field="Field_11" selected="False" />
-                <SelectField field="Field_12" selected="False" />
-                <SelectField field="Field_122" selected="False" />
-                <SelectField field="Field_1221" selected="True" rename="Gross" type="Double" size="8" />
-                <SelectField field="Field_1222" selected="True" rename="Tax" type="Double" size="8" />
-                <SelectField field="Field_1223" selected="True" rename="Net" type="Double" size="8" />
-                <SelectField field="1" selected="False" />
-                <SelectField field="2" selected="False" />
-                <SelectField field="21" selected="False" />
-                <SelectField field="22" selected="False" />
-                <SelectField field="221" selected="False" rename="Gross" type="Double" size="8" />
-                <SelectField field="222" selected="False" rename="Tax" type="Double" size="8" />
-                <SelectField field="223" selected="False" rename="Net" type="Double" size="8" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="17">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="859.9999" y="979.9998" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Field>Field_122</Field>
-              <ErrorHandling>Warn</ErrorHandling>
-              <RootName>Field_122</RootName>
-              <Delimeters value="." />
-              <NumFields value="3" />
-              <Flags value="0" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
-        </Node>
-        <Node ToolID="16">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="764.0001" y="979.9999" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Field>Field_12</Field>
-              <ErrorHandling>Last</ErrorHandling>
-              <RootName>Field_12</RootName>
-              <Delimeters value=":" />
-              <NumFields value="2" />
-              <Flags value="0" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
-        </Node>
-        <Node ToolID="15">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="752.0001" y="740" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Field>Field_12</Field>
-              <ErrorHandling>Last</ErrorHandling>
-              <RootName>Field_12</RootName>
-              <Delimeters value=" " />
-              <NumFields value="4" />
-              <Flags value="0" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
-        </Node>
-        <Node ToolID="14">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="715.9997" y="1256" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Expression>REGEX_Match([Field_11], '\d+|\d+.\d+')</Expression>
-              <Mode>Custom</Mode>
-              <Simple>
-                <Operator>=</Operator>
-                <Field>
-                </Field>
-                <Operands>
-                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-                  <DateType>fixed</DateType>
-                  <PeriodDate>2021-04-09 15:12:13</PeriodDate>
-                  <PeriodType>
-                  </PeriodType>
-                  <PeriodCount>0</PeriodCount>
-                  <Operand>
-                  </Operand>
-                  <StartDate>2021-04-09 15:12:13</StartDate>
-                  <EndDate>2021-04-09 15:12:13</EndDate>
-                </Operands>
-              </Simple>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>REGEX_Match([Field_11], '\d+|\d+.\d+')</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-        </Node>
-        <Node ToolID="13">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="632.0001" y="751.9998" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Expression>[Field_11] = "Payment"</Expression>
-              <Mode>Simple</Mode>
-              <Simple>
-                <Operator>=</Operator>
-                <Field>Field_11</Field>
-                <Operands>
-                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-                  <DateType>fixed</DateType>
-                  <PeriodDate>2021-04-10 21:07:51</PeriodDate>
-                  <PeriodType>
-                  </PeriodType>
-                  <PeriodCount>0</PeriodCount>
-                  <Operand>Payment</Operand>
-                  <StartDate>2021-04-10 21:07:51</StartDate>
-                  <EndDate>2021-04-10 21:07:51</EndDate>
-                </Operands>
-              </Simple>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>[Field_11] = "Payment"</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-        </Node>
-        <Node ToolID="12">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="379.9997" y="992.0001" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     1" selected="False" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="11">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="668" y="1004" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Expression>[Field_11] = "Payment" || [Field_11] = "Distributor"</Expression>
-              <Mode>Custom</Mode>
-              <Simple>
-                <Operator>=</Operator>
-                <Field>Field_11</Field>
-                <Operands>
-                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-                  <DateType>fixed</DateType>
-                  <PeriodDate>2021-04-10 21:07:55</PeriodDate>
-                  <PeriodType>
-                  </PeriodType>
-                  <PeriodCount>0</PeriodCount>
-                  <Operand>Distributor</Operand>
-                  <StartDate>2021-04-10 21:07:55</StartDate>
-                  <EndDate>2021-04-10 21:07:55</EndDate>
-                </Operands>
-              </Simple>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>[Field_11] = "Payment" || [Field_11] = "Distributor"</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-        </Node>
-        <Node ToolID="10">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="284" y="992.0004" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Field>Field_1</Field>
-              <ErrorHandling>Last</ErrorHandling>
-              <RootName>Field_1</RootName>
-              <Delimeters value="   " />
-              <NumFields value="2" />
-              <Flags value="0" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
-        </Node>
-      </ChildNodes>
-    </Node>
-    <Node ToolID="39">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="307" y="331.0001" width="625" height="252" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>VM*</Caption>
-          <Style TextColor="#314c4a" FillColor="#ffa6a6" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
-          <Folded value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="2">
-          <GuiSettings>
-            <Position x="428" y="392.0002" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="List Box (11)">"Field_81"</Value>
-              <Value name="Check Box (84)">True</Value>
-              <Value name="Check Box (117)">True</Value>
-              <Value name="Check Box (15)">True</Value>
-              <Value name="Check Box (109)">False</Value>
-              <Value name="Check Box (122)">False</Value>
-              <Value name="Check Box (53)">False</Value>
-              <Value name="Check Box (58)">False</Value>
-              <Value name="Check Box (70)">True</Value>
-              <Value name="Check Box (77)">False</Value>
-              <Value name="Drop Down (81)">upper</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="Cleanse.yxmc" />
-        </Node>
-        <Node ToolID="3">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="848" y="380.0001" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="True" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="Field_9" selected="True" rename="ID" />
-                <SelectField field="Field_1" selected="False" />
-                <SelectField field="Field_2" selected="True" rename="Name" />
-                <SelectField field="Field_3" selected="False" />
-                <SelectField field="Field_4" selected="False" />
-                <SelectField field="Field_5" selected="False" />
-                <SelectField field="Field_6" selected="False" />
-                <SelectField field="Field_7" selected="False" />
-                <SelectField field="Field_8" selected="False" type="Double" size="8" />
-                <SelectField field="Field_10" selected="False" />
-                <SelectField field="Field_11" selected="False" />
-                <SelectField field="Field_12" selected="False" />
-                <SelectField field="Field_13" selected="False" />
-                <SelectField field="Field_81" selected="True" rename="Net" type="Double" size="8" />
-                <SelectField field="Field_82" selected="False" />
-                <SelectField field="DateTime_Out" selected="False" />
-                <SelectField field="DateTime" selected="True" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="4">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="332" y="392.0001" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Field>Field_8</Field>
-              <ErrorHandling>Last</ErrorHandling>
-              <RootName>Field_8</RootName>
-              <Delimeters value="." />
-              <NumFields value="2" />
-              <Flags value="0" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
-        </Node>
-        <Node ToolID="5">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="596" y="392.0001" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <IsFrom value="False" />
-              <InputFieldName>Field_10</InputFieldName>
-              <Format>yyyyMMdd</Format>
-              <OutputFieldName>DateTime_Out</OutputFieldName>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Convert Field_10 From:
-Custom</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
-        </Node>
-        <Node ToolID="6">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="692" y="392.0001" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Expression>!IsNull([DateTime_Out])</Expression>
-              <Mode>Simple</Mode>
-              <Simple>
-                <Operator>IsNotNull</Operator>
-                <Field>DateTime_Out</Field>
-                <Operands>
-                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-                  <DateType>fixed</DateType>
-                  <PeriodDate>2021-04-09 16:52:01</PeriodDate>
-                  <PeriodType>days</PeriodType>
-                  <PeriodCount>0</PeriodCount>
-                  <Operand>2021-04-09</Operand>
-                  <StartDate>2021-04-09 16:52:01</StartDate>
-                  <EndDate>2021-04-09 16:52:01</EndDate>
-                </Operands>
-              </Simple>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>!IsNull([DateTime_Out])</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-        </Node>
-        <Node ToolID="37">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="776" y="380.0001" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <IsFrom value="True" />
-              <InputFieldName>DateTime_Out</InputFieldName>
-              <Format>Month yyyy</Format>
-              <OutputFieldName>DateTime</OutputFieldName>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Convert DateTime_Out To:
-Custom</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
-        </Node>
-        <Node ToolID="42">
-          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="847" y="499.0001" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <SummarizeFields>
-                <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
-                <SummarizeField field="DateTime" action="GroupBy" rename="DateTime" />
-              </SummarizeFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-        </Node>
-      </ChildNodes>
-    </Node>
     <Node ToolID="65">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="3139" y="679.0001" />
+        <Position x="3185" y="415.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -873,7 +48,7 @@ Custom</DefaultAnnotationText>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
-            <OutputOption>Create</OutputOption>
+            <OutputOption>RemoveFile</OutputOption>
           </FormatSpecificOptions>
           <MultiFile value="False" />
         </Configuration>
@@ -888,7 +63,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2971" y="667.0001" />
+        <Position x="2670" y="596.0002" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -907,7 +82,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="63">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="3055" y="667.0001" />
+        <Position x="2753" y="595.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -939,19 +114,20 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2863" y="667.0001" />
+        <Position x="2513" y="595.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="IF IsNull([Gross]) THEN [Net] ELSE [Gross] ENDIF" field="Gross" size="8" type="Double" />
+            <FormulaField expression="[Net]+[Tax]" field="Gross" size="8" type="Double" />
             <FormulaField expression="IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF" field="Tax" size="8" type="Double" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>Gross = IF IsNull([Gross]) THEN [Net] ELSE [Gross] ENDIF
-Tax = IF IsNull([Tax]) ...</DefaultAnnotationText>
+          <DefaultAnnotationText><![CDATA[Gross = [Net]+[Tax]
+Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
+]]></DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -959,7 +135,7 @@ Tax = IF IsNull([Tax]) ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="61">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="2647" y="666.9999" />
+        <Position x="2345" y="595.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -978,7 +154,7 @@ Tax = IF IsNull([Tax]) ...</DefaultAnnotationText>
     </Node>
     <Node ToolID="60">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="2911" y="1039" />
+        <Position x="2513" y="1555" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -986,7 +162,7 @@ Tax = IF IsNull([Tax]) ...</DefaultAnnotationText>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
-            <OutputOption>Create</OutputOption>
+            <OutputOption>RemoveFile</OutputOption>
           </FormatSpecificOptions>
           <MultiFile value="False" />
         </Configuration>
@@ -1001,7 +177,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="59">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="2683" y="1015" />
+        <Position x="2501" y="1399" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1034,14 +210,13 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="58">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2515" y="1099" />
+        <Position x="2334" y="1412" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="False" />
           <CommaDecimal value="False" />
           <SelectFields>
-            <SelectField field="Bank Name" selected="False" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -1055,7 +230,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="57">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2335" y="919.0001" />
+        <Position x="2334" y="968.0002" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1070,6 +245,7 @@ Table=Sheet1</DefaultAnnotationText>
             <SelectField field="Bank Name" selected="True" />
             <SelectField field="Bank Net" selected="True" />
             <SelectField field="Date" selected="True" />
+            <SelectField field="DateTime" selected="True" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -1083,7 +259,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="56">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="2707" y="1183" />
+        <Position x="2333" y="1555" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1091,7 +267,7 @@ Table=Sheet1</DefaultAnnotationText>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
-            <OutputOption>Create</OutputOption>
+            <OutputOption>RemoveFile</OutputOption>
           </FormatSpecificOptions>
           <MultiFile value="False" />
         </Configuration>
@@ -1106,7 +282,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="55">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="2443" y="979.0001" />
+        <Position x="2298" y="1208" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1139,7 +315,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="2239" y="919.0001" />
+        <Position x="2238" y="968.0002" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -1179,7 +355,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
-        <Position x="151" y="979.0004" />
+        <Position x="149.9997" y="1028" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1213,7 +389,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
-        <Position x="55.0003" y="979.0004" />
+        <Position x="54" y="1028" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1231,7 +407,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
-        <Position x="198.9999" y="391.0002" />
+        <Position x="197.9996" y="440.0003" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1265,7 +441,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
-        <Position x="103" y="391" />
+        <Position x="101.9997" y="440.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1283,7 +459,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="93">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1494" y="378" />
+        <Position x="1493" y="427.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1300,9 +476,1369 @@ Table=Sheet1</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
     </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="3089" y="595.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ID" action="GroupBy" rename="ID" />
+            <SummarizeField field="Employee Name" action="First" rename="First_Employee Name" />
+            <SummarizeField field="Gross" action="Sum" rename="Sum_Gross" />
+            <SummarizeField field="Tax" action="Sum" rename="Sum_Tax" />
+            <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
+            <SummarizeField field="DateTime" action="GroupBy" rename="DateTime" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1745" y="343.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
+            <SummarizeField field="DateTime" action="GroupBy" rename="DateTime" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1697" y="103.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="3185" y="523.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="ID" />
+            <Field field="First_Employee Name" />
+            <Field field="Sum_Tax" />
+            <Field field="Sum_Net" />
+            <Field field="DateTime" />
+          </GroupFields>
+          <HeaderField field="DateTime" />
+          <DataField field="Sum_Gross" />
+          <Methods>
+            <Method method="Sum" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" size="254" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="First_Employee Name" size="1073741823" source="CrossTab:Group:Sum:" type="V_WString" />
+            <Field name="Sum_Tax" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="Sum_Net" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="DateTime" size="24" source="CrossTab:Group:Sum:" type="String" />
+            <Field name="February_2021" source="CrossTab:Header:DateTime:February 2021:Sum:" type="Double" />
+            <Field name="January_2021" source="CrossTab:Header:DateTime:January 2021:Sum:" type="Double" />
+            <Field name="March_2021" source="CrossTab:Header:DateTime:March 2021:Sum:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ID" order="Asc" />
+            <Field field="First_Employee Name" order="Asc" />
+            <Field field="Sum_Tax" order="Asc" />
+            <Field field="Sum_Net" order="Asc" />
+            <Field field="DateTime" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="3377" y="511.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="ID" />
+            <Field field="First_Employee Name" />
+            <Field field="February_2021" />
+            <Field field="January_2021" />
+            <Field field="March_2021" />
+            <Field field="February_2021_2" />
+            <Field field="January_2021_2" />
+            <Field field="March_2021_2" />
+          </GroupFields>
+          <HeaderField field="DateTime" />
+          <DataField field="Sum_Net" />
+          <Methods>
+            <Method method="Sum" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" size="254" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="First_Employee Name" size="1073741823" source="CrossTab:Group:Sum:" type="V_WString" />
+            <Field name="February_2021" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="January_2021" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="March_2021" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="February_2021_2" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="January_2021_2" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="March_2021_2" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="February_2021_3" source="CrossTab:Header:DateTime:February 2021:Sum:" type="Double" />
+            <Field name="January_2021_3" source="CrossTab:Header:DateTime:January 2021:Sum:" type="Double" />
+            <Field name="March_2021_3" source="CrossTab:Header:DateTime:March 2021:Sum:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ID" order="Asc" />
+            <Field field="First_Employee Name" order="Asc" />
+            <Field field="February_2021" order="Asc" />
+            <Field field="January_2021" order="Asc" />
+            <Field field="March_2021" order="Asc" />
+            <Field field="February_2021_2" order="Asc" />
+            <Field field="January_2021_2" order="Asc" />
+            <Field field="March_2021_2" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="102">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="2681" y="511.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2789" y="499.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ID" action="GroupBy" rename="ID" />
+            <SummarizeField field="Employee Name" action="GroupBy" rename="Employee Name" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="3281" y="523.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="ID" />
+            <Field field="First_Employee Name" />
+            <Field field="Sum_Net" />
+            <Field field="DateTime" />
+            <Field field="February_2021" />
+            <Field field="January_2021" />
+            <Field field="March_2021" />
+          </GroupFields>
+          <HeaderField field="DateTime" />
+          <DataField field="Sum_Tax" />
+          <Methods>
+            <Method method="Sum" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" size="254" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="First_Employee Name" size="1073741823" source="CrossTab:Group:Sum:" type="V_WString" />
+            <Field name="Sum_Net" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="DateTime" size="24" source="CrossTab:Group:Sum:" type="String" />
+            <Field name="February_2021" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="January_2021" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="March_2021" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="February_2021_2" source="CrossTab:Header:DateTime:February 2021:Sum:" type="Double" />
+            <Field name="January_2021_2" source="CrossTab:Header:DateTime:January 2021:Sum:" type="Double" />
+            <Field name="March_2021_2" source="CrossTab:Header:DateTime:March 2021:Sum:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ID" order="Asc" />
+            <Field field="First_Employee Name" order="Asc" />
+            <Field field="Sum_Net" order="Asc" />
+            <Field field="DateTime" order="Asc" />
+            <Field field="February_2021" order="Asc" />
+            <Field field="January_2021" order="Asc" />
+            <Field field="March_2021" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="3353" y="667.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ID" action="GroupBy" rename="ID" />
+            <SummarizeField field="First_Employee Name" action="GroupBy" rename="First_Employee Name" />
+            <SummarizeField field="January_2021" action="Sum" rename="Gross_January_2021" />
+            <SummarizeField field="January_2021_2" action="Sum" rename="Tax_January_2021" />
+            <SummarizeField field="January_2021_3" action="Sum" rename="Net_January_2021" />
+            <SummarizeField field="February_2021" action="Sum" rename="Gross_February_2021" />
+            <SummarizeField field="February_2021_2" action="Sum" rename="Tax_February_2021" />
+            <SummarizeField field="February_2021_3" action="Sum" rename="Net_February_2021" />
+            <SummarizeField field="March_2021" action="Sum" rename="Gross_March_2021" />
+            <SummarizeField field="March_2021_2" action="Sum" rename="Tax_March_2021" />
+            <SummarizeField field="March_2021_3" action="Sum" rename="Net_March_2021" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="105">
+      <GuiSettings>
+        <Position x="3449" y="667.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"ID","First_Employee Name","Gross_January_2021","Tax_January_2021","Net_January_2021","Gross_February_2021","Tax_February_2021","Net_February_2021","Gross_March_2021","Tax_March_2021","Net_March_2021"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="3497" y="823.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Gross_January_2021" action="Sum" rename="Sum_Gross_January_2021" />
+            <SummarizeField field="Tax_January_2021" action="Sum" rename="Sum_Tax_January_2021" />
+            <SummarizeField field="Net_January_2021" action="Sum" rename="Sum_Net_January_2021" />
+            <SummarizeField field="Gross_February_2021" action="Sum" rename="Sum_Gross_February_2021" />
+            <SummarizeField field="Tax_February_2021" action="Sum" rename="Sum_Tax_February_2021" />
+            <SummarizeField field="Net_February_2021" action="Sum" rename="Sum_Net_February_2021" />
+            <SummarizeField field="Gross_March_2021" action="Sum" rename="Sum_Gross_March_2021" />
+            <SummarizeField field="Tax_March_2021" action="Sum" rename="Sum_Tax_March_2021" />
+            <SummarizeField field="Net_March_2021" action="Sum" rename="Sum_Net_March_2021" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="108">
+      <GuiSettings>
+        <Position x="2429" y="595.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Net","Tax","Bank Net","Gross"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="109">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="2897" y="583.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>ID</FieldFind>
+          <FieldSearch>ID</FieldSearch>
+          <ReplaceFoundField>Employee Name</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="Employee Name" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="110">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2993" y="571.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ID" selected="True" />
+            <SelectField field="Employee Name2" selected="True" rename="Employee Name" />
+            <SelectField field="Employee Name" selected="False" />
+            <SelectField field="Gross" selected="True" />
+            <SelectField field="Tax" selected="True" />
+            <SelectField field="Net" selected="True" />
+            <SelectField field="DateTime" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="113">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="3425" y="991.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="First_Employee Name" action="Count" rename="Count" />
+            <SummarizeField field="First_Employee Name" action="GroupBy" rename="First_Employee Name" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="3509" y="1063" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>First_Employee Name</FieldFind>
+          <FieldSearch>First_Employee Name</FieldSearch>
+          <ReplaceFoundField>First_Employee Name</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="Count" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="115">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="3605" y="1075" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Count] &gt; 1</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-04-12 13:59:27</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2021-04-12 13:59:27</StartDate>
+              <EndDate>2021-04-12 13:59:27</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] &gt; 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="3677" y="1063" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\nkhoi005\Desktop\Duplicate ID (file 120-Bank).xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Duplicate ID (file 120-Bank).xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="117">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="3689" y="667.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\nkhoi005\Desktop\Report.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>RemoveFile</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Report.xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="257.9997" y="727.9999" width="1741" height="708.0002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>bm120</Caption>
+          <Style TextColor="#314c4a" FillColor="#b4fef3" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1890" y="1352" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Gross" action="Sum" rename="Sum_Gross" />
+                <SummarizeField field="Tax" action="Sum" rename="Sum_Tax" />
+                <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
+                <SummarizeField field="DateTime2" action="GroupBy" rename="DateTime2" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1915" y="1029" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ID" selected="True" />
+                <SelectField field="Tax" selected="True" />
+                <SelectField field="Net" selected="True" />
+                <SelectField field="Name2" selected="False" />
+                <SelectField field="Name1" selected="False" />
+                <SelectField field="Name" selected="True" />
+                <SelectField field="Gross" selected="True" />
+                <SelectField field="DateTime" selected="False" />
+                <SelectField field="DateTime2" selected="True" rename="DateTime" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="1723" y="1029" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>DateTime</InputFieldName>
+              <Format>Month yyyy</Format>
+              <OutputFieldName>DateTime</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert DateTime To:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1387" y="968.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Field_121" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1291" y="968.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([Gross])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>Gross</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-04-10 22:19:39</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2021-04-10 22:19:39</StartDate>
+                  <EndDate>2021-04-10 22:19:39</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([Gross])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="1231" y="968.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="True" />
+              <UpdateField_Name>DateTime</UpdateField_Name>
+              <CreateField_Name>New Field</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="1" />
+              <Expression>IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF</Expression>
+              <GroupByFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] E...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="1159" y="968.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>Field_121</FieldFind>
+              <FieldSearch>Field_123</FieldSearch>
+              <ReplaceFoundField>Field_123</ReplaceFoundField>
+              <FindMode>FindAny</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="False" />
+              <ReplaceAppendFields>
+                <Field field="DateTime" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings>
+            <Position x="1831" y="1041" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"Gross","Tax","Net","DateTime","ID"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">True</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="1626.999" y="1029" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Name</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>Name</RootName>
+              <Delimeters value="&amp;" />
+              <NumFields value="2" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="1039" y="776.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Field_123</InputFieldName>
+              <Format>dd/MM/yyyy</Format>
+              <OutputFieldName>DateTime</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Field_123 From:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="966.9993" y="776.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Field_1" selected="False" />
+                <SelectField field="Field_11" selected="False" />
+                <SelectField field="Field_12" selected="False" />
+                <SelectField field="Field_121" selected="False" />
+                <SelectField field="Field_122" selected="False" />
+                <SelectField field="Field_124" selected="False" />
+                <SelectField field="1" selected="False" />
+                <SelectField field="2" selected="False" />
+                <SelectField field="21" selected="False" />
+                <SelectField field="22" selected="False" />
+                <SelectField field="23" selected="False" rename="Date" />
+                <SelectField field="24" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="882.9997" y="788.9998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Field_123" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="822.9997" y="1293" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Field_1" selected="False" />
+                <SelectField field="Field_11" selected="True" rename="ID" />
+                <SelectField field="Field_12" selected="True" rename="Name" />
+                <SelectField field="1" selected="False" rename="ID" />
+                <SelectField field="2" selected="False" rename="Name" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+            <Position x="1506.999" y="1041" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JoinByRecPos value="True" />
+              <OutputJoinOnly value="False" />
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Input_#3_Field_1" selected="True" rename="Input_#3_Field_1" />
+                    <SelectField field="Input_#3_Field_11" selected="True" rename="Input_#3_Field_11" />
+                    <SelectField field="Input_#3_Field_12" selected="True" rename="Input_#3_Field_12" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings>
+            <Position x="942.9997" y="1029" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"Field_1222","Field_1223"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">True</Value>
+              <Value name="Check Box (53)">True</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">True</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1027" y="1029" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Field_1" selected="False" />
+                <SelectField field="Field_11" selected="False" />
+                <SelectField field="Field_12" selected="False" />
+                <SelectField field="Field_122" selected="False" />
+                <SelectField field="Field_1221" selected="True" rename="Gross" type="Double" size="8" />
+                <SelectField field="Field_1222" selected="True" rename="Tax" type="Double" size="8" />
+                <SelectField field="Field_1223" selected="True" rename="Net" type="Double" size="8" />
+                <SelectField field="1" selected="False" />
+                <SelectField field="2" selected="False" />
+                <SelectField field="21" selected="False" />
+                <SelectField field="22" selected="False" />
+                <SelectField field="221" selected="False" rename="Gross" type="Double" size="8" />
+                <SelectField field="222" selected="False" rename="Tax" type="Double" size="8" />
+                <SelectField field="223" selected="False" rename="Net" type="Double" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="858.9996" y="1029" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Field_122</Field>
+              <ErrorHandling>Warn</ErrorHandling>
+              <RootName>Field_122</RootName>
+              <Delimeters value="." />
+              <NumFields value="3" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="762.9998" y="1029" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Field_12</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>Field_12</RootName>
+              <Delimeters value=":" />
+              <NumFields value="2" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="750.9998" y="789.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Field_12</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>Field_12</RootName>
+              <Delimeters value=" " />
+              <NumFields value="4" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="714.9994" y="1305" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>REGEX_Match([Field_11], '\d+|\d+.\d+')</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>
+                </Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-04-09 15:12:13</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2021-04-09 15:12:13</StartDate>
+                  <EndDate>2021-04-09 15:12:13</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>REGEX_Match([Field_11], '\d+|\d+.\d+')</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="630.9998" y="800.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Field_11] = "Payment"</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Field_11</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-04-10 21:07:51</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>Payment</Operand>
+                  <StartDate>2021-04-10 21:07:51</StartDate>
+                  <EndDate>2021-04-10 21:07:51</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Field_11] = "Payment"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="378.9994" y="1041" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     1" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="666.9997" y="1053" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Field_11] = "Payment" || [Field_11] = "Distributor"</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Field_11</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-04-10 21:07:55</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>Distributor</Operand>
+                  <StartDate>2021-04-10 21:07:55</StartDate>
+                  <EndDate>2021-04-10 21:07:55</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Field_11] = "Payment" || [Field_11] = "Distributor"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="282.9997" y="1041" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Field_1</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>Field_1</RootName>
+              <Delimeters value="   " />
+              <NumFields value="2" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="305.9997" y="380.0002" width="625" height="252" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>VM*</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffa6a6" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings>
+            <Position x="426.9997" y="441.0003" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"Field_81"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">True</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="846.9997" y="429.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Field_9" selected="True" rename="ID" />
+                <SelectField field="Field_1" selected="False" />
+                <SelectField field="Field_2" selected="True" rename="Name" />
+                <SelectField field="Field_3" selected="False" />
+                <SelectField field="Field_4" selected="False" />
+                <SelectField field="Field_5" selected="False" />
+                <SelectField field="Field_6" selected="False" />
+                <SelectField field="Field_7" selected="False" />
+                <SelectField field="Field_8" selected="False" type="Double" size="8" />
+                <SelectField field="Field_10" selected="False" />
+                <SelectField field="Field_11" selected="False" />
+                <SelectField field="Field_12" selected="False" />
+                <SelectField field="Field_13" selected="False" />
+                <SelectField field="Field_81" selected="True" rename="Net" type="Double" size="8" />
+                <SelectField field="Field_82" selected="False" />
+                <SelectField field="DateTime_Out" selected="False" />
+                <SelectField field="DateTime" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="330.9997" y="441.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Field_8</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>Field_8</RootName>
+              <Delimeters value="." />
+              <NumFields value="2" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="594.9997" y="441.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Field_10</InputFieldName>
+              <Format>yyyyMMdd</Format>
+              <OutputFieldName>DateTime_Out</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Field_10 From:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="690.9997" y="441.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([DateTime_Out])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>DateTime_Out</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-04-09 16:52:01</PeriodDate>
+                  <PeriodType>days</PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>2021-04-09</Operand>
+                  <StartDate>2021-04-09 16:52:01</StartDate>
+                  <EndDate>2021-04-09 16:52:01</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([DateTime_Out])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="774.9997" y="429.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>DateTime_Out</InputFieldName>
+              <Format>Month yyyy</Format>
+              <OutputFieldName>DateTime</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert DateTime_Out To:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="845.9997" y="548.0002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Net" action="Sum" rename="Sum_Net" />
+                <SummarizeField field="DateTime" action="GroupBy" rename="DateTime" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+      </ChildNodes>
+    </Node>
     <Node ToolID="90">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="197" y="4.999931" width="1465" height="312.0001" />
+        <Position x="195.9997" y="54" width="1465" height="312" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1320,7 +1856,7 @@ Table=Sheet1</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="45">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="222" y="65.99986" />
+            <Position x="220.9997" y="114.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1342,7 +1878,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="67">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="342" y="65.99993" />
+            <Position x="340.9997" y="115" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1374,7 +1910,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="68">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="450.0001" y="54.00002" />
+            <Position x="448.9998" y="103.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1395,7 +1931,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="69">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="594" y="53.99993" />
+            <Position x="592.9997" y="103" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1416,7 +1952,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="70">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="726" y="54.00002" />
+            <Position x="724.9997" y="103.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1438,7 +1974,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="74">
           <GuiSettings>
-            <Position x="870" y="54" />
+            <Position x="868.9997" y="103.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1459,15 +1995,12 @@ Table=Sheet1</DefaultAnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings Macro="Cleanse.yxmc" />
         </Node>
         <Node ToolID="79">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="366" y="198.0001" />
+            <Position x="364.9997" y="247.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1499,7 +2032,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="80">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="450" y="174" />
+            <Position x="448.9997" y="223.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1521,7 +2054,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="81">
           <GuiSettings>
-            <Position x="534" y="174.0001" />
+            <Position x="532.9997" y="223.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1542,15 +2075,12 @@ Table=Sheet1</DefaultAnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings Macro="Cleanse.yxmc" />
         </Node>
         <Node ToolID="82">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="606" y="185.9999" />
+            <Position x="604.9997" y="235" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1570,7 +2100,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="83">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="678" y="186" />
+            <Position x="676.9997" y="235.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1594,7 +2124,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="84">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="954" y="53.99998" />
+            <Position x="952.9997" y="103" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1615,7 +2145,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="85">
           <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-            <Position x="1086" y="114" />
+            <Position x="1085" y="163.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1641,7 +2171,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="86">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1278" y="114" />
+            <Position x="1277" y="163.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1666,7 +2196,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="87">
           <GuiSettings>
-            <Position x="1182" y="114" />
+            <Position x="1181" y="163.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1687,15 +2217,12 @@ Custom</DefaultAnnotationText>
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings Macro="Cleanse.yxmc" />
         </Node>
         <Node ToolID="88">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="1350" y="114" />
+            <Position x="1349" y="163.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1719,12 +2246,12 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="89">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1422" y="114" />
+            <Position x="1421" y="163.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Expression>[ID] != "For"</Expression>
-              <Mode>Simple</Mode>
+              <Expression>[ID] != "For" &amp;&amp; [ID] != '90'</Expression>
+              <Mode>Custom</Mode>
               <Simple>
                 <Operator>!=</Operator>
                 <Field>ID</Field>
@@ -1743,7 +2270,7 @@ Custom</DefaultAnnotationText>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText>[ID] != "For"</DefaultAnnotationText>
+              <DefaultAnnotationText>[ID] != "For" &amp;&amp; [ID] != '90'</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
@@ -1751,7 +2278,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="91">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="1506" y="90" />
+            <Position x="1505" y="139.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1771,7 +2298,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="92">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1578" y="90" />
+            <Position x="1577" y="139.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1800,12 +2327,156 @@ Custom</DefaultAnnotationText>
       <Destination ToolID="45" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="109" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="109" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="108" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="True" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="False" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="True" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Join" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="54" Connection="Join" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="54" Connection="Left" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="54" Connection="Left" />
+    </Connection>
+    <Connection>
       <Origin ToolID="36" Connection="Output" />
       <Destination ToolID="54" Connection="Right" />
     </Connection>
     <Connection>
       <Origin ToolID="93" Connection="Output" />
-      <Destination ToolID="54" Connection="Left" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Output" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="102" Connection="Unique" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="105" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output26" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output26" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output26" />
+      <Destination ToolID="114" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="113" Connection="Output" />
+      <Destination ToolID="114" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output26" />
+      <Destination ToolID="117" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Output26" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="109" Connection="Output" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="114" Connection="Output" />
+      <Destination ToolID="115" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="115" Connection="True" />
+      <Destination ToolID="116" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="35" Connection="Output" />
@@ -1940,70 +2611,6 @@ Custom</DefaultAnnotationText>
       <Destination ToolID="3" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="64" Connection="Output" />
-      <Destination ToolID="63" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="63" Connection="Output" />
-      <Destination ToolID="65" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="62" Connection="Output" />
-      <Destination ToolID="64" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="61" Connection="Output" />
-      <Destination ToolID="62" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="59" Connection="True" />
-      <Destination ToolID="60" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="58" Connection="Output" />
-      <Destination ToolID="56" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="57" Connection="Output" />
-      <Destination ToolID="55" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="55" Connection="False" />
-      <Destination ToolID="58" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="55" Connection="True" />
-      <Destination ToolID="59" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="54" Connection="Join" />
-      <Destination ToolID="57" Connection="Input" />
-    </Connection>
-    <Connection name="#1">
-      <Origin ToolID="54" Connection="Join" />
-      <Destination ToolID="61" Connection="Input" />
-    </Connection>
-    <Connection name="#2">
-      <Origin ToolID="54" Connection="Right" />
-      <Destination ToolID="61" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="34" Connection="Output" />
-      <Destination ToolID="10" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="33" Connection="Output" />
-      <Destination ToolID="34" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="8" Connection="Output" />
-      <Destination ToolID="4" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="7" Connection="Output" />
-      <Destination ToolID="8" Connection="Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="45" Connection="Output" />
       <Destination ToolID="67" Connection="Input" />
     </Connection>
@@ -2078,6 +2685,10 @@ Custom</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="91" Connection="Output" />
       <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
