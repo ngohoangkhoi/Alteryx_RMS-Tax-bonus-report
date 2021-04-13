@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2970" y="810" />
+        <Position x="2970" y="858" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -22,7 +22,7 @@
     </Node>
     <Node ToolID="63">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="3053" y="806" />
+        <Position x="3053" y="854" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -54,7 +54,7 @@
     </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="2813" y="806" />
+        <Position x="2813" y="854" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -75,7 +75,7 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
     </Node>
     <Node ToolID="61">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="2645" y="806" />
+        <Position x="2645" y="854" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -94,7 +94,7 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
     </Node>
     <Node ToolID="60">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="2513" y="1646" />
+        <Position x="2513" y="1694" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -117,7 +117,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="59">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="2501" y="1490" />
+        <Position x="2501" y="1538" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -150,7 +150,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="58">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2334" y="1503" />
+        <Position x="2334" y="1551" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -170,7 +170,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="57">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2334" y="1059" />
+        <Position x="2334" y="1107" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -199,7 +199,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="56">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="2333" y="1646" />
+        <Position x="2333" y="1694" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -222,7 +222,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="55">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="2298" y="1299" />
+        <Position x="2298" y="1347" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -255,7 +255,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="2238" y="1059" />
+        <Position x="2238" y="1107" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -295,7 +295,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
-        <Position x="149.9997" y="1119" />
+        <Position x="149.9997" y="1167" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -329,7 +329,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
-        <Position x="54" y="1119" />
+        <Position x="54" y="1167" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -347,7 +347,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="94">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="3186" y="804" />
+        <Position x="3186" y="852" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -370,7 +370,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="108">
       <GuiSettings>
-        <Position x="2729" y="806" />
+        <Position x="2729" y="854" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -396,7 +396,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="123">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="2130" y="996.9999" width="156" height="60" />
+        <Position x="2130" y="1045" width="156" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -416,7 +416,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="125">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="2586" y="744.9999" width="172" height="60" />
+        <Position x="2586" y="792.9999" width="172" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -437,7 +437,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="126">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="2862" y="984.9999" width="172" height="60" />
+        <Position x="2862" y="1033" width="172" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -459,7 +459,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="93">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1493" y="578" />
+        <Position x="1493" y="626" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -478,7 +478,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
-        <Position x="101.9997" y="591" />
+        <Position x="101.9997" y="639" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -496,7 +496,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
-        <Position x="197.9996" y="591.0003" />
+        <Position x="197.9996" y="639.0003" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -530,7 +530,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="124">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1446" y="636.9998" width="144" height="40" />
+        <Position x="1446" y="684.9998" width="144" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -550,7 +550,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="132">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="3018" y="684" />
+        <Position x="3018" y="732" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -568,7 +568,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="133">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="3102" y="600" />
+        <Position x="3102" y="648" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -595,7 +595,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="134">
       <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-        <Position x="3162" y="696" />
+        <Position x="3162" y="744" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -621,7 +621,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="135">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="2862" y="612" width="216" height="60" />
+        <Position x="2862" y="660" width="216" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -642,7 +642,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="159">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="3762" y="558" width="216" height="60" />
+        <Position x="3762" y="606" width="216" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -663,7 +663,7 @@ Select: - Gross Tax Net of Each Month ]]></Text>
     </Node>
     <Node ToolID="164">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="4266" y="6" />
+        <Position x="4266" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -673,12 +673,17 @@ Select: - Gross Tax Net of Each Month ]]></Text>
             <FormulaField expression="IF [Gross_January_2021] &gt;= 100000000 &#xA;THEN 1 ELSE 0 ENDIF" field="Jan - Condition" size="8" type="Double" />
             <FormulaField expression="IF [Gross_Jan_Feb] &gt;=100000000 &amp;&amp; [Jan - Condition] = 0&#xA;THEN 1&#xA;ELSEIF [Gross_Jan_Feb] &gt;=100000000 &amp;&amp; [Jan - Condition] = 1 THEN 2&#xA;ELSE [Jan - Condition]&#xA;ENDIF" field="Feb - Condition" size="8" type="Double" />
             <FormulaField expression="IF [Gross_Jan_Feb_Mar] &gt;=100000000 &amp;&amp; [Feb - Condition] = 0&#xA;THEN 1&#xA;ELSEIF [Gross_Jan_Feb_Mar] &gt;=100000000 &amp;&amp; [Feb - Condition] = 1 THEN 2&#xA;ELSE [Feb - Condition]&#xA;ENDIF" field="Mar - Condition" size="8" type="Double" />
-            <FormulaField expression="IF [Jan - Condition] = 1 THEN 0.05*[Gross_January_2021] ELSE 0 ENDIF" field="New_Tax_January" size="8" type="Int64" />
-            <FormulaField expression="IF [Feb - Condition] = 0 THEN 0&#xA;ELSEIF [Feb - Condition] = 1 THEN [Gross_Jan_Feb]*0.05&#xA;ELSE [Gross_February_2021]*0.05&#xA;ENDIF" field="New_Tax_feb" size="8" type="Int64" />
-            <FormulaField expression="IF [Mar - Condition] = 0 THEN 0&#xA;ELSEIF [Mar - Condition] = 1 THEN [Gross_Jan_Feb_Mar]*0.05&#xA;ELSE [Gross_March_2021]*0.05&#xA;ENDIF" field="New_Tax_Mar" size="8" type="Int64" />
-            <FormulaField expression="[Gross_January_2021] - [New_Tax_January]" field="New_Net_Jan" size="8" type="Double" />
-            <FormulaField expression="[Gross_February_2021] - [New_Tax_feb]" field="New_Net_Feb" size="8" type="Double" />
-            <FormulaField expression="[Gross_March_2021] - [New_Tax_Mar]" field="New_Net_Mar" size="8" type="Double" />
+            <FormulaField expression="IF [Jan - Condition] = 1 THEN 0.05*[Gross_January_2021] ELSE 0 ENDIF" field="New_PIT_January" size="8" type="Int64" />
+            <FormulaField expression="IF [Feb - Condition] = 0 THEN 0&#xA;ELSEIF [Feb - Condition] = 1 THEN [Gross_Jan_Feb]*0.05&#xA;ELSE [Gross_February_2021]*0.05&#xA;ENDIF" field="New_PIT_feb" size="8" type="Int64" />
+            <FormulaField expression="IF [Mar - Condition] = 0 THEN 0&#xA;ELSEIF [Mar - Condition] = 1 THEN [Gross_Jan_Feb_Mar]*0.05&#xA;ELSE [Gross_March_2021]*0.05&#xA;ENDIF" field="New_PIT_Mar" size="8" type="Int64" />
+            <FormulaField expression="[Gross_January_2021] - [New_PIT_January]" field="New_Net_Jan" size="8" type="Double" />
+            <FormulaField expression="[Gross_February_2021] - [New_PIT_feb]" field="New_Net_Feb" size="8" type="Double" />
+            <FormulaField expression="[Gross_March_2021] - [New_PIT_Mar]" field="New_Net_Mar" size="8" type="Double" />
+            <FormulaField expression="[Gross_January_2021] + [Gross_February_2021] + [Gross_March_2021]" field="Total_Gross" size="8" type="Int64" />
+            <FormulaField expression="IF [Jan - Condition] = 0 THEN 0 ELSE [Gross_January_2021] ENDIF" field="New_Tax_Jan" size="8" type="Int64" />
+            <FormulaField expression="IF [Feb - Condition] = 0 THEN 0 &#xA;ELSEIF [Feb - Condition] = 1 THEN [Gross_Jan_Feb]&#xA;ELSE [Gross_February_2021]&#xA;ENDIF" field="New_Tax_Feb" size="8" type="Int64" />
+            <FormulaField expression="IF [Mar - Condition] = 0 THEN 0 &#xA;ELSEIF [Mar - Condition] = 1 THEN [Gross_Jan_Feb_Mar]&#xA;ELSE [Gross_March_2021]&#xA;ENDIF" field="New_Tax_Mar" size="8" type="Int64" />
+            <FormulaField expression="[New_PIT_January] + [New_PIT_feb] + [New_PIT_Mar]" field="Total_PIT" size="1073741823" type="V_WString" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -690,51 +695,9 @@ Gross_Jan_Feb_Mar =...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
     </Node>
-    <Node ToolID="165">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="4374" y="6" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="True" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="ID" selected="True" />
-            <SelectField field="First_Employee Name" selected="True" />
-            <SelectField field="Gross_January_2021" selected="True" />
-            <SelectField field="New_Tax_January" selected="True" rename="Tax_January_2021" />
-            <SelectField field="New_Net_Jan" selected="True" rename="Net_January_2021" />
-            <SelectField field="Tax_January_2021" selected="False" />
-            <SelectField field="Net_January_2021" selected="False" />
-            <SelectField field="Gross_February_2021" selected="True" />
-            <SelectField field="Tax_February_2021" selected="False" />
-            <SelectField field="New_Tax_feb" selected="True" rename="Tax_February_2021" />
-            <SelectField field="New_Net_Feb" selected="True" rename="Net_February_2021" />
-            <SelectField field="Net_February_2021" selected="False" />
-            <SelectField field="Gross_March_2021" selected="True" />
-            <SelectField field="Tax_March_2021" selected="False" />
-            <SelectField field="New_Tax_Mar" selected="True" rename="Tax_March_2021" />
-            <SelectField field="New_Net_Mar" selected="True" rename="Net_March_2021" />
-            <SelectField field="Net_March_2021" selected="False" />
-            <SelectField field="Gross_Jan_Feb" selected="False" />
-            <SelectField field="Gross_Jan_Feb_Mar" selected="False" />
-            <SelectField field="Jan - Condition" selected="False" />
-            <SelectField field="Feb - Condition" selected="False" />
-            <SelectField field="Mar - Condition" selected="False" />
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
     <Node ToolID="175">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="4494" y="6" />
+        <Position x="4494" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -742,7 +705,7 @@ Gross_Jan_Feb_Mar =...</DefaultAnnotationText>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
-            <OutputOption>Create</OutputOption>
+            <OutputOption>RemoveFile</OutputOption>
           </FormatSpecificOptions>
           <MultiFile value="False" />
         </Configuration>
@@ -758,9 +721,56 @@ Table=Sheet1</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
+    <Node ToolID="178">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="4362" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ID" selected="True" />
+            <SelectField field="First_Employee Name" selected="True" />
+            <SelectField field="Gross_January_2021" selected="True" />
+            <SelectField field="New_Tax_Jan" selected="True" rename="Tax_January_2021" />
+            <SelectField field="New_PIT_January" selected="True" rename="PIT_January_2021" />
+            <SelectField field="New_Net_Jan" selected="False" />
+            <SelectField field="Tax_January_2021" selected="False" />
+            <SelectField field="Net_January_2021" selected="False" />
+            <SelectField field="Gross_February_2021" selected="True" />
+            <SelectField field="New_Tax_Feb" selected="True" rename="Tax_February_2021" />
+            <SelectField field="New_PIT_feb" selected="True" rename="PIT_February_2021" />
+            <SelectField field="New_Net_Feb" selected="False" />
+            <SelectField field="Tax_February_2021" selected="False" />
+            <SelectField field="Net_February_2021" selected="False" />
+            <SelectField field="Gross_March_2021" selected="True" />
+            <SelectField field="Tax_March_2021" selected="False" />
+            <SelectField field="New_Tax_Mar" selected="True" rename="Tax_March_2021" />
+            <SelectField field="New_PIT_Mar" selected="True" rename="PIT_March_2021" />
+            <SelectField field="Net_March_2021" selected="False" />
+            <SelectField field="Gross_Jan_Feb" selected="False" />
+            <SelectField field="Gross_Jan_Feb_Mar" selected="False" />
+            <SelectField field="Jan - Condition" selected="False" />
+            <SelectField field="Feb - Condition" selected="False" />
+            <SelectField field="Mar - Condition" selected="False" />
+            <SelectField field="New_Net_Mar" selected="False" />
+            <SelectField field="Total_Gross" selected="True" />
+            <SelectField field="Total_PIT" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
     <Node ToolID="166">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="3414" y="870" width="128.7491" height="24" />
+        <Position x="3414" y="918" width="128.7491" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -778,7 +788,7 @@ Table=Sheet1</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="131">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="3439" y="1201" />
+            <Position x="3439" y="1249" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -806,7 +816,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="137">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="3547" y="1021" />
+            <Position x="3547" y="1069" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -845,7 +855,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="138">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="3547" y="961" />
+            <Position x="3547" y="1009" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -884,7 +894,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="139">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="3547" y="1081" />
+            <Position x="3547" y="1129" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -923,7 +933,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="140">
           <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
-            <Position x="3775" y="1009" />
+            <Position x="3775" y="1057" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -975,7 +985,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="141">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-            <Position x="3919" y="1027" />
+            <Position x="3919" y="1075" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1044,7 +1054,7 @@ ELSE (
         </Node>
         <Node ToolID="142">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="919" />
+            <Position x="4015" y="967" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1063,7 +1073,7 @@ ELSE (
         </Node>
         <Node ToolID="143">
           <GuiSettings>
-            <Position x="4351" y="1003" />
+            <Position x="4351" y="1051" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1084,15 +1094,12 @@ ELSE (
               <DefaultAnnotationText />
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings Macro="Cleanse.yxmc" />
         </Node>
         <Node ToolID="145">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="967" />
+            <Position x="4015" y="1015" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1110,7 +1117,7 @@ ELSE (
         </Node>
         <Node ToolID="146">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="1027" />
+            <Position x="4015" y="1075" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1128,7 +1135,7 @@ ELSE (
         </Node>
         <Node ToolID="147">
           <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
-            <Position x="4171" y="1003" />
+            <Position x="4171" y="1051" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1215,7 +1222,7 @@ ELSE (
         </Node>
         <Node ToolID="148">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="1075" />
+            <Position x="4015" y="1123" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1233,7 +1240,7 @@ ELSE (
         </Node>
         <Node ToolID="149">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="1207" />
+            <Position x="4015" y="1255" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1251,7 +1258,7 @@ ELSE (
         </Node>
         <Node ToolID="150">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="1387" />
+            <Position x="4015" y="1435" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1269,7 +1276,7 @@ ELSE (
         </Node>
         <Node ToolID="151">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="1555" />
+            <Position x="4015" y="1603" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1287,7 +1294,7 @@ ELSE (
         </Node>
         <Node ToolID="152">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="1519" />
+            <Position x="4015" y="1567" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1305,7 +1312,7 @@ ELSE (
         </Node>
         <Node ToolID="153">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="1267" />
+            <Position x="4015" y="1315" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1323,7 +1330,7 @@ ELSE (
         </Node>
         <Node ToolID="154">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="1327" />
+            <Position x="4015" y="1375" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1341,7 +1348,7 @@ ELSE (
         </Node>
         <Node ToolID="155">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="1459" />
+            <Position x="4015" y="1507" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1359,7 +1366,7 @@ ELSE (
         </Node>
         <Node ToolID="156">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4015" y="1135" />
+            <Position x="4015" y="1183" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1377,7 +1384,7 @@ ELSE (
         </Node>
         <Node ToolID="157">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-            <Position x="4267" y="1003" />
+            <Position x="4267" y="1051" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1396,7 +1403,7 @@ ELSE (
         </Node>
         <Node ToolID="158">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="3535" y="1147" width="216" height="60" />
+            <Position x="3535" y="1195" width="216" height="60" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1420,7 +1427,7 @@ ELSE (
         </Node>
         <Node ToolID="161">
           <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
-            <Position x="4531" y="1003" />
+            <Position x="4531" y="1051" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1461,7 +1468,7 @@ ELSE (
         </Node>
         <Node ToolID="162">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="4615" y="967" />
+            <Position x="4615" y="1015" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1489,7 +1496,7 @@ ELSE (
         </Node>
         <Node ToolID="163">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="4459" y="1075" />
+            <Position x="4459" y="1123" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1517,7 +1524,7 @@ ELSE (
     </Node>
     <Node ToolID="136">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="3306" y="53" width="906" height="494" />
+        <Position x="3306" y="101" width="906" height="494" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1535,7 +1542,7 @@ ELSE (
       <ChildNodes>
         <Node ToolID="97">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="3331" y="174.0002" />
+            <Position x="3331" y="222.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1583,7 +1590,7 @@ ELSE (
         </Node>
         <Node ToolID="101">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="3499" y="174.0002" />
+            <Position x="3499" y="222.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1640,7 +1647,7 @@ ELSE (
         </Node>
         <Node ToolID="100">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="3427" y="186.0002" />
+            <Position x="3427" y="234.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1694,7 +1701,7 @@ ELSE (
         </Node>
         <Node ToolID="104">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="3630" y="248.0001" />
+            <Position x="3630" y="296.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1722,7 +1729,7 @@ ELSE (
         </Node>
         <Node ToolID="105">
           <GuiSettings>
-            <Position x="3727" y="247" />
+            <Position x="3727" y="295" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1748,7 +1755,7 @@ ELSE (
         </Node>
         <Node ToolID="106">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="3775" y="379" />
+            <Position x="3775" y="427" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1774,7 +1781,7 @@ ELSE (
         </Node>
         <Node ToolID="113">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="3703" y="463" />
+            <Position x="3703" y="511" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1793,7 +1800,7 @@ ELSE (
         </Node>
         <Node ToolID="114">
           <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-            <Position x="3906" y="296" />
+            <Position x="3906" y="344" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1819,7 +1826,7 @@ ELSE (
         </Node>
         <Node ToolID="115">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="4002" y="308" />
+            <Position x="4002" y="356" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1851,7 +1858,7 @@ ELSE (
         </Node>
         <Node ToolID="116">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="4087" y="295" />
+            <Position x="4087" y="343" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1874,7 +1881,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="118">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="3919" y="103" />
+            <Position x="3919" y="151" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1895,7 +1902,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="119">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="3823" y="103" />
+            <Position x="3823" y="151" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1915,7 +1922,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="128">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="3367" y="235" width="172" height="60" />
+            <Position x="3367" y="283" width="172" height="60" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1935,7 +1942,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="176">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="4014" y="102" />
+            <Position x="4014" y="150" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1943,7 +1950,7 @@ Table=Sheet1</DefaultAnnotationText>
               <Passwords />
               <FormatSpecificOptions>
                 <SkipFieldNames>False</SkipFieldNames>
-                <OutputOption>Create</OutputOption>
+                <OutputOption>RemoveFile</OutputOption>
               </FormatSpecificOptions>
               <MultiFile value="False" />
             </Configuration>
@@ -1963,7 +1970,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="39">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="305.9997" y="503.9999" width="624.9999" height="279.0001" />
+        <Position x="305.9997" y="551.9999" width="624.9999" height="279.0001" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1981,7 +1988,7 @@ Table=Sheet1</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="42">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="845.9996" y="699" />
+            <Position x="845.9996" y="747" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2000,7 +2007,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="37">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="774.9998" y="580.0001" />
+            <Position x="774.9998" y="628.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2020,7 +2027,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="6">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="690.9998" y="592.0001" />
+            <Position x="690.9998" y="640.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2051,7 +2058,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="594.9998" y="592.0001" />
+            <Position x="594.9998" y="640.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2071,7 +2078,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="4">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="330.9997" y="592.0001" />
+            <Position x="330.9997" y="640.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2092,7 +2099,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="3">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="846.9996" y="580.0001" />
+            <Position x="846.9996" y="628.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2129,7 +2136,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="2">
           <GuiSettings>
-            <Position x="426.9997" y="592.0001" />
+            <Position x="426.9997" y="640.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2155,7 +2162,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="121">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="438" y="552.9999" width="192" height="36" />
+            <Position x="438" y="600.9999" width="192" height="36" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2177,7 +2184,7 @@ Custom</DefaultAnnotationText>
     </Node>
     <Node ToolID="127">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="99.99979" y="108" width="158.7758" height="24" />
+        <Position x="99.99979" y="156" width="158.7758" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2195,7 +2202,7 @@ Custom</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="45">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="221" y="265.9997" />
+            <Position x="221" y="313.9997" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2217,7 +2224,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="67">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="340.9996" y="266" />
+            <Position x="340.9996" y="314" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2249,7 +2256,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="68">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="448.9996" y="253.9998" />
+            <Position x="448.9996" y="301.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2270,7 +2277,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="69">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="592.9996" y="254" />
+            <Position x="592.9996" y="302" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2291,7 +2298,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="70">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="724.9998" y="254" />
+            <Position x="724.9998" y="302" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2313,7 +2320,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="74">
           <GuiSettings>
-            <Position x="868.9998" y="254" />
+            <Position x="868.9998" y="302" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2339,7 +2346,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="79">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="364.9997" y="398" />
+            <Position x="364.9997" y="446" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2371,7 +2378,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="80">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="448.9996" y="374.0002" />
+            <Position x="448.9996" y="422.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2393,7 +2400,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="81">
           <GuiSettings>
-            <Position x="532.9997" y="374.0001" />
+            <Position x="532.9997" y="422.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2419,7 +2426,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="82">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="604.9998" y="385.9999" />
+            <Position x="604.9998" y="433.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2439,7 +2446,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="83">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="676.9996" y="385.9999" />
+            <Position x="676.9996" y="433.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2463,7 +2470,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="84">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="952.9999" y="253.9999" />
+            <Position x="952.9999" y="301.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2484,7 +2491,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="85">
           <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-            <Position x="1085" y="314" />
+            <Position x="1085" y="362" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2510,7 +2517,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="86">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1277" y="314" />
+            <Position x="1277" y="362" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2535,7 +2542,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="87">
           <GuiSettings>
-            <Position x="1181" y="314" />
+            <Position x="1181" y="362" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2561,7 +2568,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="88">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="1349" y="314" />
+            <Position x="1349" y="362" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2585,7 +2592,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="89">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1421" y="314" />
+            <Position x="1421" y="362" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2617,7 +2624,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="91">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="1505" y="290" />
+            <Position x="1505" y="338" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2637,7 +2644,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="92">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1577" y="290" />
+            <Position x="1577" y="338" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2659,7 +2666,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="124.9997" y="266.0001" />
+            <Position x="124.9997" y="314.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2696,7 +2703,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="120">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="401.9999" y="157.0001" width="192" height="36" />
+            <Position x="401.9999" y="205.0001" width="192" height="36" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2718,7 +2725,7 @@ Custom</DefaultAnnotationText>
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="257" y="815.9998" width="1742" height="711.0002" />
+        <Position x="257" y="863.9998" width="1742" height="711.0002" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2736,7 +2743,7 @@ Custom</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="40">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="1890" y="1443" />
+            <Position x="1890" y="1491" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2757,7 +2764,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="36">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1915" y="1120" />
+            <Position x="1915" y="1168" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2786,7 +2793,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="35">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="1723" y="1120" />
+            <Position x="1723" y="1168" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2806,7 +2813,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="31">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1387" y="1060" />
+            <Position x="1387" y="1108" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2827,7 +2834,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1291" y="1060" />
+            <Position x="1291" y="1108" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2860,7 +2867,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="29">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="1231" y="1060" />
+            <Position x="1231" y="1108" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2884,7 +2891,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="28">
           <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-            <Position x="1159" y="1060" />
+            <Position x="1159" y="1108" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2910,7 +2917,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="27">
           <GuiSettings>
-            <Position x="1831" y="1132" />
+            <Position x="1831" y="1180" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2936,7 +2943,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="25">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="1626.999" y="1120" />
+            <Position x="1626.999" y="1168" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2957,7 +2964,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-            <Position x="1039" y="867.9998" />
+            <Position x="1039" y="915.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2977,7 +2984,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="23">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="966.9993" y="867.9998" />
+            <Position x="966.9993" y="915.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3009,7 +3016,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-            <Position x="882.9996" y="879.9997" />
+            <Position x="882.9996" y="927.9997" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3027,7 +3034,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="21">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="822.9996" y="1384" />
+            <Position x="822.9996" y="1432" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3052,7 +3059,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="20">
           <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
-            <Position x="1506.999" y="1132" />
+            <Position x="1506.999" y="1180" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3081,7 +3088,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="19">
           <GuiSettings>
-            <Position x="942.9996" y="1120" />
+            <Position x="942.9996" y="1168" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3107,7 +3114,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="18">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1027" y="1120" />
+            <Position x="1027" y="1168" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3141,7 +3148,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="17">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="858.9995" y="1120" />
+            <Position x="858.9995" y="1168" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3162,7 +3169,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="16">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="762.9998" y="1120" />
+            <Position x="762.9998" y="1168" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3183,7 +3190,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="15">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="750.9998" y="880" />
+            <Position x="750.9998" y="928" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3204,7 +3211,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="714.9994" y="1396" />
+            <Position x="714.9994" y="1444" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3238,7 +3245,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="13">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="630.9998" y="891.9998" />
+            <Position x="630.9998" y="939.9998" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3270,7 +3277,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="12">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="378.9994" y="1132" />
+            <Position x="378.9994" y="1180" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3291,7 +3298,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="11">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="666.9997" y="1144" />
+            <Position x="666.9997" y="1192" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3323,7 +3330,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="10">
           <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="282.9998" y="1132" />
+            <Position x="282.9998" y="1180" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3344,7 +3351,7 @@ Custom</DefaultAnnotationText>
         </Node>
         <Node ToolID="122">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="282" y="864.9998" width="192" height="48" />
+            <Position x="282" y="912.9998" width="192" height="48" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -3496,10 +3503,10 @@ Custom</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="164" Connection="Output" />
-      <Destination ToolID="165" Connection="Input" />
+      <Destination ToolID="178" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="165" Connection="Output" />
+      <Origin ToolID="178" Connection="Output" />
       <Destination ToolID="175" Connection="Input" />
     </Connection>
     <Connection>
