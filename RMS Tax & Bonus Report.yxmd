@@ -1,29 +1,6 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="2019.3">
   <Nodes>
-    <Node ToolID="65">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="3485" y="572" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <File FileFormat="25" MaxRecords="">.\OUTPUT\Y2021\RMS-Tax-bonus-report.xlsx|||Sheet1</File>
-          <Passwords />
-          <FormatSpecificOptions>
-            <SkipFieldNames>False</SkipFieldNames>
-            <OutputOption>RemoveFile</OutputOption>
-          </FormatSpecificOptions>
-          <MultiFile value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>RMS-Tax-bonus-report.xlsx
-Table=Sheet1</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
-    </Node>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
         <Position x="2970" y="753.0001" />
@@ -1000,7 +977,7 @@ Net --&gt; Gross, Tax, Net</Text>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\nkhoi005\AppData\Local\Temp\Engine_20760_1a411d632d9544c49850e96e09620dcc_\Engine_15828_21aedbeb7cb641058d2312a9d83460d7_.yxdb</TempFile>
+          <TempFile>C:\Users\nkhoi005\AppData\Local\Temp\Engine_4100_b9e0d680e4264a27a0efc76fc529c2c3_\Engine_18048_a8f625097e2047899304a7af3821130e_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1030,7 +1007,6 @@ Net --&gt; Gross, Tax, Net</Text>
         <Configuration>
           <UniqueFields>
             <Field field="ID" />
-            <Field field="Employee Name" />
           </UniqueFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -2583,10 +2559,6 @@ Custom</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="33" Connection="Output" />
       <Destination ToolID="34" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="94" Connection="Output" />
-      <Destination ToolID="65" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="94" Connection="Output" />
