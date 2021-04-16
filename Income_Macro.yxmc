@@ -1,0 +1,1191 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.3">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2262" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ID" selected="True" />
+            <SelectField field="Name" selected="True" />
+            <SelectField field="Gross" selected="True" />
+            <SelectField field="Tax" selected="True" />
+            <SelectField field="Net" selected="True" />
+            <SelectField field="Name2" selected="False" />
+            <SelectField field="Name1" selected="False" />
+            <SelectField field="DateTime" selected="False" />
+            <SelectField field="DateTime2" selected="True" rename="DateTime" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_1" name="ID" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Name" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field name="DateTime" size="24" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="2070" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>DateTime</InputFieldName>
+          <Format>Month yyyy</Format>
+          <OutputFieldName>DateTime</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert DateTime To:
+Custom</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" name="DateTime" source="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" type="Date" />
+            <Field description="TextToColumns: Parsed from Field_1" name="ID" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Name" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Name" name="Name1" size="254" source="TextToColumns: Parsed from Name" type="V_String" />
+            <Field description="TextToColumns: Parsed from Name" name="Name2" size="254" source="TextToColumns: Parsed from Name" type="V_String" />
+            <Field name="DateTime2" size="24" source="DateTime: From Month yyyy" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1734" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field_121" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" name="DateTime" source="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1638" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([Gross])</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Gross</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-04-10 22:19:39</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2021-04-10 22:19:39</StartDate>
+              <EndDate>2021-04-10 22:19:39</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Gross])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" name="DateTime" source="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" name="DateTime" source="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1578" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>DateTime</UpdateField_Name>
+          <CreateField_Name>New Field</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] E...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" name="DateTime" source="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="1506" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Field_121</FieldFind>
+          <FieldSearch>Field_123</FieldSearch>
+          <ReplaceFoundField>Field_123</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="False" />
+          <ReplaceAppendFields>
+            <Field field="DateTime" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field name="DateTime" source="DateTime: To dd/MM/yyyy" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings>
+        <Position x="2178" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Gross","Tax","Net","DateTime","ID"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" name="DateTime" source="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" type="Date" />
+            <Field description="TextToColumns: Parsed from Field_1" name="ID" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Name" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Name" name="Name1" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Name" name="Name2" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field name="DateTime2" size="24" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1974" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Name</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Name</RootName>
+          <Delimeters value="&amp;" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" name="DateTime" source="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" type="Date" />
+            <Field description="TextToColumns: Parsed from Field_1" name="ID" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Name" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Name" name="Name1" size="254" source="TextToColumns: Parsed from Name" type="V_String" />
+            <Field description="TextToColumns: Parsed from Name" name="Name2" size="254" source="TextToColumns: Parsed from Name" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="1386" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Field_123</InputFieldName>
+          <Format>dd/MM/yyyy</Format>
+          <OutputFieldName>DateTime</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Field_123 From:
+Custom</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_123" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field name="DateTime" source="DateTime: To dd/MM/yyyy" type="Date" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Field_123" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1314" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field_1" selected="False" />
+            <SelectField field="Field_11" selected="False" />
+            <SelectField field="Field_12" selected="False" />
+            <SelectField field="Field_121" selected="False" />
+            <SelectField field="Field_122" selected="False" />
+            <SelectField field="Field_124" selected="False" />
+            <SelectField field="1" selected="False" />
+            <SelectField field="2" selected="False" />
+            <SelectField field="21" selected="False" />
+            <SelectField field="22" selected="False" />
+            <SelectField field="23" selected="False" rename="Date" />
+            <SelectField field="24" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_123" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Field_123" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1230" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Field_123" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_122" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_123" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_124" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Field_123" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_122" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_123" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_124" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Field_123" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1170" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field_1" selected="False" />
+            <SelectField field="Field_11" selected="True" rename="ID" />
+            <SelectField field="Field_12" selected="True" rename="Name" />
+            <SelectField field="1" selected="False" rename="ID" />
+            <SelectField field="2" selected="False" rename="Name" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_1" name="ID" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Name" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="1854" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="True" />
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input_#3_Field_1" selected="True" rename="Input_#3_Field_1" />
+                <SelectField field="Input_#3_Field_11" selected="True" rename="Input_#3_Field_11" />
+                <SelectField field="Input_#3_Field_12" selected="True" rename="Input_#3_Field_12" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" name="DateTime" source="Formula: IF isnull([DateTime]) THEN [Row-1:DateTime] ELSE [DateTime] ENDIF" type="Date" />
+            <Field description="TextToColumns: Parsed from Field_1" name="ID" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Name" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="1290" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Field_1222","Field_1223"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">True</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_122" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Field_1221" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Field_1222" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Field_1223" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1374" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field_1" selected="False" />
+            <SelectField field="Field_11" selected="False" />
+            <SelectField field="Field_12" selected="False" />
+            <SelectField field="Field_122" selected="False" />
+            <SelectField field="Field_1221" selected="True" rename="Gross" type="Double" size="8" />
+            <SelectField field="Field_1222" selected="True" rename="Tax" type="Double" size="8" />
+            <SelectField field="Field_1223" selected="True" rename="Net" type="Double" size="8" />
+            <SelectField field="1" selected="False" />
+            <SelectField field="2" selected="False" />
+            <SelectField field="21" selected="False" />
+            <SelectField field="22" selected="False" />
+            <SelectField field="221" selected="False" rename="Gross" type="Double" size="8" />
+            <SelectField field="222" selected="False" rename="Tax" type="Double" size="8" />
+            <SelectField field="223" selected="False" rename="Net" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Field_1222&quot;,&quot;Field_1223&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1206" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field_122</Field>
+          <ErrorHandling>Warn</ErrorHandling>
+          <RootName>Field_122</RootName>
+          <Delimeters value="." />
+          <NumFields value="3" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_122" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Field_1221" size="254" source="TextToColumns: Parsed from Field_122" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Field_1222" size="254" source="TextToColumns: Parsed from Field_122" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Field_1223" size="254" source="TextToColumns: Parsed from Field_122" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1110" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field_12</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Field_12</RootName>
+          <Delimeters value=":" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_122" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1098" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field_12</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Field_12</RootName>
+          <Delimeters value=" " />
+          <NumFields value="4" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_121" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_122" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_123" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_12" name="Field_124" size="254" source="TextToColumns: Parsed from Field_12" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1062" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>REGEX_Match([Field_11], '\d+|\d+.\d+')</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-04-09 15:12:13</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2021-04-09 15:12:13</StartDate>
+              <EndDate>2021-04-09 15:12:13</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>REGEX_Match([Field_11], '\d+|\d+.\d+')</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="978" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Field_11] = "Payment"</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Field_11</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-04-10 21:07:51</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Payment</Operand>
+              <StartDate>2021-04-10 21:07:51</StartDate>
+              <EndDate>2021-04-10 21:07:51</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Field_11] = "Payment"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="726" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BM0120     Amway Vietnam Production (500)           Tax Report                             MYU078HS    2/03/21 19:35:53 Page     1" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1014" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Field_11] = "Payment" || [Field_11] = "Distributor"</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Field_11</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-04-10 21:07:55</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Distributor</Operand>
+              <StartDate>2021-04-10 21:07:55</StartDate>
+              <EndDate>2021-04-10 21:07:55</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Field_11] = "Payment" || [Field_11] = "Distributor"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="630" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field_1</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Field_1</RootName>
+          <Delimeters value="   " />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_11" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_12" size="254" source="TextToColumns: Parsed from Field_1" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="630" y="318" width="192" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Cleaning the data into 4 columns: ID, Name, Gross, Tax, Net, DateTime</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="174" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="510" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>False</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>bm0120$.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="510" y="510" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="498" y="402" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2382" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output30</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Input2" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output26" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="7" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="7" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Unique" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output26" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="15" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="28" Connection="Action" />
+      <Destination ToolID="26" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="29" Connection="Question" />
+      <Destination ToolID="28" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (29)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Income_Macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="28" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\bm0120$.txt</ReplaceText>
+              <Destination>26/File</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (27)</Name>
+          <ToolId value="27" />
+          <Questions>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (29)</Description>
+              <Name>Control Parameter (29)</Name>
+              <ToolId value="29" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (30)</Description>
+              <Name>Macro Output (30)</Name>
+              <ToolId value="30" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (29)</Name>
+            <Description>Control Parameter (29)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="8" Selected="True" />
+        <Tool ToolId="15" Selected="True" />
+        <Tool ToolId="30" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

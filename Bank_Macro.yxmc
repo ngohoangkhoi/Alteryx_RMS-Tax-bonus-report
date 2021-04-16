@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="390" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>;</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>False</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>VM040121.TXT</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_2" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_3" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_4" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_5" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_6" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_7" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_8" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_9" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_10" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_11" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_12" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_13" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="906" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="True" />
+          <InputFieldName>DateTime_Out</InputFieldName>
+          <Format>Month yyyy</Format>
+          <OutputFieldName>DateTime</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert DateTime_Out To:
+Custom</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_2" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_3" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_4" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_5" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_6" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_7" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_8" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_9" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_10" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_11" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_12" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_13" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_81" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_82" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="DateTime_Out" source="DateTime: To yyyyMMdd" type="Date" />
+            <Field name="DateTime" size="24" source="DateTime: From Month yyyy" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="822" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([DateTime_Out])</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>DateTime_Out</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-04-09 16:52:01</PeriodDate>
+              <PeriodType>days</PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2021-04-09</Operand>
+              <StartDate>2021-04-09 16:52:01</StartDate>
+              <EndDate>2021-04-09 16:52:01</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([DateTime_Out])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_2" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_3" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_4" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_5" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_6" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_7" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_8" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_9" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_10" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_11" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_12" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_13" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_81" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_82" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="DateTime_Out" source="DateTime: To yyyyMMdd" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_2" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_3" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_4" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_5" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_6" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_7" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_8" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_9" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_10" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_11" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_12" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_13" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_81" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_82" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="DateTime_Out" source="DateTime: To yyyyMMdd" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="726" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Field_10</InputFieldName>
+          <Format>yyyyMMdd</Format>
+          <OutputFieldName>DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Field_10 From:
+Custom</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_2" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_3" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_4" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_5" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_6" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_7" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_8" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_9" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_10" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_11" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_12" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_13" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_81" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_82" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="DateTime_Out" source="DateTime: To yyyyMMdd" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="462" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field_8</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Field_8</RootName>
+          <Delimeters value="." />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_2" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_3" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_4" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_5" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_6" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_7" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_8" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_9" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_10" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_11" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_12" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field name="Field_13" size="254" source="File: C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_81" size="254" source="TextToColumns: Parsed from Field_8" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_82" size="254" source="TextToColumns: Parsed from Field_8" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="978" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field_9" selected="True" rename="ID" />
+            <SelectField field="Field_1" selected="False" />
+            <SelectField field="Field_2" selected="True" rename="Name" />
+            <SelectField field="Field_3" selected="False" />
+            <SelectField field="Field_4" selected="False" />
+            <SelectField field="Field_5" selected="False" />
+            <SelectField field="Field_6" selected="False" />
+            <SelectField field="Field_7" selected="False" />
+            <SelectField field="Field_8" selected="False" type="Double" size="8" />
+            <SelectField field="Field_10" selected="False" />
+            <SelectField field="Field_11" selected="False" />
+            <SelectField field="Field_12" selected="False" />
+            <SelectField field="Field_13" selected="False" />
+            <SelectField field="Field_81" selected="True" rename="Net" type="Double" size="8" />
+            <SelectField field="Field_82" selected="False" />
+            <SelectField field="DateTime_Out" selected="False" />
+            <SelectField field="DateTime" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Name" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Net" source="Formula: [_CurrentField_]" type="Double" />
+            <Field name="DateTime" size="24" source="DateTime: From Month yyyy" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings>
+        <Position x="558" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Field_81"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_2" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_3" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_4" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_5" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_6" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_7" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_8" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_9" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_10" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_11" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_12" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Field_13" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_81" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Field_82" size="254" source="Formula: [_CurrentField_]" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="606" y="162" width="192" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Cleaning the data into 4 columns: ID, Name, Net, DateTime</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="202" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="342" y="138" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="330" y="42" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1086" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output13</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output26" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="12" Connection="Question" />
+      <Destination ToolID="11" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (12)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (13)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Bank_Macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="11" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>C:\Users\nkhoi005\Desktop\Alteryx_RMS-Tax-bonus-report\Input\Y2021\1.Jan\VM040121.TXT</ReplaceText>
+              <Destination>1/File</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (10)</Name>
+          <ToolId value="10" />
+          <Questions>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (12)</Description>
+              <Name>Control Parameter (12)</Name>
+              <ToolId value="12" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (13)</Description>
+              <Name>Macro Output (13)</Name>
+              <ToolId value="13" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (12)</Name>
+            <Description>Control Parameter (12)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="8" Selected="True" />
+        <Tool ToolId="13" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
