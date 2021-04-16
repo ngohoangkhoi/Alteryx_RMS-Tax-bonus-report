@@ -92,65 +92,9 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
     </Node>
-    <Node ToolID="60">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="2513" y="1694" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <File FileFormat="25" MaxRecords="">.\OUTPUT\Y2021\Different Name (file120-Bank).xlsx|||Sheet1</File>
-          <Passwords />
-          <FormatSpecificOptions>
-            <SkipFieldNames>False</SkipFieldNames>
-            <OutputOption>RemoveFile</OutputOption>
-          </FormatSpecificOptions>
-          <MultiFile value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>Different Name (file120-Bank).xlsx
-Table=Sheet1</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
-    </Node>
-    <Node ToolID="59">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="2501" y="1538" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Expression>[Name] != [Bank Name]</Expression>
-          <Mode>Custom</Mode>
-          <Simple>
-            <Operator>!=</Operator>
-            <Field>Name</Field>
-            <Operands>
-              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-              <DateType>fixed</DateType>
-              <PeriodDate>2021-04-09 17:47:11</PeriodDate>
-              <PeriodType>
-              </PeriodType>
-              <PeriodCount>0</PeriodCount>
-              <Operand>
-              </Operand>
-              <StartDate>2021-04-09 17:47:11</StartDate>
-              <EndDate>2021-04-09 17:47:11</EndDate>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[Name] != [Bank Name]</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
     <Node ToolID="58">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2334" y="1551" />
+        <Position x="2394" y="1362" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -199,7 +143,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="56">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="2333" y="1694" />
+        <Position x="2478" y="1350" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -642,7 +586,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="159">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="3762" y="606" width="216" height="60" />
+        <Position x="3378" y="834" width="216" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -660,110 +604,6 @@ Select: - Gross Tax Net of Each Month ]]></Text>
           <Left value="False" />
         </Annotation>
       </Properties>
-    </Node>
-    <Node ToolID="164">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="4266" y="54" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="[Gross_January_2021] + [Gross_February_2021]" field="Gross_Jan_Feb" size="8" type="Double" />
-            <FormulaField expression="[Gross_Jan_Feb] + [Gross_March_2021]" field="Gross_Jan_Feb_Mar" size="8" type="Double" />
-            <FormulaField expression="IF [Gross_January_2021] &gt;= 100000000 &#xA;THEN 1 ELSE 0 ENDIF" field="Jan - Condition" size="8" type="Double" />
-            <FormulaField expression="IF [Gross_Jan_Feb] &gt;=100000000 &amp;&amp; [Jan - Condition] = 0&#xA;THEN 1&#xA;ELSEIF [Gross_Jan_Feb] &gt;=100000000 &amp;&amp; [Jan - Condition] = 1 THEN 2&#xA;ELSE [Jan - Condition]&#xA;ENDIF" field="Feb - Condition" size="8" type="Double" />
-            <FormulaField expression="IF [Gross_Jan_Feb_Mar] &gt;=100000000 &amp;&amp; [Feb - Condition] = 0&#xA;THEN 1&#xA;ELSEIF [Gross_Jan_Feb_Mar] &gt;=100000000 &amp;&amp; [Feb - Condition] = 1 THEN 2&#xA;ELSE [Feb - Condition]&#xA;ENDIF" field="Mar - Condition" size="8" type="Double" />
-            <FormulaField expression="IF [Jan - Condition] = 1 THEN 0.05*[Gross_January_2021] ELSE 0 ENDIF" field="New_PIT_January" size="8" type="Int64" />
-            <FormulaField expression="IF [Feb - Condition] = 0 THEN 0&#xA;ELSEIF [Feb - Condition] = 1 THEN [Gross_Jan_Feb]*0.05&#xA;ELSE [Gross_February_2021]*0.05&#xA;ENDIF" field="New_PIT_feb" size="8" type="Int64" />
-            <FormulaField expression="IF [Mar - Condition] = 0 THEN 0&#xA;ELSEIF [Mar - Condition] = 1 THEN [Gross_Jan_Feb_Mar]*0.05&#xA;ELSE [Gross_March_2021]*0.05&#xA;ENDIF" field="New_PIT_Mar" size="8" type="Int64" />
-            <FormulaField expression="[Gross_January_2021] - [New_PIT_January]" field="New_Net_Jan" size="8" type="Double" />
-            <FormulaField expression="[Gross_February_2021] - [New_PIT_feb]" field="New_Net_Feb" size="8" type="Double" />
-            <FormulaField expression="[Gross_March_2021] - [New_PIT_Mar]" field="New_Net_Mar" size="8" type="Double" />
-            <FormulaField expression="[Gross_January_2021] + [Gross_February_2021] + [Gross_March_2021]" field="Total_Gross" size="8" type="Int64" />
-            <FormulaField expression="IF [Jan - Condition] = 0 THEN 0 ELSE [Gross_January_2021] ENDIF" field="New_Tax_Jan" size="8" type="Int64" />
-            <FormulaField expression="IF [Feb - Condition] = 0 THEN 0 &#xA;ELSEIF [Feb - Condition] = 1 THEN [Gross_Jan_Feb]&#xA;ELSE [Gross_February_2021]&#xA;ENDIF" field="New_Tax_Feb" size="8" type="Int64" />
-            <FormulaField expression="IF [Mar - Condition] = 0 THEN 0 &#xA;ELSEIF [Mar - Condition] = 1 THEN [Gross_Jan_Feb_Mar]&#xA;ELSE [Gross_March_2021]&#xA;ENDIF" field="New_Tax_Mar" size="8" type="Int64" />
-            <FormulaField expression="[New_PIT_January] + [New_PIT_feb] + [New_PIT_Mar]" field="Total_PIT" size="1073741823" type="V_WString" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>Gross_Jan_Feb = [Gross_January_2021] + [Gross_February_2021]
-Gross_Jan_Feb_Mar =...</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
-    <Node ToolID="175">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="4494" y="54" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <File FileFormat="25" MaxRecords="">.\OUTPUT\Y2021\Calculated_Tax_Report.xlsx|||Sheet1</File>
-          <Passwords />
-          <FormatSpecificOptions>
-            <SkipFieldNames>False</SkipFieldNames>
-            <OutputOption>RemoveFile</OutputOption>
-          </FormatSpecificOptions>
-          <MultiFile value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>Calculated_Tax_Report.xlsx
-Table=Sheet1</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
-    </Node>
-    <Node ToolID="178">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="4362" y="54" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="True" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="ID" selected="True" />
-            <SelectField field="First_Employee Name" selected="True" />
-            <SelectField field="Gross_January_2021" selected="True" />
-            <SelectField field="New_Tax_Jan" selected="True" rename="Tax_January_2021" />
-            <SelectField field="New_PIT_January" selected="True" rename="PIT_January_2021" />
-            <SelectField field="New_Net_Jan" selected="False" />
-            <SelectField field="Tax_January_2021" selected="False" />
-            <SelectField field="Net_January_2021" selected="False" />
-            <SelectField field="Gross_February_2021" selected="True" />
-            <SelectField field="New_Tax_Feb" selected="True" rename="Tax_February_2021" />
-            <SelectField field="New_PIT_feb" selected="True" rename="PIT_February_2021" />
-            <SelectField field="New_Net_Feb" selected="False" />
-            <SelectField field="Tax_February_2021" selected="False" />
-            <SelectField field="Net_February_2021" selected="False" />
-            <SelectField field="Gross_March_2021" selected="True" />
-            <SelectField field="Tax_March_2021" selected="False" />
-            <SelectField field="New_Tax_Mar" selected="True" rename="Tax_March_2021" />
-            <SelectField field="New_PIT_Mar" selected="True" rename="PIT_March_2021" />
-            <SelectField field="Net_March_2021" selected="False" />
-            <SelectField field="Gross_Jan_Feb" selected="False" />
-            <SelectField field="Gross_Jan_Feb_Mar" selected="False" />
-            <SelectField field="Jan - Condition" selected="False" />
-            <SelectField field="Feb - Condition" selected="False" />
-            <SelectField field="Mar - Condition" selected="False" />
-            <SelectField field="New_Net_Mar" selected="False" />
-            <SelectField field="Total_Gross" selected="True" />
-            <SelectField field="Total_PIT" selected="True" />
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
     <Node ToolID="179">
       <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
@@ -841,7 +681,7 @@ Table=Sheet1</DefaultAnnotationText>
           <Passwords />
           <FormatSpecificOptions>
             <SkipFieldNames>False</SkipFieldNames>
-            <OutputOption>Create</OutputOption>
+            <OutputOption>RemoveFile</OutputOption>
           </FormatSpecificOptions>
           <MultiFile value="False" />
         </Configuration>
@@ -856,6 +696,166 @@ Table=Sheet1</DefaultAnnotationText>
         </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="186">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="4398" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Field" />
+            <Field name="ID" />
+            <Field name="First_Employee Name" />
+            <Field name="Address" />
+            <Field name="ID_Card_No" />
+            <Field name="Date_of_issuance" />
+            <Field name="Place_of_issuance" />
+            <Field name="Tax_code" />
+            <Field name="WH_code" />
+            <Field name="Gross_January_2021" />
+            <Field name="Tax_January_2021" />
+            <Field name="PIT_January_2021" />
+            <Field name="Gross_February_2021" />
+            <Field name="Tax_February_2021" />
+            <Field name="PIT_February_2021" />
+            <Field name="Gross_March_2021" />
+            <Field name="Tax_March_2021" />
+            <Field name="PIT_March_2021" />
+            <Field name="Gross_April_2021" />
+            <Field name="Tax_April_2021" />
+            <Field name="PIT_April_2021" />
+            <Field name="Gross_May_2021" />
+            <Field name="Tax_May_2021" />
+            <Field name="PIT_May_2021" />
+            <Field name="Gross_June_2021" />
+            <Field name="Tax_June_2021" />
+            <Field name="PIT_June_2021" />
+            <Field name="Gross_July_2021" />
+            <Field name="Tax_July_2021" />
+            <Field name="PIT_July_2021" />
+            <Field name="Gross_August_2021" />
+            <Field name="Tax_August_2021" />
+            <Field name="PIT_August_2021" />
+            <Field name="Gross_September_2021" />
+            <Field name="Tax_September_2021" />
+            <Field name="PIT_September_2021" />
+            <Field name="Gross_October_2021" />
+            <Field name="Tax_October_2021" />
+            <Field name="PIT_October_2021" />
+            <Field name="Gross_November_2021" />
+            <Field name="Tax_November_2021" />
+            <Field name="PIT_November_2021" />
+            <Field name="Gross_December_2021" />
+            <Field name="Tax_December_2021" />
+            <Field name="PIT_December_2021" />
+            <Field name="Total_Gross" />
+            <Field name="Total_PIT" />
+          </Fields>
+          <Data>
+            <r>
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+              <c />
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="187">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="4494" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="197">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="4602" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="datetime" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Từ tháng 1 tới tháng 3</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>giai đoạn từ tháng tới tháng theo cách người ta chạy</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
     <Node ToolID="166">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
@@ -881,7 +881,7 @@ Table=Sheet1</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\nkhoi005\AppData\Local\Temp\Engine_17264_96696346e1c34a28b650fff8695a9755_\Engine_18784_10ab5d8a469b49dd8d3267b7d6f8d936_.yxdb</TempFile>
+              <TempFile>C:\Users\nkhoi005\AppData\Local\Temp\Engine_22224_895a5a2a25fc44ebb2f73c95c6483338_\Engine_18784_68290f8e09824ae79c310acfbc6eabf0_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1242,10 +1242,16 @@ ELSE (
                 <JoinInfo connection="#4">
                   <Field field="ID" />
                 </JoinInfo>
-                <JoinInfo connection="#5">
+                <JoinInfo connection="#6">
                   <Field field="ID" />
                 </JoinInfo>
-                <JoinInfo connection="#6">
+                <JoinInfo connection="#9">
+                  <Field field="ID" />
+                </JoinInfo>
+                <JoinInfo connection="#12">
+                  <Field field="ID" />
+                </JoinInfo>
+                <JoinInfo connection="#11">
                   <Field field="ID" />
                 </JoinInfo>
                 <JoinInfo connection="#7">
@@ -1254,16 +1260,10 @@ ELSE (
                 <JoinInfo connection="#8">
                   <Field field="ID" />
                 </JoinInfo>
-                <JoinInfo connection="#9">
-                  <Field field="ID" />
-                </JoinInfo>
                 <JoinInfo connection="#10">
                   <Field field="ID" />
                 </JoinInfo>
-                <JoinInfo connection="#11">
-                  <Field field="ID" />
-                </JoinInfo>
-                <JoinInfo connection="#12">
+                <JoinInfo connection="#5">
                   <Field field="ID" />
                 </JoinInfo>
               </JoinFields>
@@ -1280,22 +1280,22 @@ ELSE (
                     <SelectField field="Input_#3_Employee Name" selected="True" rename="Input_#3_Employee Name" />
                     <SelectField field="Input_#4_ID" selected="True" rename="Input_#4_ID" />
                     <SelectField field="Input_#4_Employee Name" selected="True" rename="Input_#4_Employee Name" />
-                    <SelectField field="Input_#5_ID" selected="True" rename="Input_#5_ID" />
-                    <SelectField field="Input_#5_Employee Name" selected="True" rename="Input_#5_Employee Name" />
                     <SelectField field="Input_#6_ID" selected="True" rename="Input_#6_ID" />
                     <SelectField field="Input_#6_Employee Name" selected="True" rename="Input_#6_Employee Name" />
+                    <SelectField field="Input_#9_ID" selected="True" rename="Input_#9_ID" />
+                    <SelectField field="Input_#9_Employee Name" selected="True" rename="Input_#9_Employee Name" />
+                    <SelectField field="Input_#12_ID" selected="True" rename="Input_#12_ID" />
+                    <SelectField field="Input_#12_Employee Name" selected="True" rename="Input_#12_Employee Name" />
+                    <SelectField field="Input_#11_ID" selected="True" rename="Input_#11_ID" />
+                    <SelectField field="Input_#11_Employee Name" selected="True" rename="Input_#11_Employee Name" />
                     <SelectField field="Input_#7_ID" selected="True" rename="Input_#7_ID" />
                     <SelectField field="Input_#7_Employee Name" selected="True" rename="Input_#7_Employee Name" />
                     <SelectField field="Input_#8_ID" selected="True" rename="Input_#8_ID" />
                     <SelectField field="Input_#8_Employee Name" selected="True" rename="Input_#8_Employee Name" />
-                    <SelectField field="Input_#9_ID" selected="True" rename="Input_#9_ID" />
-                    <SelectField field="Input_#9_Employee Name" selected="True" rename="Input_#9_Employee Name" />
                     <SelectField field="Input_#10_ID" selected="True" rename="Input_#10_ID" />
                     <SelectField field="Input_#10_Employee Name" selected="True" rename="Input_#10_Employee Name" />
-                    <SelectField field="Input_#11_ID" selected="True" rename="Input_#11_ID" />
-                    <SelectField field="Input_#11_Employee Name" selected="True" rename="Input_#11_Employee Name" />
-                    <SelectField field="Input_#12_ID" selected="True" rename="Input_#12_ID" />
-                    <SelectField field="Input_#12_Employee Name" selected="True" rename="Input_#12_Employee Name" />
+                    <SelectField field="Input_#5_ID" selected="True" rename="Input_#5_ID" />
+                    <SelectField field="Input_#5_Employee Name" selected="True" rename="Input_#5_Employee Name" />
                     <SelectField field="*Unknown" selected="True" />
                   </SelectFields>
                 </Configuration>
@@ -1561,7 +1561,7 @@ ELSE (
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\nkhoi005\AppData\Local\Temp\Engine_17264_96696346e1c34a28b650fff8695a9755_\Engine_18784_10ca46d935034e3d99ce94433ee27f18_.yxdb</TempFile>
+              <TempFile>C:\Users\nkhoi005\AppData\Local\Temp\Engine_22224_895a5a2a25fc44ebb2f73c95c6483338_\Engine_18784_6ebfaed4443e4295a305a99fd42e26dd_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1613,7 +1613,7 @@ ELSE (
     </Node>
     <Node ToolID="136">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="3306" y="103" width="906" height="493" />
+        <Position x="3306" y="0" width="906" height="651" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1631,7 +1631,7 @@ ELSE (
       <ChildNodes>
         <Node ToolID="97">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="3331" y="223.0002" />
+            <Position x="3331" y="278.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1679,7 +1679,7 @@ ELSE (
         </Node>
         <Node ToolID="101">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="3499" y="223.0002" />
+            <Position x="3499" y="278.0004" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1736,7 +1736,7 @@ ELSE (
         </Node>
         <Node ToolID="100">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="3427" y="235.0001" />
+            <Position x="3427" y="290.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1790,7 +1790,7 @@ ELSE (
         </Node>
         <Node ToolID="104">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="3630" y="297.0001" />
+            <Position x="3630" y="352.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1818,7 +1818,7 @@ ELSE (
         </Node>
         <Node ToolID="105">
           <GuiSettings>
-            <Position x="3727" y="296" />
+            <Position x="3727" y="351" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1844,7 +1844,7 @@ ELSE (
         </Node>
         <Node ToolID="106">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="3775" y="428" />
+            <Position x="3775" y="483" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1870,7 +1870,7 @@ ELSE (
         </Node>
         <Node ToolID="113">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="3703" y="512" />
+            <Position x="3703" y="567" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1889,7 +1889,7 @@ ELSE (
         </Node>
         <Node ToolID="114">
           <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-            <Position x="3906" y="345" />
+            <Position x="3906" y="400" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1915,7 +1915,7 @@ ELSE (
         </Node>
         <Node ToolID="115">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="4002" y="357" />
+            <Position x="4002" y="412" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1947,7 +1947,7 @@ ELSE (
         </Node>
         <Node ToolID="116">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="4087" y="344" />
+            <Position x="4087" y="399" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1970,7 +1970,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="118">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="3919" y="152" />
+            <Position x="3919" y="207" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1991,7 +1991,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="119">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="3823" y="152" />
+            <Position x="3823" y="207" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2011,7 +2011,7 @@ Table=Sheet1</DefaultAnnotationText>
         </Node>
         <Node ToolID="128">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="3367" y="284" width="172" height="60" />
+            <Position x="3367" y="339.0001" width="172" height="60" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2028,6 +2028,91 @@ Table=Sheet1</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
+        </Node>
+        <Node ToolID="164">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="3918" y="49.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Gross_January_2021] + [Gross_February_2021]" field="Gross_Jan_Feb" size="8" type="Double" />
+                <FormulaField expression="[Gross_Jan_Feb] + [Gross_March_2021]" field="Gross_Jan_Feb_Mar" size="8" type="Double" />
+                <FormulaField expression="IF [Gross_January_2021] &gt;= 100000000 &#xA;THEN 1 ELSE 0 ENDIF" field="Jan - Condition" size="8" type="Double" />
+                <FormulaField expression="IF [Gross_Jan_Feb] &gt;=100000000 &amp;&amp; [Jan - Condition] = 0&#xA;THEN 1&#xA;ELSEIF [Gross_Jan_Feb] &gt;=100000000 &amp;&amp; [Jan - Condition] = 1 THEN 2&#xA;ELSE [Jan - Condition]&#xA;ENDIF" field="Feb - Condition" size="8" type="Double" />
+                <FormulaField expression="IF [Gross_Jan_Feb_Mar] &gt;=100000000 &amp;&amp; [Feb - Condition] = 0&#xA;THEN 1&#xA;ELSEIF [Gross_Jan_Feb_Mar] &gt;=100000000 &amp;&amp; [Feb - Condition] = 1 THEN 2&#xA;ELSE [Feb - Condition]&#xA;ENDIF" field="Mar - Condition" size="8" type="Double" />
+                <FormulaField expression="IF [Jan - Condition] = 1 THEN 0.05*[Gross_January_2021] ELSE 0 ENDIF" field="New_PIT_January" size="8" type="Int64" />
+                <FormulaField expression="IF [Feb - Condition] = 0 THEN 0&#xA;ELSEIF [Feb - Condition] = 1 THEN [Gross_Jan_Feb]*0.05&#xA;ELSE [Gross_February_2021]*0.05&#xA;ENDIF" field="New_PIT_feb" size="8" type="Int64" />
+                <FormulaField expression="IF [Mar - Condition] = 0 THEN 0&#xA;ELSEIF [Mar - Condition] = 1 THEN [Gross_Jan_Feb_Mar]*0.05&#xA;ELSE [Gross_March_2021]*0.05&#xA;ENDIF" field="New_PIT_Mar" size="8" type="Int64" />
+                <FormulaField expression="[Gross_January_2021] - [New_PIT_January]" field="New_Net_Jan" size="8" type="Double" />
+                <FormulaField expression="[Gross_February_2021] - [New_PIT_feb]" field="New_Net_Feb" size="8" type="Double" />
+                <FormulaField expression="[Gross_March_2021] - [New_PIT_Mar]" field="New_Net_Mar" size="8" type="Double" />
+                <FormulaField expression="[Gross_January_2021] + [Gross_February_2021] + [Gross_March_2021]" field="Total_Gross" size="8" type="Int64" />
+                <FormulaField expression="IF [Jan - Condition] = 0 THEN 0 ELSE [Gross_January_2021] ENDIF" field="New_Tax_Jan" size="8" type="Int64" />
+                <FormulaField expression="IF [Feb - Condition] = 0 THEN 0 &#xA;ELSEIF [Feb - Condition] = 1 THEN [Gross_Jan_Feb]&#xA;ELSE [Gross_February_2021]&#xA;ENDIF" field="New_Tax_Feb" size="8" type="Int64" />
+                <FormulaField expression="IF [Mar - Condition] = 0 THEN 0 &#xA;ELSEIF [Mar - Condition] = 1 THEN [Gross_Jan_Feb_Mar]&#xA;ELSE [Gross_March_2021]&#xA;ENDIF" field="New_Tax_Mar" size="8" type="Int64" />
+                <FormulaField expression="[New_PIT_January] + [New_PIT_feb] + [New_PIT_Mar]" field="Total_PIT" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Calculated PIT
+0 : &lt; 100.000.000 =&gt; PIT = 0
+1 : &gt;= 100.000.000 once =&gt; PIT = Cumulative Gross * 5%
+2: have already &gt;= 100.00.000 =&gt; PIT = That month * 5%</AnnotationText>
+              <DefaultAnnotationText>Gross_Jan_Feb = [Gross_January_2021] + [Gross_February_2021]
+Gross_Jan_Feb_Mar =...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="178">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="4014" y="49" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ID" selected="True" />
+                <SelectField field="First_Employee Name" selected="True" />
+                <SelectField field="Gross_January_2021" selected="True" />
+                <SelectField field="New_Tax_Jan" selected="True" rename="Tax_January_2021" />
+                <SelectField field="New_PIT_January" selected="True" rename="PIT_January_2021" />
+                <SelectField field="New_Net_Jan" selected="False" />
+                <SelectField field="Tax_January_2021" selected="False" />
+                <SelectField field="Net_January_2021" selected="False" />
+                <SelectField field="Gross_February_2021" selected="True" />
+                <SelectField field="New_Tax_Feb" selected="True" rename="Tax_February_2021" />
+                <SelectField field="New_PIT_feb" selected="True" rename="PIT_February_2021" />
+                <SelectField field="New_Net_Feb" selected="False" />
+                <SelectField field="Tax_February_2021" selected="False" />
+                <SelectField field="Net_February_2021" selected="False" />
+                <SelectField field="Gross_March_2021" selected="True" />
+                <SelectField field="Tax_March_2021" selected="False" />
+                <SelectField field="New_Tax_Mar" selected="True" rename="Tax_March_2021" />
+                <SelectField field="New_PIT_Mar" selected="True" rename="PIT_March_2021" />
+                <SelectField field="Net_March_2021" selected="False" />
+                <SelectField field="Gross_Jan_Feb" selected="False" />
+                <SelectField field="Gross_Jan_Feb_Mar" selected="False" />
+                <SelectField field="Jan - Condition" selected="False" />
+                <SelectField field="Feb - Condition" selected="False" />
+                <SelectField field="Mar - Condition" selected="False" />
+                <SelectField field="New_Net_Mar" selected="False" />
+                <SelectField field="Total_Gross" selected="True" />
+                <SelectField field="Total_PIT" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
         </Node>
       </ChildNodes>
     </Node>
@@ -3434,6 +3519,132 @@ Custom</DefaultAnnotationText>
         </Node>
       </ChildNodes>
     </Node>
+    <Node ToolID="196">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="4865" y="280" width="217" height="552" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output to specific range</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="191">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="4914" y="678" width="100" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Yêu cầu lưu file report template trong cùng folder tạo workflow</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="193">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="4901" y="329" width="156" height="225" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Container 10</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="192">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+                <Position x="4926" y="378" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <File FileFormat="25" MaxRecords="">\Amway_Summary of PIT withheld_2021.xlsx|||'Summary$A8:AU1000000'</File>
+                  <Passwords />
+                  <FormatSpecificOptions>
+                    <SkipFieldNames>True</SkipFieldNames>
+                    <OutputOption>Overwrite</OutputOption>
+                  </FormatSpecificOptions>
+                  <MultiFile value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Amway_Summary of PIT withheld_2021.xlsx
+Table='Summary$A8:AU1000000'</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="195">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="4890" y="582" width="156" height="225" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Container 12</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="194">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+                <Position x="4915" y="631" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <File FileFormat="25" MaxRecords="">\Amway_Summary of PIT withheld_2021.xlsx|||'Summary$A5:A5'</File>
+                  <Passwords />
+                  <FormatSpecificOptions>
+                    <SkipFieldNames>True</SkipFieldNames>
+                    <OutputOption>Overwrite</OutputOption>
+                  </FormatSpecificOptions>
+                  <MultiFile value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText>Amway_Summary of PIT withheld_2021.xlsx
+Table='Summary$A5:A5'</DefaultAnnotationText>
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -3461,10 +3672,6 @@ Custom</DefaultAnnotationText>
       <Destination ToolID="108" Connection="Input2" />
     </Connection>
     <Connection>
-      <Origin ToolID="59" Connection="True" />
-      <Destination ToolID="60" Connection="Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="58" Connection="Output" />
       <Destination ToolID="56" Connection="Input" />
     </Connection>
@@ -3475,10 +3682,6 @@ Custom</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="55" Connection="False" />
       <Destination ToolID="58" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="55" Connection="True" />
-      <Destination ToolID="59" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="54" Connection="Join" />
@@ -3565,24 +3768,28 @@ Custom</DefaultAnnotationText>
       <Destination ToolID="94" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="164" Connection="Output" />
-      <Destination ToolID="178" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="178" Connection="Output" />
-      <Destination ToolID="179" Connection="Targets" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="118" Connection="Output" />
-      <Destination ToolID="179" Connection="Source" />
-    </Connection>
-    <Connection>
       <Origin ToolID="179" Connection="Output" />
       <Destination ToolID="180" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="180" Connection="Output" />
       <Destination ToolID="182" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="186" Connection="Output" />
+      <Destination ToolID="187" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="178" Connection="Output" />
+      <Destination ToolID="187" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="187" Connection="Output" />
+      <Destination ToolID="192" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="197" Connection="Output" />
+      <Destination ToolID="194" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="140" Connection="Output" />
@@ -3749,12 +3956,24 @@ Custom</DefaultAnnotationText>
       <Destination ToolID="116" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="118" Connection="Output" />
+      <Destination ToolID="179" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="178" Connection="Output" />
+      <Destination ToolID="179" Connection="Targets" />
+    </Connection>
+    <Connection>
       <Origin ToolID="119" Connection="Output" />
       <Destination ToolID="118" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="119" Connection="Output" />
       <Destination ToolID="164" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="164" Connection="Output" />
+      <Destination ToolID="178" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="37" Connection="Output" />
