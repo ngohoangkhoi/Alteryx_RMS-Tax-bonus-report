@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1050" y="576" />
+        <Position x="1050" y="324" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -22,7 +22,7 @@
     </Node>
     <Node ToolID="63">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1133" y="572" />
+        <Position x="1133" y="320" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -54,7 +54,7 @@
     </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="893" y="572" />
+        <Position x="893" y="320" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -75,7 +75,7 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
     </Node>
     <Node ToolID="61">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="558" y="570" />
+        <Position x="558" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -94,7 +94,7 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
     </Node>
     <Node ToolID="58">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="486" y="930" />
+        <Position x="486" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -114,7 +114,7 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
     </Node>
     <Node ToolID="57">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="354" y="753" />
+        <Position x="354" y="501" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -143,7 +143,7 @@ Tax = IF IsNull([Tax]) THEN 0 ELSE [Tax] ENDIF
     </Node>
     <Node ToolID="56">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="546" y="1002" />
+        <Position x="546" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -166,7 +166,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="55">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="414" y="858" />
+        <Position x="414" y="606" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -199,7 +199,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="342" y="573" />
+        <Position x="342" y="321" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -239,7 +239,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
-        <Position x="54" y="582" />
+        <Position x="54" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -257,7 +257,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="94">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1266" y="570" />
+        <Position x="1266" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -281,7 +281,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="108">
       <GuiSettings>
-        <Position x="809" y="572" />
+        <Position x="809" y="320" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -307,7 +307,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="123">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="294" y="642" width="156" height="60" />
+        <Position x="294" y="390" width="156" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -327,7 +327,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="125">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="798" y="510" width="172" height="60" />
+        <Position x="798" y="258" width="172" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -348,7 +348,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="126">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1542" y="882" width="172" height="60" />
+        <Position x="1542" y="630" width="172" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -369,7 +369,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Directory.Directory">
-        <Position x="54" y="498" />
+        <Position x="54" y="246" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -387,7 +387,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="132">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="1098" y="450" />
+        <Position x="1098" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -405,7 +405,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="133">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1182" y="366" />
+        <Position x="1182" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -432,7 +432,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="134">
       <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-        <Position x="1242" y="462" />
+        <Position x="1242" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -458,7 +458,7 @@ Net --&gt; Gross, Tax, Net</Text>
     </Node>
     <Node ToolID="135">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1086" y="306" width="216" height="60" />
+        <Position x="1086" y="54" width="216" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -479,7 +479,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="159">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1998" y="450" width="216" height="60" />
+        <Position x="1998" y="198" width="216" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -500,7 +500,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="197">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="2658" y="906" />
+        <Position x="2658" y="654" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -525,7 +525,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="199">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RunningTotal.RunningTotal">
-        <Position x="1398" y="726" />
+        <Position x="1398" y="474" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -546,7 +546,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="202">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1494" y="726" />
+        <Position x="1494" y="474" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -565,7 +565,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="203">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RunningTotal.RunningTotal">
-        <Position x="1566" y="726" />
+        <Position x="1566" y="474" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -586,7 +586,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="205">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1638" y="726" />
+        <Position x="1638" y="474" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -605,7 +605,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="206">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1710" y="726" />
+        <Position x="1710" y="474" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -633,7 +633,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="207">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1842" y="570" />
+        <Position x="1842" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -672,7 +672,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="208">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1842" y="798" />
+        <Position x="1842" y="546" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -711,7 +711,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="209">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1842" y="642" />
+        <Position x="1842" y="390" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -750,7 +750,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="210">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1842" y="726" />
+        <Position x="1842" y="474" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -789,7 +789,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="211">
       <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
-        <Position x="2034" y="534" />
+        <Position x="2034" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -854,7 +854,7 @@ Remove duplicate ID with different names.</Text>
     </Node>
     <Node ToolID="212">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-        <Position x="2106" y="546" />
+        <Position x="2106" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -951,7 +951,7 @@ ELSE (
     </Node>
     <Node ToolID="215">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="498" />
+        <Position x="2226" y="246" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -970,7 +970,7 @@ ELSE (
     </Node>
     <Node ToolID="217">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="534" />
+        <Position x="2226" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -988,7 +988,7 @@ ELSE (
     </Node>
     <Node ToolID="218">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="594" />
+        <Position x="2226" y="342" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1006,7 +1006,7 @@ ELSE (
     </Node>
     <Node ToolID="219">
       <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
-        <Position x="2382" y="570" />
+        <Position x="2382" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1098,7 +1098,7 @@ ELSE (
     </Node>
     <Node ToolID="220">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="642" />
+        <Position x="2226" y="390" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1116,7 +1116,7 @@ ELSE (
     </Node>
     <Node ToolID="221">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="774" />
+        <Position x="2226" y="522" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1134,7 +1134,7 @@ ELSE (
     </Node>
     <Node ToolID="222">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="954" />
+        <Position x="2226" y="702" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1152,7 +1152,7 @@ ELSE (
     </Node>
     <Node ToolID="223">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="1122" />
+        <Position x="2226" y="870" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1170,7 +1170,7 @@ ELSE (
     </Node>
     <Node ToolID="224">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="1086" />
+        <Position x="2226" y="834" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1188,7 +1188,7 @@ ELSE (
     </Node>
     <Node ToolID="225">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="834" />
+        <Position x="2226" y="582" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1206,7 +1206,7 @@ ELSE (
     </Node>
     <Node ToolID="226">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="894" />
+        <Position x="2226" y="642" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1224,7 +1224,7 @@ ELSE (
     </Node>
     <Node ToolID="227">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="1026" />
+        <Position x="2226" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1242,7 +1242,7 @@ ELSE (
     </Node>
     <Node ToolID="228">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="702" />
+        <Position x="2226" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1260,7 +1260,7 @@ ELSE (
     </Node>
     <Node ToolID="229">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2478" y="570" />
+        <Position x="2478" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1279,7 +1279,7 @@ ELSE (
     </Node>
     <Node ToolID="230">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="2646" y="570" />
+        <Position x="2646" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1302,7 +1302,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="191">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="3018" y="582" width="100" height="40" />
+        <Position x="3018" y="330" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1322,7 +1322,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="232">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2526" y="690" />
+        <Position x="2526" y="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1340,7 +1340,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="233">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1842" y="882" />
+        <Position x="1842" y="630" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1363,7 +1363,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="234">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
-        <Position x="2226" y="1182" />
+        <Position x="2226" y="930" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1381,7 +1381,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="236">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="2622" y="690" />
+        <Position x="2622" y="438" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1400,7 +1400,7 @@ Table=Sheet1</DefaultAnnotationText>
     </Node>
     <Node ToolID="240">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="2514" y="846" />
+        <Position x="2514" y="594" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1417,51 +1417,48 @@ Table=Sheet1</DefaultAnnotationText>
 Table=``Sheet1$`$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="ID" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Employee Name" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_January_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_January_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_January_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_February_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_February_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_February_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_March_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_March_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_March_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_April_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_April_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_April_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_May_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_May_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_May_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_June_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_June_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_June_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_July_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_July_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_July_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_August_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_August_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_August_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_September_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_September_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_September_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_October_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_October_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_October_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_November_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_November_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_November_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Gross_December_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Taxable_December_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="PIT_December_2021" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Total_Gross" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
-            <Field name="Total_PIT" source="File: C:\Users\nkhoi005\Documents\GitHub\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="ID" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Employee Name" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_January_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_January_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_January_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_February_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_February_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_February_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_March_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_March_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_March_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_April_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_April_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_April_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_May_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_May_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_May_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_June_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_June_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_June_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_July_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_July_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_July_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_August_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_August_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_August_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_September_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_September_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_September_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_October_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_October_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_October_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_November_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_November_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_November_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Gross_December_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Taxable_December_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="PIT_December_2021" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Total_Gross" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
+            <Field name="Total_PIT" source="File: C:\Users\nkhoi005\Documents\Alteryx_RMS-Tax-bonus-report\Columns.xlsx|||``Sheet1$`$`" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -1469,7 +1466,7 @@ Table=``Sheet1$`$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="243">
       <GuiSettings>
-        <Position x="162" y="582" />
+        <Position x="162" y="330" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1496,7 +1493,7 @@ Table=``Sheet1$`$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="200">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
-        <Position x="630" y="570" />
+        <Position x="630" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1516,7 +1513,7 @@ Custom</DefaultAnnotationText>
     </Node>
     <Node ToolID="244">
       <GuiSettings>
-        <Position x="162" y="498" />
+        <Position x="162" y="246" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1541,7 +1538,7 @@ Custom</DefaultAnnotationText>
     </Node>
     <Node ToolID="245">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="2202" y="1242" width="144" height="60" />
+        <Position x="2202" y="990" width="144" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1562,7 +1559,7 @@ Custom</DefaultAnnotationText>
     </Node>
     <Node ToolID="246">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="2442" y="498" width="144" height="60" />
+        <Position x="2442" y="246" width="144" height="60" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1581,9 +1578,30 @@ Custom</DefaultAnnotationText>
         </Annotation>
       </Properties>
     </Node>
+    <Node ToolID="247">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1782" y="702" width="216" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Rename: - The column to Gross Tax Net
+Select: - Gross Tax Net of Each Month ]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="159" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
     <Node ToolID="196">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2969" y="658" width="217" height="552" />
+        <Position x="2969" y="406" width="217" height="552" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1601,7 +1619,7 @@ Custom</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="193">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="3005" y="707" width="156" height="225" />
+            <Position x="3005" y="455" width="156" height="225" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1619,7 +1637,7 @@ Custom</DefaultAnnotationText>
           <ChildNodes>
             <Node ToolID="192">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-                <Position x="3030" y="756" />
+                <Position x="3030" y="504" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1644,7 +1662,7 @@ Table='Summary$A8:AU1000000'</DefaultAnnotationText>
         </Node>
         <Node ToolID="195">
           <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-            <Position x="2994" y="960" width="156" height="225" />
+            <Position x="2994" y="708" width="156" height="225" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1662,7 +1680,7 @@ Table='Summary$A8:AU1000000'</DefaultAnnotationText>
           <ChildNodes>
             <Node ToolID="194">
               <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-                <Position x="3019" y="1009" />
+                <Position x="3019" y="757" />
               </GuiSettings>
               <Properties>
                 <Configuration>
@@ -1686,27 +1704,6 @@ Table='Summary$A5:A5'</DefaultAnnotationText>
           </ChildNodes>
         </Node>
       </ChildNodes>
-    </Node>
-    <Node ToolID="247">
-      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1782" y="954" width="216" height="60" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Text><![CDATA[Rename: - The column to Gross Tax Net
-Select: - Gross Tax Net of Each Month ]]></Text>
-          <Font name="Arial" size="8.25" style="0" />
-          <TextColor name="Black" />
-          <FillColor r="255" g="255" b="159" />
-          <Shape shape="0" />
-          <Justification Justification="1" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
     </Node>
   </Nodes>
   <Connections>

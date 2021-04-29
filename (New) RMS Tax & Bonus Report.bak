@@ -614,7 +614,7 @@ Remove duplicate ID with different names.</Text>
           <SelectFields>
             <SelectField field="DateTime_Out" selected="False" />
             <SelectField field="Sum_Gross" selected="True" rename="Gross" type="Int64" size="8" />
-            <SelectField field="Sum_Tax" selected="True" rename="Tax" type="Int64" size="8" />
+            <SelectField field="Sum_Tax" selected="True" rename="Tax" type="Int64" size="8" description="Original PIT" />
             <SelectField field="Sum_Net" selected="True" rename="Net" type="Int64" size="8" />
             <SelectField field="RunTot_Sum_Gross" selected="False" />
             <SelectField field="Condition" selected="False" />
@@ -801,13 +801,13 @@ Remove duplicate ID with different names.</Text>
             <JoinInfo connection="#2">
               <Field field="ID" />
             </JoinInfo>
+            <JoinInfo connection="#5">
+              <Field field="ID" />
+            </JoinInfo>
             <JoinInfo connection="#3">
               <Field field="ID" />
             </JoinInfo>
             <JoinInfo connection="#4">
-              <Field field="ID" />
-            </JoinInfo>
-            <JoinInfo connection="#5">
               <Field field="ID" />
             </JoinInfo>
             <JoinInfo connection="#6">
@@ -822,6 +822,11 @@ Remove duplicate ID with different names.</Text>
               <CommaDecimal value="False" />
               <SelectFields>
                 <SelectField field="Input_#2_ID" selected="True" rename="Input_#2_ID" />
+                <SelectField field="Input_#5_ID" selected="True" rename="Input_#5_ID" />
+                <SelectField field="Input_#5_First_Employee Name" selected="True" rename="Input_#5_First_Employee Name" />
+                <SelectField field="Input_#5_February_2021" selected="True" rename="Input_#5_February_2021" />
+                <SelectField field="Input_#5_January_2021" selected="True" rename="Input_#5_January_2021" />
+                <SelectField field="Input_#5_March_2021" selected="True" rename="Input_#5_March_2021" />
                 <SelectField field="Input_#3_ID" selected="True" rename="Input_#3_ID" />
                 <SelectField field="Input_#3_First_Employee Name" selected="True" rename="Input_#3_First_Employee Name" />
                 <SelectField field="Input_#3_February_2021" selected="True" rename="Input_#3_February_2021" />
@@ -832,11 +837,6 @@ Remove duplicate ID with different names.</Text>
                 <SelectField field="Input_#4_February_2021" selected="True" rename="Input_#4_February_2021" />
                 <SelectField field="Input_#4_January_2021" selected="True" rename="Input_#4_January_2021" />
                 <SelectField field="Input_#4_March_2021" selected="True" rename="Input_#4_March_2021" />
-                <SelectField field="Input_#5_ID" selected="True" rename="Input_#5_ID" />
-                <SelectField field="Input_#5_First_Employee Name" selected="True" rename="Input_#5_First_Employee Name" />
-                <SelectField field="Input_#5_February_2021" selected="True" rename="Input_#5_February_2021" />
-                <SelectField field="Input_#5_January_2021" selected="True" rename="Input_#5_January_2021" />
-                <SelectField field="Input_#5_March_2021" selected="True" rename="Input_#5_March_2021" />
                 <SelectField field="Input_#6_ID" selected="True" rename="Input_#6_ID" />
                 <SelectField field="Input_#6_First_Employee Name" selected="True" rename="Input_#6_First_Employee Name" />
                 <SelectField field="*Unknown" selected="True" />
@@ -868,6 +868,11 @@ Remove duplicate ID with different names.</Text>
             <Field name="February_2021" />
             <Field name="January_2021" />
             <Field name="March_2021" />
+            <Field name="Input_#5_ID" />
+            <Field name="Input_#5_First_Employee Name" />
+            <Field name="Input_#5_February_2021" />
+            <Field name="Input_#5_January_2021" />
+            <Field name="Input_#5_March_2021" />
             <Field name="Input_#3_ID" />
             <Field name="Input_#3_First_Employee Name" />
             <Field name="Input_#3_February_2021" />
@@ -878,11 +883,6 @@ Remove duplicate ID with different names.</Text>
             <Field name="Input_#4_February_2021" />
             <Field name="Input_#4_January_2021" />
             <Field name="Input_#4_March_2021" />
-            <Field name="Input_#5_ID" />
-            <Field name="Input_#5_First_Employee Name" />
-            <Field name="Input_#5_February_2021" />
-            <Field name="Input_#5_January_2021" />
-            <Field name="Input_#5_March_2021" />
             <Field name="Input_#6_ID" />
             <Field name="Input_#6_First_Employee Name" />
             <Field name="Sum_Gross" />
@@ -920,6 +920,11 @@ ELSE (
             <Field name="Gross_February_2021" source="CrossTab:Header:DateTime:February 2021:Sum:" type="Int64" />
             <Field name="Gross_January_2021" source="CrossTab:Header:DateTime:January 2021:Sum:" type="Int64" />
             <Field name="Gross_March_2021" source="CrossTab:Header:DateTime:March 2021:Sum:" type="Int64" />
+            <Field name="Original_PIT_ID" size="254" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Original_PIT_First_Employee Name" size="1073741823" source="CrossTab:Group:Sum:" type="V_WString" />
+            <Field name="Original_PIT_February_2021" source="CrossTab:Header:DateTime:February 2021:Sum:" type="Int64" />
+            <Field name="Original_PIT_January_2021" source="CrossTab:Header:DateTime:January 2021:Sum:" type="Int64" />
+            <Field name="Original_PIT_March_2021" source="CrossTab:Header:DateTime:March 2021:Sum:" type="Int64" />
             <Field name="Taxable_ID" size="254" source="CrossTab:Group:Sum:" type="V_String" />
             <Field name="Taxable_First_Employee Name" size="1073741823" source="CrossTab:Group:Sum:" type="V_WString" />
             <Field name="Taxable_February_2021" source="CrossTab:Header:DateTime:February 2021:Sum:" type="Int64" />
@@ -930,11 +935,6 @@ ELSE (
             <Field name="PIT_February_2021" source="CrossTab:Header:DateTime:February 2021:Sum:" type="Int64" />
             <Field name="PIT_January_2021" source="CrossTab:Header:DateTime:January 2021:Sum:" type="Int64" />
             <Field name="PIT_March_2021" source="CrossTab:Header:DateTime:March 2021:Sum:" type="Int64" />
-            <Field name="Original_PIT_ID" size="254" source="CrossTab:Group:Sum:" type="V_String" />
-            <Field name="Original_PIT_First_Employee Name" size="1073741823" source="CrossTab:Group:Sum:" type="V_WString" />
-            <Field name="Original_PIT_February_2021" source="CrossTab:Header:DateTime:February 2021:Sum:" type="Int64" />
-            <Field name="Original_PIT_January_2021" source="CrossTab:Header:DateTime:January 2021:Sum:" type="Int64" />
-            <Field name="Original_PIT_March_2021" source="CrossTab:Header:DateTime:March 2021:Sum:" type="Int64" />
             <Field name="Input_#6_ID" size="254" source="Summarize: GroupBy - ID" type="V_String" />
             <Field name="Input_#6_First_Employee Name" size="1073741823" source="Summarize: GroupBy - First_Employee Name" type="V_WString" />
             <Field name="Total_Gross" source="Summarize: Sum - Gross" type="Int64" />
@@ -1483,12 +1483,12 @@ Table=``Sheet1$`$`</DefaultAnnotationText>
         </Annotation>
         <MetaInfo connection="Output30">
           <RecordInfo>
-            <Field description="TextToColumns: Parsed from Field_1" name="ID" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro) (BatchMacro)" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Name" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro) (BatchMacro)" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;     IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;        0&#xA;         ELSE [_CurrentField_]&#xA;     ENDIF&#xA; ELSE [_CurrentField_]&#xA; ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro) (BatchMacro)" type="Double" />
-            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;     IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;        0&#xA;         ELSE [_CurrentField_]&#xA;     ENDIF&#xA; ELSE [_CurrentField_]&#xA; ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro) (BatchMacro)" type="Double" />
-            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;     IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;        0&#xA;         ELSE [_CurrentField_]&#xA;     ENDIF&#xA; ELSE [_CurrentField_]&#xA; ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro) (BatchMacro)" type="Double" />
-            <Field name="DateTime" size="24" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro) (BatchMacro)" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="ID" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Name" size="254" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Gross" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro)" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Tax" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro)" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_122" name="Net" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro)" type="Double" />
+            <Field name="DateTime" size="24" source="Formula: IF [_CurrentFieldName_] IN(&quot;Gross&quot;,&quot;Tax&quot;,&quot;Net&quot;,&quot;DateTime&quot;,&quot;ID&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro)" type="String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -1530,10 +1530,10 @@ Custom</DefaultAnnotationText>
         </Annotation>
         <MetaInfo connection="Output13">
           <RecordInfo>
-            <Field name="ID" size="254" source="Formula: [_CurrentField_] (BatchMacro) (BatchMacro)" type="V_String" />
-            <Field name="Name" size="254" source="Formula: [_CurrentField_] (BatchMacro) (BatchMacro)" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_8" name="Net" source="Formula: [_CurrentField_] (BatchMacro) (BatchMacro)" type="Double" />
-            <Field name="DateTime" size="24" source="DateTime: From Month yyyy (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="ID" size="254" source="Formula: [_CurrentField_] (BatchMacro)" type="V_String" />
+            <Field name="Name" size="254" source="Formula: [_CurrentField_] (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_8" name="Net" source="Formula: [_CurrentField_] (BatchMacro)" type="Double" />
+            <Field name="DateTime" size="24" source="DateTime: From Month yyyy (BatchMacro)" type="String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
